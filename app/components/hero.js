@@ -5,9 +5,9 @@ export default function Hero() {
 
   return (
     <div className="w-full">
-      <video className="" src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4" autoPlay loop controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar">
+      <video className="z-0" src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4" autoPlay loop controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar">
       </video> 
-        <div className="mx-auto max-w-2xl -mt-[180px] sm:-py-56">
+        <div className="mx-auto max-w-2xl -mt-[180px] sm:-py-56 lg:-mt-[300px]">
         
           <div className="text-center">
             <h1 className="text-3xl font-bold tracking-tight text-white sm:text-6xl">
@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="z-10 rounded-md bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 Get started
               </a>
