@@ -5,6 +5,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { playfair } from '../pages/_app'
 import Link from 'next/link'
+import SocialMediaBanner from './socialmediaTopBanner'
 
 const navigation = [
   { name: 'Events', href: '/events' },
@@ -46,7 +47,7 @@ export default function Nav() {
         </Link>
         <div className="flex flex-1 justify-end">
           <Link href="/login" className="text-sm font-semibold leading-6 text-gray-900">
-            Sign in or Join
+            Sign in
           </Link>
         </div>
       </nav>
@@ -64,12 +65,12 @@ export default function Nav() {
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <Link href="/home" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
           <span className={`h-8 font-bold ${playfair.className} text-lg text-amber-800`}>United Chin International</span>
               
             </Link>
             <div className="flex flex-1 justify-end">
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="/login" className="text-sm font-semibold leading-6 text-gray-900">
                 Register
               </a>
             </div>
@@ -87,6 +88,7 @@ export default function Nav() {
           </div>
         </Dialog.Panel>
       </Dialog>
+      <SocialMediaBanner/>
     </header>
   )
 }

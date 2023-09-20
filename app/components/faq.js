@@ -59,7 +59,7 @@ const faqs = [
           <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
           <p className="mt-6 max-w-2xl text-base leading-7 text-gray-600">
             Have a different question and can&apos;t find the answer you&apos;re looking for? Reach out to our support team by{' '}
-            <Link href="/contact" className="font-semibold text-indigo-600 hover:text-indigo-500">
+            <Link href="/contact" className="font-semibold text-amber-600 hover:text-orange-500">
               sending us an email
             </Link>{' '}
             and we&apos;ll get back to you as soon as we can.
