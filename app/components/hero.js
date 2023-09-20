@@ -6,13 +6,14 @@ export default function Hero() {
   return (
     <div className="w-full">
       <video className="" src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4" autoPlay loop controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      </video> 
+        <div className="mx-auto max-w-2xl -mt-[180px] sm:-py-56">
         
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-6xl">
             Unearth Your Passion
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-100">
+            <p className="mt-6 hidden leading-8 text-gray-100 md:text-4xl">
             Unlock a universe of excitement, camaraderie, and competition with United Chin International, your all-access pass to clubs, events, and contests. 
               Say hello to limitless opportunities.
             </p>
@@ -29,7 +30,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </video>
+      
     </div>
   )
 }
