@@ -1,4 +1,4 @@
-import { playfair } from "../styles/font"
+import { playfair } from "../pages/_app"
 
 const navigation = {
     Events: [

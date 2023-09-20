@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { playfair } from '../styles/font'
+import { playfair } from '../pages/_app'
 import Link from 'next/link'
 
 const navigation = [
