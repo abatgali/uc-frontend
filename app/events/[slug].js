@@ -1,9 +1,7 @@
-import Image from "next/image"
-
 export default function event(evt) {
   return (
     <div>evt.attributes.name</div>
-    // <Image src={evt.attributes.date}/>
+    
   )
 }
 

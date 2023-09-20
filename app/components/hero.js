@@ -1,9 +1,5 @@
-// import video from "https://asset.cloudinary.com/dtyw96fds/5dc74c3381e2d61bfca4be3fdd96d179"
-
 export default function Hero() {
-  
-
-  return (
+    return (
     <div className="w-full">
       <video className="z-0" src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4" autoPlay loop controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar">
       </video> 

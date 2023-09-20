@@ -1,9 +1,7 @@
 "use client"
 
-
 export default function SectionHome() {
   
-
   return (
     <div className="bg-white">
       
@@ -123,4 +121,3 @@ export default function SectionHome() {
     </div>
   )
 }
-
