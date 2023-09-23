@@ -47,7 +47,7 @@ export default function SectionHome() {
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-32 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h2 className="text-4xl font-bold tracking-tight text-orange-950 sm:text-4xl">
+                  <h2 className="text-4xl font-bold tracking-tight text-orange-800 sm:text-4xl">
                   Elevate Your Community Experience
                   </h2>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
@@ -61,11 +61,11 @@ export default function SectionHome() {
                       href="#"
                       className="rounded-md bg-amber-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Get Started Now 
+                      Join Now 
                     </a>
                     
-                    <a href="/clubs" className="rounded-md text-sm font-semibold leading-6 text-gray-900"> 
-                      Explore Clubs
+                    <a href="/events" className="rounded-md text-sm font-semibold leading-6 text-gray-900"> 
+                      Explore Events
                     </a>
                   </div>
                 </div>

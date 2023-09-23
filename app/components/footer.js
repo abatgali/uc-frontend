@@ -1,21 +1,16 @@
 import { playfair } from "../pages/_app"
+import Logo from "./logo"
+import Image from "next/image"
+import logoIcon from "../logo.svg"
 
 const navigation = {
     Events: [
-      { name: 'UC Cup', href: '#' },
       { name: 'Chin Idol', href: '#' },
       { name: 'Beauty Pageant', href: '#' },
       { name: 'Track 100M race', href: '#' },
     ],
-    Clubs: [
-      { name: 'Soccer', href: '#' },
-      { name: 'Ping Pong', href: '#' },
-      { name: 'Tennis', href: '#' },
-      { name: 'Wrestling', href: '#' },
-    ],
     company: [
-      { name: 'About', href: '#' },
-      { name: 'FAQ', href: '#faqs' },
+      { name: 'FAQ', href: '/#faqs' },
       { name: 'Jobs', href: '#' },
       { name: 'Partners', href: '#' },
     ],
@@ -23,6 +18,11 @@ const navigation = {
       { name: 'Info', href: '/contact' },
       { name: 'Privacy', href: '#' },
       { name: 'Terms', href: '#' },
+    ],
+    Shop: [
+      { name: 'Merch', href: '#' },
+      { name: 'Caps', href: '#' },
+      { name: 'Support your Team', href: '#' },
     ],
     social: [
       {
@@ -79,14 +79,19 @@ const navigation = {
   
   export default function Footer() {
     return (
-      <footer className="bg-white" aria-labelledby="footer-heading">
+      <footer className="bg-gray-900" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
         <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+        
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          
             <div className="space-y-8">
-            <span className={`h-8 text-amber-800 font-bold ${playfair.className} text-xl text-amber-800`}>United Chin International</span>
+              <div className="flex justify-items-start">
+                <Image src={logoIcon} className="w-10 h-10 mr-4" alt="United Chin International - UC Cup logo"/>
+                <Logo/>
+              </div>
               <p className="text-sm leading-6 text-gray-600">
               Unlock a universe of excitement, camaraderie, and competition. Say hello to limitless opportunities.
               </p>
@@ -102,7 +107,7 @@ const navigation = {
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold leading-6 text-gray-900">Events</h3>
+                  <h3 className="text-sm font-semibold leading-6 text-slate-400">Events</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.Events.map((item) => (
                       <li key={item.name}>
@@ -114,9 +119,9 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-gray-900">Clubs</h3>
+                  <h3 className="text-sm font-semibold leading-6 text-slate-400">Shop</h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {navigation.Clubs.map((item) => (
+                    {navigation.Shop.map((item) => (
                       <li key={item.name}>
                         <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
@@ -128,7 +133,7 @@ const navigation = {
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold leading-6 text-gray-900">Company</h3>
+                  <h3 className="text-sm font-semibold leading-6 text-slate-400">Company </h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.company.map((item) => (
                       <li key={item.name}>
@@ -140,7 +145,7 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-gray-900">Contact</h3>
+                  <h3 className="text-sm font-semibold leading-6 text-slate-400">Contact</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.Contact.map((item) => (
                       <li key={item.name}>

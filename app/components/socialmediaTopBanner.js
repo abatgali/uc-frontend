@@ -1,3 +1,5 @@
+import { kenia } from "../pages/_app"
+
 const medialinks = {
     social: [
         {
@@ -56,13 +58,14 @@ export default function SocialMediaBanner() {
   return (
     <>
       <div className="w-full inset-x-0 bottom-0">
-        <div className="flex items-center gap-x-6 bg-gray-900 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div className="flex items-center gap-x-6 bg-slate-950 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+          <h3 className={`text-white font-extrabold md:text-4xl text-lg ${kenia.className}`}>UC CUP</h3>
           <div className="flex flex-1 justify-end">
             <div className="flex space-x-5">
                 {medialinks.social.map((item) => (
                   <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">{item.name}</span>
-                    <item.icon className="h-5 w-5" aria-hidden="true" />
+                    <item.icon className="h-6 w-6" aria-hidden="true" />
                   </a>
                 ))}
             </div>

@@ -7,8 +7,6 @@ export default function SignUporIn() {
         <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
-          {/* <span className={`h-8 font-bold ${playfair.className} text-xl text-amber-800`}>United Chin International</span> */}
-              
               <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">
                 Sign in to your account
               </h2>
@@ -20,7 +18,7 @@ export default function SignUporIn() {
               </p>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-10 mb-10">
               <div>
                 <form action="#" method="POST" className="space-y-6">
                   <div>
@@ -78,7 +76,7 @@ export default function SignUporIn() {
                   <div>
                     <button
                       type="submit"
-                      className="flex w-full justify-center rounded-md bg-amber-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="flex w-full justify-center rounded-md bg-amber-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Sign in
                     </button>

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Switch } from '@headlessui/react'
+// import { Switch } from '@headlessui/react'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -52,7 +52,7 @@ export default function ContactUs() {
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
+            {/* <div className="sm:col-span-2">
               <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
                 Company
               </label>
@@ -65,13 +65,14 @@ export default function ContactUs() {
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="sm:col-span-2">
               <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
                 Email
               </label>
               <div className="mt-2.5">
                 <input
+                  required
                   type="email"
                   name="email"
                   id="email"
@@ -92,11 +93,10 @@ export default function ContactUs() {
                   <select
                     id="country"
                     name="country"
-                    className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                    className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm"
                   >
                     <option>US</option>
-                    <option>CA</option>
-                    <option>EU</option>
+                    
                   </select>
                   <ChevronDownIcon
                     className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
@@ -126,7 +126,7 @@ export default function ContactUs() {
                 />
               </div>
             </div>
-            <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
+            {/* <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
               <div className="flex h-6 items-center">
                 <Switch
                   checked={agreed}
@@ -153,12 +153,12 @@ export default function ContactUs() {
                 </a>
                 .
               </Switch.Label>
-            </Switch.Group>
+            </Switch.Group> */}
           </div>
           <div className="mt-10">
             <button
               type="submit"
-              className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="block w-full rounded-md bg-amber-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Let's talk
             </button>
@@ -186,7 +186,7 @@ export default function ContactUs() {
                     <div>
                       <dt className="sr-only">Email</dt>
                       <dd>
-                        <a className="font-semibold text-indigo-600" href="mailto:collaborate@example.com">
+                        <a className="font-semibold text-amber-600" href="mailto:collaborate@example.com">
                           collaborate@example.com
                         </a>
                       </dd>
@@ -203,7 +203,7 @@ export default function ContactUs() {
                     <div>
                       <dt className="sr-only">Email</dt>
                       <dd>
-                        <a className="font-semibold text-indigo-600" href="mailto:press@example.com">
+                        <a className="font-semibold text-amber-600" href="mailto:press@example.com">
                           press@example.com
                         </a>
                       </dd>
@@ -220,7 +220,7 @@ export default function ContactUs() {
                     <div>
                       <dt className="sr-only">Email</dt>
                       <dd>
-                        <a className="font-semibold text-indigo-600" href="mailto:careers@example.com">
+                        <a className="font-semibold text-amber-600" href="mailto:careers@example.com">
                           careers@example.com
                         </a>
                       </dd>
@@ -237,7 +237,7 @@ export default function ContactUs() {
                     <div>
                       <dt className="sr-only">Email</dt>
                       <dd>
-                        <a className="font-semibold text-indigo-600" href="mailto:hello@example.com">
+                        <a className="font-semibold text-amber-600" href="mailto:hello@example.com">
                           hello@example.com
                         </a>
                       </dd>
@@ -254,7 +254,7 @@ export default function ContactUs() {
               <div>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Locations</h2>
                 <p className="mt-4 leading-7 text-gray-600">
-                  Consequat sunt cillum cillum elit sint. Qui occaecat nisi in ipsum commodo.
+                Discover the venues where UC Cup events take place, ensuring you're well-prepared and informed for your upcoming sports experience
                 </p>
               </div>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
@@ -272,7 +272,7 @@ export default function ContactUs() {
                     <p>Greenwood, IN 12345</p>
                   </address>
                 </div>
-                <div className="rounded-2xl bg-gray-50 p-10">
+                {/* <div className="rounded-2xl bg-gray-50 p-10">
                   <h3 className="text-base font-semibold leading-7 text-gray-900">Carmel</h3>
                   <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
                     <p>7363 Cynthia Pass</p>
@@ -285,7 +285,7 @@ export default function ContactUs() {
                     <p>726 Mavis Island</p>
                     <p>Chicago, IL 60601</p>
                   </address>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

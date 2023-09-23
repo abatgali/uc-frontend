@@ -1,13 +1,17 @@
+import EventCard from "./eventCard"
+
 export default function Eventlist({ events }) {
   
   return (
     <>
-    {/* {console.log(events)} */}
+  
+  <hr className="my-10"/>
+  <h2 className="text-2xl">Upcoming Events</h2>
     
-    <div className="border-b border-gray-200 bg-white px-4 py-5 sm:px-6 my-5">
+    <div className="border-b border-gray-200 bg-white px-4 py-6 sm:px-6 my-5 drop-shadow-lg rounded-md">
       <div className="-ml-4 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap">
         <div className="ml-4 mt-2">
-          <h3 className="text-base font-semibold leading-6 text-gray-900">Event Name</h3>
+          
         </div>
         <div className="ml-4 mt-2 flex-shrink-0">
           <button
@@ -18,12 +22,8 @@ export default function Eventlist({ events }) {
           </button>
         </div>
       </div>
-      <div className="p-2">
-        <span>Date </span>
-        &nbsp; 
-        <span>Time</span>
-
-      </div>
+      <EventCard/>
+     
     </div>
 
     </>
