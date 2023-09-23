@@ -19,8 +19,8 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-gray-900">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header className="bg-gradient-to-l from-slate-800 to-sky-900">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8" aria-label="Global">
         <div className="flex flex-1">
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
@@ -41,7 +41,7 @@ export default function Nav() {
           </div>
         </div>
         <Link href="/" className="-m-1.5 p-1.5 flex items-center">
-        <Image src={logoIcon} className="w-10 h-10 mr-4 " alt="United Chin International - UC Cup logo"/>
+        <Image src={logoIcon} className="w-8 h-8 mr-4 " alt="United Chin International - UC Cup logo"/>
         <div className='max-sm:hidden'>
           <Logo/>
           </div>

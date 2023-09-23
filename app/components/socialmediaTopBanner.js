@@ -58,8 +58,8 @@ export default function SocialMediaBanner() {
   return (
     <>
       <div className="w-full inset-x-0 bottom-0">
-        <div className="flex items-center gap-x-6 bg-slate-950 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-          <h3 className={`text-white font-extrabold md:text-4xl text-lg ${kenia.className}`}>UC CUP</h3>
+        <div className="flex items-center gap-x-6 bg-gradient-to-r from-slate-900 to-gray-700 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+          <h3 className={`text-gray-200 font-extrabold md:text-4xl text-lg ${kenia.className}`}>UC CUP</h3>
           <div className="flex flex-1 justify-end">
             <div className="flex space-x-5">
                 {medialinks.social.map((item) => (
