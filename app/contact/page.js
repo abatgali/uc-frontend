@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Team from '../components/team'
 // import { Switch } from '@headlessui/react'
 
 function classNames(...classes) {
@@ -126,6 +127,7 @@ export default function ContactUs() {
                 />
               </div>
             </div>
+
             {/* <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
               <div className="flex h-6 items-center">
                 <Switch
@@ -291,6 +293,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
+      <Team/>
 
       
     </>

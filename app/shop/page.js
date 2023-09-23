@@ -1,4 +1,5 @@
 import { CheckBadgeIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { kenia } from '../pages/_app'
 import Link from 'next/link'
 const features = [
   {
@@ -53,7 +54,7 @@ export default function Shop() {
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-amber-600">Sporting Spirit</h2>
               <div className="flex items-center">
-                  <p className="mt-2 text-3xl font-bold tracking-tight text-amber-900 sm:text-4xl">UC Cup Shop</p>
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-amber-900 sm:text-4xl"><span className={`${kenia.className} text-6xl`}>UC CUP </span></p>
                   <Link href="https://uci-clubconnect.myshopify.com/" className="ml-20 bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2 px-4 rounded">
                     Go to Shop
                   </Link>

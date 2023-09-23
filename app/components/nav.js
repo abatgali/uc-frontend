@@ -19,7 +19,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-gradient-to-l from-slate-800 to-sky-900">
+    <header className="bg-gradient-to-r from-slate-800 to-sky-900">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8" aria-label="Global">
         <div className="flex flex-1">
           <div className="hidden lg:flex lg:gap-x-12">
@@ -59,7 +59,7 @@ export default function Nav() {
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-gray-900 px-6 py-6">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto  bg-gradient-to-r from-slate-800 to-sky-900 px-6 py-6">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button

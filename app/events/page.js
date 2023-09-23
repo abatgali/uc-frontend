@@ -6,7 +6,7 @@ export default function Events() {
   // console.log(events)
   return (
     <>
-     <EventsCalendar/>
+     {/* <EventsCalendar/> */}
 
      <Eventlist/>
     </>
