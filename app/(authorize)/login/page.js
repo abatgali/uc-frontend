@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import logoIcon from '../../logo.svg';
 import Link from 'next/link';
+
 export default function SignIn() {
   return (
     <div className='mx-auto w-full max-w-sm lg:w-96 h-full'>
@@ -98,7 +99,15 @@ export default function SignIn() {
             </button>
           </div>
         </form>
+        <div className='mt-10 flex'>
+            <Link
+              href='/'
+              className='text-sm font-semibold leading-7 text-gray-700'
+            >
+              <span aria-hidden='true'>&larr;</span> Back to home
+            </Link>
+          </div>
       </div>
     </div>
-  )
+  );
 }

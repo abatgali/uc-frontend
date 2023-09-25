@@ -19,5 +19,11 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    "no-unused-vars": "off",
+    "semi": "off",
+    "space-before-function-paren": "off",
+    "comma-dangle": "off",
+    "quotes": "off"
+  },
 };
