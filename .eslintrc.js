@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     "no-unused-vars": "off",
     "semi": "off",
+    "camelcase": "off",
     "space-before-function-paren": "off",
     "comma-dangle": "off",
     "quotes": "off"
