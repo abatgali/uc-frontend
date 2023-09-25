@@ -1,5 +1,5 @@
 import { CheckBadgeIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import { kenia } from '../pages/_app'
+import { kenia } from '../../pages/_app'
 import Link from 'next/link'
 const features = [
   {

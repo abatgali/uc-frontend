@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import Team from '../components/team'
+import Team from '../../components/team'
 // import { Switch } from '@headlessui/react'
 
 function classNames(...classes) {
