@@ -1,10 +1,8 @@
-"use client"
+"use client";
 
 export default function SectionHome() {
-  
   return (
     <div className="bg-white">
-      
       <main>
         <div className="relative isolate">
           <svg
@@ -29,7 +27,12 @@ export default function SectionHome() {
                 strokeWidth={0}
               />
             </svg>
-            <rect width="100%" height="100%" strokeWidth={0} fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
+            <rect
+              width="100%"
+              height="100%"
+              strokeWidth={0}
+              fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
+            />
           </svg>
           <div
             className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
@@ -39,7 +42,7 @@ export default function SectionHome() {
               className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#C75922] to-[#2834FE] opacity-30"
               style={{
                 clipPath:
-                  'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
+                  "polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)",
               }}
             />
           </div>
@@ -48,23 +51,28 @@ export default function SectionHome() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h2 className="text-4xl font-bold tracking-tight text-orange-800 sm:text-4xl">
-                  Elevate Your Community Experience
+                    Elevate Your Community Experience
                   </h2>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                  
-                  Our events unite enthusiasts, forge connections, and celebrate the spirit of competition. Explore our offerings, connect with like-minded individuals, and be part of a vibrant sporting community that values every participant. Together, we elevate our community through sportsmanship. 
+                    Our events unite enthusiasts, forge connections, and
+                    celebrate the spirit of competition. Explore our offerings,
+                    connect with like-minded individuals, and be part of a
+                    vibrant sporting community that values every participant.
+                    Together, we elevate our community through sportsmanship.
                   </p>
 
-                  
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="#"
                       className="rounded-md bg-amber-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Join Now 
+                      Join Now
                     </a>
-                    
-                    <a href="/events" className="rounded-md text-sm font-semibold leading-6 text-gray-900"> 
+
+                    <a
+                      href="/events"
+                      className="rounded-md text-sm font-semibold leading-6 text-gray-900"
+                    >
                       Explore Events
                     </a>
                   </div>
@@ -75,7 +83,8 @@ export default function SectionHome() {
                       <img
                         src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695156455/small_physiquecomp_5b54da58be.jpg"
                         alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"/>
+                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
@@ -84,14 +93,16 @@ export default function SectionHome() {
                       <img
                         src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695156455/small_pageant2_5e5c687dd3.jpg"
                         alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative">
                       <img
                         src="https://res.cloudinary.com/dtyw96fds/image/upload/v1694359186/small_event2_9b4f770b5b.jpg"
                         alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
@@ -108,7 +119,8 @@ export default function SectionHome() {
                       <img
                         src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695156456/small_wrestling_cdae7afd34.jpg"
                         alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
@@ -119,5 +131,5 @@ export default function SectionHome() {
         </div>
       </main>
     </div>
-  )
+  );
 }

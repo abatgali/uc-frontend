@@ -1,19 +1,15 @@
 export default function event(evt) {
-  return (
-    <div>evt.attributes.name</div>
-    
-  )
+  return <div>evt.attributes.name</div>;
 }
 
-export async function getStaticPaths({ params: {slug} }) {
+export async function getStaticPaths({ params: { slug } }) {
+  const res = await fetch(`${API_URL}/api/events?slug=${slug}`);
+  const events = await res.json();
 
-    const res = await fetch(`${API_URL}/api/events?slug=${slug}`)
-    const events = await res.json()
-
-    return {
-        props: {
-            evt: events[0],
-        },
-        revalidate: 10,
-    }
+  return {
+    props: {
+      evt: events[0],
+    },
+    revalidate: 10,
+  };
 }

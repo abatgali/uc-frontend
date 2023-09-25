@@ -24,7 +24,7 @@ export default function SignUp() {
         </p>
       </div>
       <div className="mt-10 mb-10">
-      <form action="#" method="POST" className="space-y-6">
+        <form action="#" method="POST" className="space-y-6">
           <div>
             <label
               htmlFor="name"
