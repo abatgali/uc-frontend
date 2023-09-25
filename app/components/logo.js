@@ -1,4 +1,3 @@
-import { playfair } from "../pages/_app";
 import { Grenze_Gotisch } from "next/font/google";
 const grenze = Grenze_Gotisch({ subsets: ["latin"] });
 
