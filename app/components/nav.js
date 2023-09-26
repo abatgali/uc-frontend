@@ -12,14 +12,15 @@ import logoIcon from '../logo.svg'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Events', href: '/events' },
-  { name: 'Contact Us', href: '/contact' },
+  { name: 'Shop', href: '/shop' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className='bg-gradient-to-r from-slate-800 to-sky-900'>
+    <header className='bg-gradient-to-r from-blue-950 to-blue-300'>
       <nav
         className='mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8'
         aria-label='Global'
@@ -53,7 +54,7 @@ export default function Nav() {
             className='w-8 h-8 mr-4 '
             alt='United Chin International - UC Cup logo'
           />
-          <div className='max-sm:hidden'>
+          <div className=''>
             <Logo />
           </div>
         </Link>
@@ -86,7 +87,7 @@ export default function Nav() {
         onClose={setMobileMenuOpen}
       >
         <div className='fixed inset-0 z-10' />
-        <Dialog.Panel className='fixed inset-y-0 left-0 z-10 w-full overflow-y-auto  bg-gradient-to-r from-slate-800 to-sky-900 px-6 py-6'>
+        <Dialog.Panel className='fixed inset-y-0 left-0 w-2/4 overflow-y-auto  bg-gradient-to-r from-slate-800 to-sky-900 px-6 py-6 z-10'>
           <div className='flex items-center justify-between'>
             <div className='flex flex-1'>
               <button
@@ -98,15 +99,15 @@ export default function Nav() {
                 <XMarkIcon className='h-6 w-6' aria-hidden='true' />
               </button>
             </div>
-            <Link href='/' className='-m-1.5 p-1.5'>
+            <Link href='/' className='m-1.5 p-1.5'>
               <Logo />
             </Link>
             <div className='flex flex-1 justify-end'>
               <a
-                href='/login'
-                className='text-sm font-semibold leading-6 text-gray-900'
+                href='/signin'
+                className='text-sm font-semibold leading-6 text-gray-400'
               >
-                Register
+                Login
               </a>
             </div>
           </div>
@@ -115,7 +116,7 @@ export default function Nav() {
               <a
                 key={item.name}
                 href={item.href}
-                className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50'
+                className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-400 hover:bg-cyan-200'
               >
                 {item.name}
               </a>

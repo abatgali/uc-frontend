@@ -1,6 +1,7 @@
 import '../globals.css';
 import Link from 'next/link';
 import LogoIcon from '../components/logoIcon';
+import { bigShoulders } from '../pages/_app';
 export const metadata = {
   title: 'UC Cup - United Chin International',
   description:
@@ -21,15 +22,16 @@ export default function AuthorizeLayout({ children }) {
             alt=''
           />
           <div className='absolute inset-0 p-16'>
-            <Link href='/'>
               <div className='flex items-baseline'>
                 <LogoIcon />
-                <p className='text-white font-extrabold text-3xl ml-4 mb-24'>
+                <Link href='/'>
+
+                <p className= {`text-white font-black text-5xl ml-4 mb-24 ${bigShoulders.className}`}>
                   {' '}
-                  United Chin International
+                  United Chin International <br></br><span className=''> UC CUP</span>
                 </p>
+                </Link>
               </div>
-            </Link>
             <h2 className='mt-20 text-5xl font-extrabold text-white'>
               Experience Community, Join Today!
             </h2>

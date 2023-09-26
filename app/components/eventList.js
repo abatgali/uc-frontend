@@ -120,6 +120,7 @@ export default function Eventlist() {
             </a>
           </div>
         </div>
+        
       ))}
     </>
   )

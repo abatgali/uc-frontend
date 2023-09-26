@@ -13,6 +13,12 @@ const features = [
     icon: CheckBadgeIcon,
   },
   {
+    name: 'Live Streaming.',
+    description:
+      'We provide live streaming of UC Cup events on our website. Subscribe to our YouTube or Rumble channels for more exciting content.',
+    icon: ServerIcon,
+  },
+  {
     name: 'Quality Assurance.',
     description: `We prioritize quality to ensure that our merchandise stands the test of time, just like the memories you will create at UC Cup events.`,
     icon: LockClosedIcon,
@@ -65,14 +71,14 @@ export default function Shop() {
                   Sporting Spirit
                 </h2>
                 <div className='flex items-center'>
-                  <p className='mt-2 text-3xl font-bold tracking-tight text-amber-900 sm:text-4xl'>
+                  <p className='mt-2 text-3xl font-bold tracking-tight text-amber-500 sm:text-4xl'>
                     <span className={`${kenia.className} text-6xl`}>
                       UC CUP{' '}
                     </span>
                   </p>
                   <Link
                     href='https://uci-clubconnect.myshopify.com/'
-                    className='ml-20 bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2 px-4 rounded'
+                    className='ml-20 bg-amber-600 hover:bg-amber-700 h-10 text-white font-semibold py-2 px-4 rounded'
                   >
                     Go to Shop
                   </Link>
@@ -148,6 +154,38 @@ export default function Shop() {
             your passion for sports but also contributes to the growth of our
             sporting community. Shop now and elevate your UC Cup experience!
           </p>
+        </div>
+      </div>
+      <div className='bg-gray-100 py-12'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <h2 className='text-3xl font-extrabold text-amber-900'>
+            Live Stream Channels
+          </h2>
+          <p className='mt-4 text-lg text-gray-600'>
+            Don't miss out on any of the action! Watch our latest events live on our streaming channels. Subscribe to our YouTube and Rumble channels to stay updated.
+          </p>
+          <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+            <div className='bg-white overflow-hidden shadow rounded-lg'>
+              <div className='p-5'>
+                <h3 className='text-lg font-medium text-gray-900'>
+                  YouTube
+                </h3>
+                <p className='mt-2 text-sm text-gray-500'>
+                  Subscribe to our YouTube channel for live streams and highlights.
+                </p>
+              </div>
+            </div>
+            <div className='bg-white overflow-hidden shadow rounded-lg'>
+              <div className='p-5'>
+                <h3 className='text-lg font-medium text-gray-900'>
+                  Rumble
+                </h3>
+                <p className='mt-2 text-sm text-gray-500'>
+                  Follow us on Rumble for exclusive content and live streams.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

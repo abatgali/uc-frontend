@@ -7,7 +7,7 @@ export default function SignUp() {
       <div>
         <Image
           src={logoIcon}
-          className="w-6 h-6 mt-20"
+          className="w-6 h-6 mt-16"
           alt="United Chin International - UC Cup logo"
         />
         <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -23,7 +23,7 @@ export default function SignUp() {
           </Link>
         </p>
       </div>
-      <div className="mt-10 mb-10">
+      <div className="mt-5 mb-10">
         <form action="#" method="POST" className="space-y-6">
           <div>
             <label

@@ -87,7 +87,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer
-      className="bg-gradient-to-r from-slate-800 to-sky-900"
+      className="bg-gradient-to-r  from-blue-950 to-blue-300"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
@@ -104,7 +104,7 @@ export default function Footer() {
               />
               <Logo />
             </div>
-            <p className="text-sm leading-6 text-gray-600">
+            <p className="text-sm leading-6 text-gray-200">
               Unlock a universe of excitement, camaraderie, and competition. Say
               hello to limitless opportunities.
             </p>
@@ -124,7 +124,7 @@ export default function Footer() {
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-slate-400">
+                <h3 className="text-sm font-semibold leading-6 text-slate-700">
                   Events
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -132,7 +132,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-300 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -141,7 +141,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-slate-400">
+                <h3 className="text-sm font-semibold leading-6 text-slate-700">
                   Shop
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -149,7 +149,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-300 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -160,7 +160,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-slate-400">
+                <h3 className="text-sm font-semibold leading-6 text-slate-700">
                   Company{" "}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -168,7 +168,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-300 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -177,7 +177,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-slate-400">
+                <h3 className="text-sm font-semibold leading-6 text-slate-700">
                   Contact
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -185,7 +185,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-300 hover:text-gray-900"
                       >
                         {item.name}
                       </a>

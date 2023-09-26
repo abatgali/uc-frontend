@@ -66,11 +66,12 @@ export default function SocialMediaBanner() {
   return (
     <>
       <div className='w-full inset-x-0 bottom-0'>
-        <div className='flex items-center gap-x-6 bg-gradient-to-r from-red-900 to-gray-800 px-6 py-2 sm:px-3.5 sm:before:flex-1'>
+        <div className='flex items-center gap-x-6 bg-gradient-to-r from-blue-950 to-gray-800 px-6 py-2 sm:px-3.5 sm:before:flex-1'>
           <h3
-            className={`text-gray-200 font-extrabold md:text-3xl text-xl ${kenia.className}`}
+            className={`text-gray-200 font-extrabold md:text-4xl text-2xl ${kenia.className}`}
           >
             UC CUP
+            
           </h3>
           <div className='flex flex-1 justify-end'>
             <div className='flex space-x-5'>
