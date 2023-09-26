@@ -95,7 +95,7 @@ export default function Eventlist() {
       <h2 className="text-2xl">Upcoming Events</h2>
       <hr className="my-10" />
       {events.map((event) => (
-        <div className="flex items-center bg-white shadow-lg rounded-lg mx-2 my-2 p-4">
+        <div className="flex max-sm:flex-wrap items-center bg-white shadow-lg rounded-lg mx-2 my-2 p-4">
           <div className="flex-shrink-0 h-30 w-50">
             <img
               className=" object-cover"
@@ -103,7 +103,7 @@ export default function Eventlist() {
               alt={event.name}
             />
           </div>
-          <div className="ml-4">
+          <div className="ml-4 mt-5">
             <h2 className="text-lg leading-5 font-medium text-black">
               {event.name}
             </h2>
