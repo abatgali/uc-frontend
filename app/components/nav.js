@@ -102,14 +102,14 @@ export default function Nav() {
             <Link href='/' className='m-1.5 p-1.5'>
               <Logo />
             </Link>
-            <div className='flex flex-1 justify-end'>
+            {/* <div className='flex flex-1 justify-end'>
               <a
                 href='/signin'
                 className='text-sm font-semibold leading-6 text-gray-400'
               >
                 Login
               </a>
-            </div>
+            </div> */}
           </div>
           <div className='mt-6 space-y-2'>
             {navigation.map((item) => (
