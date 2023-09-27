@@ -59,7 +59,7 @@ export default function FAQs() {
           Frequently asked questions
         </h2>
         <p className='mt-6 max-w-2xl text-base leading-7 text-gray-600'>
-          Have a different question and can&apost find the answer you&aposre
+          Have a different question and can&apost find the answer you&apos;re
           looking for? Reach out to our support team by{' '}
           <Link
             href='/contact'
@@ -67,7 +67,7 @@ export default function FAQs() {
           >
             sending us an email
           </Link>{' '}
-          and we&aposll get back to you as soon as we can.
+          and we&apos;ll get back to you as soon as we can.
         </p>
         <div className='mt-20'>
           <dl className='space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10'>

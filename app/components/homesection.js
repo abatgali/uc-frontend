@@ -4,7 +4,7 @@ export default function SectionHome() {
   return (
     <div className='bg-white'>
       <main>
-        <div className='relative isolate'>
+        <div className=' isolate'>
           <svg
             className='absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]'
             aria-hidden='true'
@@ -50,10 +50,10 @@ export default function SectionHome() {
             <div className='mx-auto max-w-7xl px-6 pb-32 pt-32 sm:pt-60 lg:px-8 lg:pt-32'>
               <div className='mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center'>
                 <div className='w-full max-w-xl lg:shrink-0 xl:max-w-2xl'>
-                  <h2 className='text-4xl font-bold tracking-tight text-orange-800 sm:text-4xl'>
+                  <h2 className='text-4xl font-bold tracking-tight text-blue-500 sm:text-4xl'>
                     Elevate Your Community Experience
                   </h2>
-                  <p className='relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none'>
+                  <p className='relative mt-6 text-lg leading-8 text-gray-700 sm:max-w-md lg:max-w-none rounde bg-white bg-opacity-90 p-3'>
                     Our events unite enthusiasts, forge connections, and
                     celebrate the spirit of competition. Explore our offerings,
                     connect with like-minded individuals, and be part of a
@@ -64,7 +64,7 @@ export default function SectionHome() {
                   <div className='mt-10 flex items-center gap-x-6'>
                     <a
                       href='/signup'
-                      className='rounded-md bg-amber-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                      className='rounded-md bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
                     >
                       Join Now
                     </a>

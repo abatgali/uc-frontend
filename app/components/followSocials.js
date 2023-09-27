@@ -1,7 +1,7 @@
 export default function FollowSocials() {
   return (
     <div className='mx-auto w-full px-4 sm:px-6 lg:px-8 text-center bg-white pt-8'>
-      <h2 className='text-4xl font-bold tracking-tight text-orange-800 sm:text-4xl'>
+      <h2 className='text-4xl font-bold tracking-tight text-orange-600 sm:text-4xl'>
         Follow our Socials
       </h2>
       <p className='text-md font-semibold text-gray mt-4 relative leading-8 text-gray-600 mx-auto'></p>

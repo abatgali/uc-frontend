@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <div className=' relative sm:top-[-275px] max-sm:top-[-295px] mb-[-295px]'>
       <SectionHome />
       <FollowSocials />
       <FAQs />
+      </div>
     </>
   )
 }
