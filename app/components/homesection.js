@@ -2,8 +2,17 @@
 
 export default function SectionHome() {
   return (
+    <>
+  
     <div className='bg-white'>
+    <div className="w-full mb-10 h-[350px] bg-black text-center text-cyan-50 relative overflow-hidden">
+          <img src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695832312/bryan-plata-LUIYexdkmgE-unsplash_fqzhpl.jpg" className="w-full object-cover h-[320px] absolute top-0 left-0">
+          </img>
+          <h2 className="relative font-semibold top-1/3 w-2/3 mx-auto z-10">UC Cup isn't just about activities; it's a hub for building enduring friendships and meaningful connections. Meet kindred spirits who share your passions, aspirations, and dreams. Together, you'll craft unforgettable memories that will stand the test of time.</h2>
+    </div> 
       <main>
+        
+        
         <div className=' isolate'>
           <svg
             className='absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]'
@@ -53,7 +62,7 @@ export default function SectionHome() {
                   <h2 className='text-4xl font-bold tracking-tight text-blue-500 sm:text-4xl'>
                     Elevate Your Community Experience
                   </h2>
-                  <p className='relative mt-6 text-lg leading-8 text-gray-700 sm:max-w-md lg:max-w-none rounde bg-white bg-opacity-90 p-3'>
+                  <p className='relative mt-6 text-lg leading-8 text-gray-700 sm:max-w-md lg:max-w-none rounde p-3'>
                     Our events unite enthusiasts, forge connections, and
                     celebrate the spirit of competition. Explore our offerings,
                     connect with like-minded individuals, and be part of a
@@ -131,5 +140,6 @@ export default function SectionHome() {
         </div>
       </main>
     </div>
+    </>
   )
 }
