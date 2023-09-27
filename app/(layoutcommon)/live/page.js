@@ -9,7 +9,7 @@ export default function Live() {
           alt=""
           className="h-full w-full  bg-gray-900/5 object-cover shadow-lg object-center"
         />
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+        <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
           <h2 className="text-5xl font-bold tracking-tight text-white sm:text-4xl">
             Watch Live
           </h2>
