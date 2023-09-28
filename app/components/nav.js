@@ -19,7 +19,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r  from-slate-950 to-gray-500">
+    <header className="bg-gradient-to-r  from-stone-950 to-gray-700">
       <nav
         className="mx-auto flex max-w-full items-center justify-between p-3 lg:px-8"
         aria-label="Global"
@@ -73,7 +73,7 @@ export default function Nav() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 w-3/5 overflow-y-auto z-50  bg-gradient-to-r from-slate-900 to-black px-6 py-6">
+        <Dialog.Panel className="fixed inset-y-0 left-0 w-3/5 overflow-y-auto z-50  bg-gradient-to-r from-stone-950 to-gray-700 px-6 py-6">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
@@ -91,7 +91,7 @@ export default function Nav() {
               <a
                 key={item.name}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-200 hover:bg-blue-400"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:bg-yellow-600"
               >
                 {item.name}
               </a>

@@ -1,14 +1,14 @@
 import localFont from "next/font/local";
-import { Big_Shoulders_Display, Oswald } from "next/font/google";
-const bigShoulders = Big_Shoulders_Display({ subsets: ["latin"] });
-const oswald = Oswald({ subsets: ["latin"] });
+
+const oswald = localFont({src: '../styles/Oswald/Oswald-VariableFont_wght.ttf'})
+const openSans = localFont({ src: '../styles/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf'})
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <main className="">
+    <main className= {`${openSans.className}`}>
       <Component {...pageProps} />
     </main>
   );
 }
 
-export { bigShoulders, oswald };
+export {  oswald, openSans };

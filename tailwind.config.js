@@ -11,8 +11,15 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        'live-hero': "url('https://res.cloudinary.com/dtyw96fds/video/upload/v1695775459/pexels-kelly-lacy-5677397_2160p_mnl65a.mp4')",
+        
       },
+      colors: {
+
+      },
+      fontFamily: {
+        "brand": "oswald, sans-serif",
+        "content": "openSans, system-ui, sans-serif"
+      }
     },
   },
   plugins: [require("@tailwindcss/forms")],

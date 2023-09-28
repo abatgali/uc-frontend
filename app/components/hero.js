@@ -13,7 +13,7 @@ export default function Hero() {
             controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar "
           ></video>
           <video
-            className="z-0 sm:h-[500px] w-auto md:w-1/2 bg-slate-950 aspect-video"
+            className="z-0 max-sm:h-96 max-sm:aspect-[3/2] sm:h-[500px] w-auto md:w-1/2 bg-slate-950 aspect-video"
             src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695775459/pexels-kelly-lacy-5677397_2160p_mnl65a.mp4"
             autoPlay
             loop
@@ -22,7 +22,7 @@ export default function Hero() {
           ></video>
         </div>
         <div className="text-center relative top-[-170px] sm:top-[-200px]">
-          <h1 className="text-2xl font-bold tracking-tight text-white sm:text-6xl">
+          <h1 className="text-2xl font-bold tracking-tight text-white sm:text-6xl font-brand">
             Unearth Your Passion
           </h1>
 

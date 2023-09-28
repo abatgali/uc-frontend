@@ -4,9 +4,9 @@ import logo from "../primary.svg";
 
 const navigation = {
   Events: [
-    { name: "Chin Idol", href: "#" },
-    { name: "Beauty Pageant", href: "#" },
-    { name: "Track 100M race", href: "#" },
+    { name: "Watch Live", href: "/live" },
+    { name: "View Events", href: "/events" },
+    { name: "Search", href: "/events" },
   ],
   company: [
     { name: "FAQ", href: "/#faqs" },
@@ -19,9 +19,9 @@ const navigation = {
     { name: "Terms", href: "#" },
   ],
   Shop: [
-    { name: "Merch", href: "#" },
-    { name: "Caps", href: "#" },
-    { name: "Support your Team", href: "#" },
+    { name: "Merch", href: "/shop" },
+    { name: "Jerseys", href: "/shop" },
+    { name: "Support", href: "/contact" },
   ],
   social: [
     {
@@ -87,7 +87,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer
-      className="bg-gradient-to-r  from-slate-950 to-gray-300"
+      className="bg-gradient-to-r  from-stone-950 to-gray-700"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">

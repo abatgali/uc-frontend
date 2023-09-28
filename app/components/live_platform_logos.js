@@ -4,13 +4,13 @@ import facebook from "../Facebook_Logo_Primary.png";
 import rumble from "../rumble.svg";
 
 export function YouTube() {
-  return <Image src={brandicon} className="w-24 h-24" alt="youtube logo" />;
+  return <Image src={brandicon} className="w-auto h-16 max-sm:h-10" alt="youtube logo" />;
 }
 
 export function Facebook() {
-  return <Image src={facebook} className="w-24 h-24" alt="facebook logo" />;
+  return <Image src={facebook} className="w-auto h-16 max-sm:h-10 max-sm:w-auto" alt="facebook logo" />;
 }
 
 export function Rumble() {
-  return <Image src={rumble} className="w-auto h-24" alt="Rumble logo" />;
+  return <Image src={rumble} className="w-auto h-16 max-sm:h-10" alt="Rumble logo" />;
 }

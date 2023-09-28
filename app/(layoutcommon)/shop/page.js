@@ -78,7 +78,7 @@ export default function Shop() {
                   </p>
                   <Link
                     href="https://uci-clubconnect.myshopify.com/"
-                    className="ml-20 bg-amber-600 hover:bg-amber-700 h-10 text-white font-semibold py-2 px-4 rounded"
+                    className="ml-20 bg-amber-600 hover:bg-amber-700 h-15 w-auto text-white font-semibold py-2 px-4 rounded"
                   >
                     Go to Shop
                   </Link>
