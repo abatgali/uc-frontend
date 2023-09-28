@@ -1,5 +1,3 @@
-import { kenia } from "../pages/_app";
-
 const medialinks = {
   social: [
     {
@@ -67,7 +65,6 @@ export default function SocialMediaBanner() {
     <>
       <div className="w-full inset-x-0 bottom-0">
         <div className="flex items-center gap-x-6 bg-gradient-to-r from-blue-950 to-gray-800 px-6 py-2 sm:px-3.5 sm:before:flex-1">
-          
           <div className="flex flex-1 justify-end">
             <div className="flex space-x-5">
               {medialinks.social.map((item) => (

@@ -1,7 +1,4 @@
-import { Facebook, Rumble } from "@/app/components/live_platform_logos";
-import YouTube from "@/app/components/live_platform_logos";
-
-export const channelUrl = "";
+import { Facebook, Rumble, YouTube } from "@/app/components/live_platform_logos";
 
 export default function Live() {
   return (
