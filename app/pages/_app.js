@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
-import { Big_Shoulders_Display } from "next/font/google";
-import { Oswald } from "next/font/google";
+import { Big_Shoulders_Display, Oswald } from "next/font/google";
 const bigShoulders = Big_Shoulders_Display({ subsets: ["latin"] });
 const oswald = Oswald({ subsets: ["latin"] });
 

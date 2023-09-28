@@ -3,7 +3,7 @@ import Image from "next/image";
 import facebook from "../Facebook_Logo_Primary.png";
 import rumble from "../rumble.svg";
 
-export default function YouTube() {
+export function YouTube() {
   return <Image src={brandicon} className="w-24 h-24" alt="youtube logo" />;
 }
 
