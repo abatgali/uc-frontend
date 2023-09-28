@@ -9,7 +9,7 @@ export default function SectionHome() {
             src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695832312/bryan-plata-LUIYexdkmgE-unsplash_fqzhpl.jpg"
             className="w-full object-cover h-[320px] absolute top-0 left-0"
           ></img>
-          <h2 className="relative font-semibold top-1/3 w-2/3 mx-auto z-10">
+          <h2 className="relative top-1/3 w-2/3 mx-auto z-10">
             UC Cup isn't just about activities; it's a hub for building enduring
             friendships and meaningful connections. Meet kindred spirits who
             share your passions, aspirations, and dreams. Together, you'll craft
@@ -71,10 +71,8 @@ export default function SectionHome() {
                       celebrate the spirit of competition. Explore our
                       offerings, connect with like-minded individuals, and be
                       part of a vibrant sporting community that values every
-                      participant. Together, we elevate our community through
-                      sportsmanship.
+                      participant.
                     </p>
-
                     <div className="mt-10 flex items-center gap-x-6">
                       <a
                         href="/signup"

@@ -1,8 +1,8 @@
 import localFont from 'next/font/local'
 import { Big_Shoulders_Display } from "next/font/google";
-
-const kenia = localFont({ src: './Kenia/Kenia-Regular.ttf' })
+import { Oswald } from 'next/font/google';
 const bigShoulders = Big_Shoulders_Display({ subsets: ["latin"] });
+const oswald = Oswald({ subsets: ["latin"] });
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -12,4 +12,4 @@ export default function MyApp({ Component, pageProps }) {
   )
 }
 
-export { kenia, bigShoulders }
+export {  bigShoulders, oswald }

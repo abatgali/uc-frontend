@@ -5,9 +5,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, UserIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import SocialMediaBanner from "./socialmediaTopBanner";
-import Logo from "./logo";
 import Image from "next/image";
-import logoIcon from "../logo.svg";
+import logo from "../primary.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -20,7 +19,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r  from-blue-950 to-blue-300">
+    <header className="bg-gradient-to-r  from-slate-950 to-gray-500">
       <nav
         className="mx-auto flex max-w-full items-center justify-between p-3 lg:px-8"
         aria-label="Global"
@@ -48,21 +47,21 @@ export default function Nav() {
             </button>
           </div>
         </div>
-        <Link href="/" className="-m-1.5 p-1.5 flex items-center">
+        <Link href="/" className="">
           <Image
-            src={logoIcon}
-            className="w-8 h-8 mr-4 "
+            src={logo}
+            className="h-auto w-64 md:w-96"
             alt="United Chin International - UC Cup logo"
           />
-          <div className="">
-            <Logo />
-          </div>
         </Link>
         <div className="flex flex-1 justify-end text-white">
           <Link href="/login" className="text-sm font-semibold leading-6 ">
-            <UserIcon className="w-6 h-6 mr-3" />
+            <UserIcon className="w-6 h-6 " />
           </Link>
-          <Link href="/contact" className="text-sm font-semibold leading-6 ">
+          <Link
+            href="/contact"
+            className=" hidden md:text-sm ml-3 font-semibold leading-6 "
+          >
             Contact
           </Link>
         </div>
@@ -74,12 +73,12 @@ export default function Nav() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 w-2/5 overflow-y-auto  bg-gradient-to-r from-blue-900 to-sky-300 px-6 py-6 z-10">
+        <Dialog.Panel className="fixed inset-y-0 left-0 w-3/5 overflow-y-auto z-50  bg-gradient-to-r from-slate-900 to-black px-6 py-6">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-white"
+                className="-m-2.5 rounded-md p-2.5 text-gray-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>

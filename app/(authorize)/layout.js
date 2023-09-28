@@ -1,7 +1,7 @@
 import '../globals.css';
 import Link from 'next/link';
-import LogoIcon from '../components/logoIcon';
-import { bigShoulders } from '../pages/_app';
+import Logo from '../primary.svg';
+import Image from 'next/image';
 export const metadata = {
   title: 'UC Cup - United Chin International',
   description:
@@ -15,20 +15,24 @@ export default function AuthorizeLayout({ children }) {
         <link rel='company icon' type='image/x-icon' href='../favicon.ico' />
       </head>
       <body className='flex min-h-full flex-1 bg-white'>
-        <div className='relative hidden w-0 flex-1 lg:block '>
+        <div className='relative hidden w-0 flex-1 lg:block'>
           <img
             className='absolute inset-0 h-screen w-full object-cover'
             src='https://res.cloudinary.com/dtyw96fds/image/upload/v1695202052/registerPage_ya8bha.jpg'
             alt=''
           />
+          <div className='absolute inset-0 bg-black h-screen opacity-50'></div>
           <div className='absolute inset-0 p-16'>
               <div className='flex items-baseline'>
-                <LogoIcon />
+               
                 <Link href='/'>
 
-                <p className= {`text-white font-black text-5xl ml-4 mb-24 ${bigShoulders.className}`}>
-                  {' '}
-                  United Chin International <br></br><span className=''> UC CUP</span>
+                <p className= {`text-white font-black text-5xl ml-4 mb-24`}>
+                <Image
+                  src={Logo}
+                  className="w-[192] h-auto"
+                  alt="United Chin International - UC Cup logo"
+                />
                 </p>
                 </Link>
               </div>

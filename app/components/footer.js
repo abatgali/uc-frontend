@@ -1,6 +1,6 @@
 import Logo from "./logo";
 import Image from "next/image";
-import logoIcon from "../logo.svg";
+import logo from "../primary.svg";
 
 const navigation = {
   Events: [
@@ -87,7 +87,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer
-      className="bg-gradient-to-r  from-blue-950 to-blue-300"
+      className="bg-gradient-to-r  from-slate-950 to-gray-300"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
@@ -98,15 +98,13 @@ export default function Footer() {
           <div className="space-y-8">
             <div className="flex justify-items-start">
               <Image
-                src={logoIcon}
-                className="w-10 h-10 mr-4"
+                src={logo}
+                className="w-64 h-auto"
                 alt="United Chin International - UC Cup logo"
               />
-              <Logo />
             </div>
             <p className="text-sm leading-6 text-gray-200">
-              Unlock a universe of excitement, camaraderie, and competition. Say
-              hello to limitless opportunities.
+              Unlock a universe of excitement, camaraderie, and competition.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
