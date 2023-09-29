@@ -19,7 +19,6 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    
     <header className="bg-gradient-to-r  from-stone-950 to-gray-700">
       <SocialMediaBanner />
       <nav
@@ -101,7 +100,6 @@ export default function Nav() {
           </div>
         </Dialog.Panel>
       </Dialog>
-      
     </header>
   );
 }
