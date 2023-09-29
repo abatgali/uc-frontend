@@ -8,7 +8,7 @@ export default function SignIn() {
       <div>
         <Image
           src={logoIcon}
-          className="w-6 h-6 mt-20"
+          className="w-6 h-6"
           alt="United Chin International - UC Cup logo"
         />
         <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -93,19 +93,19 @@ export default function SignIn() {
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-orange-500 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-orange-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="flex w-full justify-center  bg-black px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Sign In
             </button>
           </div>
         </form>
         <div className="text-center p-5">
-          <p className="mb-4 text-sm">Or</p>
+          <p className="mb-2 text-sm">Or</p>
           <div>
             <Link href="/signup">
               <button
                 type=""
-                className="flex w-full justify-center rounded-md bg-yellow-500 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full justify-center bg-yellow-400 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Create Account
               </button>

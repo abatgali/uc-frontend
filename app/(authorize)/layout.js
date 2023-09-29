@@ -2,6 +2,7 @@ import "../globals.css";
 import Link from "next/link";
 import Logo from "../primary.svg";
 import Image from "next/image";
+import { oswald } from "../pages/_app";
 export const metadata = {
   title: "UC Cup - United Chin International",
   description:
@@ -30,7 +31,7 @@ export default function AuthorizeLayout({ children }) {
               </p>
             </Link>
           </div>
-          <h2 className="mt-20 text-5xl font-extrabold text-white">
+          <h2 className={` ${oswald.className} mt-20 text-5xl font-extrabold text-white`}>
             Experience Community, Join Today!
           </h2>
           <p className="text-white mt-20 text-2xl w-2/3">

@@ -1,23 +1,13 @@
 "use client";
 
+import { oswald } from "../pages/_app";
+
 export default function SectionHome() {
   return (
     <>
       <div className="bg-white">
-        <div className="w-full mb-10 h-[350px] bg-black text-center text-cyan-50 relative overflow-hidden">
-          <img
-            src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695832312/bryan-plata-LUIYexdkmgE-unsplash_fqzhpl.jpg"
-            className="w-full object-cover h-[320px] absolute top-0 left-0"
-          ></img>
-          <h2 className="relative top-1/3 w-2/3 mx-auto z-10">
-            UC Cup isn't just about activities; it's a hub for building enduring
-            friendships and meaningful connections. Meet kindred spirits who
-            share your passions, aspirations, and dreams. Together, you'll craft
-            unforgettable memories that will stand the test of time.
-          </h2>
-        </div>
         <main>
-          <div className=" isolate">
+          <div className="relative isolate">
             <svg
               className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
               aria-hidden="true"
@@ -63,7 +53,9 @@ export default function SectionHome() {
               <div className="mx-auto max-w-7xl px-6 pb-32 pt-32 sm:pt-60 lg:px-8 lg:pt-32">
                 <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                   <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                    <h2 className="text-4xl font-bold tracking-tight text-blue-500 sm:text-4xl">
+                    <h2
+                      className={`text-4xl font-bold tracking-tight sm:text-4xl ${oswald.className}`}
+                    >
                       Elevate Your Community Experience
                     </h2>
                     <p className="relative mt-6 text-lg leading-8 text-gray-700 sm:max-w-md lg:max-w-none rounde p-3">
@@ -76,7 +68,7 @@ export default function SectionHome() {
                     <div className="mt-10 flex items-center gap-x-6">
                       <a
                         href="/signup"
-                        className="rounded-md bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className=" bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                       >
                         Join Now
                       </a>

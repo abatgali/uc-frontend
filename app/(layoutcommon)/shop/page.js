@@ -64,15 +64,17 @@ export default function Shop() {
                 <h2 className="text-base font-semibold leading-7 text-amber-600">
                   Sporting Spirit
                 </h2>
-                <div className="flex items-center">
+                <div className="">
                   <p className="mt-2 text-3xl font-bold tracking-tight text-amber-500 sm:text-4xl">
-                    <span className={`${oswald.className} text-6xl`}>
-                      UC CUP{" "}
+                    <span className={`${oswald.className} text-7xl`}>
+                      Represent your Community{" "}
                     </span>
                   </p>
+                </div>
+                <div className="my-10">
                   <Link
                     href="https://uci-clubconnect.myshopify.com/"
-                    className="ml-20 bg-amber-600 hover:bg-amber-700 h-15 w-auto text-white font-semibold py-2 px-4 rounded"
+                    className="bg-black h-15  w-auto text-white font-semibold py-2 px-4"
                   >
                     Go to Shop
                   </Link>
