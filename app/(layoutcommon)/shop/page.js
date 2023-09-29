@@ -13,12 +13,6 @@ const features = [
     icon: CheckBadgeIcon,
   },
   {
-    name: "Live Streaming.",
-    description:
-      "We provide live streaming of UC Cup events on our website. Subscribe to our YouTube or Rumble channels for more exciting content.",
-    icon: ServerIcon,
-  },
-  {
     name: "Quality Assurance.",
     description: `We prioritize quality to ensure that our merchandise stands the test of time, just like the memories you will create at UC Cup events.`,
     icon: LockClosedIcon,
@@ -62,7 +56,7 @@ const featuredProducts = [
 export default function Shop() {
   return (
     <>
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:ml-auto lg:pl-4 lg:pt-4">
@@ -142,7 +136,7 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      <div className="bg-white py-12">
+      <div className=" py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-amber-900">
             Stay Connected
@@ -154,37 +148,6 @@ export default function Shop() {
             your passion for sports but also contributes to the growth of our
             sporting community. Shop now and elevate your UC Cup experience!
           </p>
-        </div>
-      </div>
-      <div className="bg-gray-100 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-amber-900">
-            Live Stream Channels
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Don't miss out on any of the action! Watch our latest events live on
-            our streaming channels. Subscribe to our YouTube and Rumble channels
-            to stay updated.
-          </p>
-          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <div className="bg-white overflow-hidden shadow rounded-lg">
-              <div className="p-5">
-                <h3 className="text-lg font-medium text-gray-900">YouTube</h3>
-                <p className="mt-2 text-sm text-gray-500">
-                  Subscribe to our YouTube channel for live streams and
-                  highlights.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white overflow-hidden shadow rounded-lg">
-              <div className="p-5">
-                <h3 className="text-lg font-medium text-gray-900">Rumble</h3>
-                <p className="mt-2 text-sm text-gray-500">
-                  Follow us on Rumble for exclusive content and live streams.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>

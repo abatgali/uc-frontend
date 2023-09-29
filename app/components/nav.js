@@ -19,9 +19,11 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
+    
     <header className="bg-gradient-to-r  from-stone-950 to-gray-700">
+      <SocialMediaBanner />
       <nav
-        className="mx-auto flex max-w-full items-center justify-between p-3 lg:px-8"
+        className="mx-auto flex max-w-full items-start justify-between p-5 lg:px-8"
         aria-label="Global"
       >
         <div className="flex flex-1">
@@ -99,7 +101,7 @@ export default function Nav() {
           </div>
         </Dialog.Panel>
       </Dialog>
-      <SocialMediaBanner />
+      
     </header>
   );
 }
