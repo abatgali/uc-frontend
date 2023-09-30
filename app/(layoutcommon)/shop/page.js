@@ -61,7 +61,7 @@ export default function Shop() {
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:ml-auto lg:pl-4 lg:pt-4">
               <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-amber-600">
+                <h2 className="text-base font-semibold leading-7">
                   Sporting Spirit
                 </h2>
                 <div className="">
@@ -114,16 +114,16 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 py-12">
+      <div className=" py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-amber-900">
+          <h2 className={`text-3xl font-extrabold  ${oswald.className}`}>
             Featured Products
           </h2>
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {featuredProducts.map((product) => (
               <div
                 key={product.name}
-                className="bg-white overflow-hidden shadow rounded-lg"
+                className="bg-white overflow-hidden shadow "
               >
                 <div className="p-5">
                   <h3 className="text-lg font-medium text-gray-900">
@@ -140,7 +140,7 @@ export default function Shop() {
       </div>
       <div className=" py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-amber-900">
+          <h2 className={`text-3xl font-extrabold ${oswald.className}`}>
             Stay Connected
           </h2>
           <p className="mt-4 text-lg text-gray-600">

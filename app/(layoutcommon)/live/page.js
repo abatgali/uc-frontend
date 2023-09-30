@@ -1,3 +1,4 @@
+import { oswald } from "@/app/pages/_app";
 import {
   Facebook,
   Rumble,
@@ -17,7 +18,7 @@ export default function Live() {
           className="h-full w-full  object-cover shadow-lg object-center"
         /> */}
         <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-center mt-10">
-          <h2 className="text-5xl font-bold tracking-tight text-white sm:text-4xl ">
+          <h2 className={`text-6xl font-bold tracking-tight text-white sm:text-5xl ${oswald.className} `}>
             Watch Live
           </h2>
           <p className="mt-4 text-lg text-white max-sm:hidden z-50">
@@ -45,7 +46,7 @@ export default function Live() {
       </div>
       <div className=" py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-amber-900">
+          <h2 className={`text-3xl font-extrabold  ${oswald.className}`}>
             Live Stream Channels
           </h2>
           <p className="mt-4 text-lg text-gray-600">

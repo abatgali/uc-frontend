@@ -31,8 +31,8 @@ export default function Home() {
         </div>
         <div className="absolute top-0 left-0 w-full h-[32rem] ">
           <video
-            className="w-full h-screen object-cover opacity-70 mix-blend-multiply max-sm:opacity-90"
-            controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar "
+            className="w-full h-screen object-cover opacity-70 mix-blend-multiply max-sm:opacity-90 z-40"
+            controlsList="play nofullscreen noremoteplayback noplaybackrate foobar "
             autoPlay
             loop
             muted
