@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full h-screen object-cover relative bg-gradient-to-t from-gray-400 to-transparent">
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-center mt-10">
+        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center mt-10">
           <h2
             className={` ${oswald.className} text-5xl font-bold tracking-tight text-white sm:text-4xl `}
           >
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <div className="absolute top-0 left-0 w-full h-[32rem] aspect-video ">
           <video
-            className="w-full h-screen object-cover opacity-70 mix-blend-multiply"
+            className="w-full h-screen object-cover opacity-70 mix-blend-multiply max-sm:opacity-90"
             controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar "
             autoPlay
             loop
@@ -48,7 +48,7 @@ export default function Home() {
         <img
           src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695776983/pexels-harrison-haines-3696395_f81rd2.jpg"
           alt=""
-          className="h-full w-full  object-cover shadow-lg object-center mix-blend-multiply "
+          className="h-full w-full  object-cover shadow-lg object-center mix-blend-multiply max-sm:hidden"
         />
       </div>
       <MobileHero />
