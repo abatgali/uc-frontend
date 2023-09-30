@@ -17,7 +17,7 @@ export default function MobileHero() {
           <div className="bg-yellow-900 w-[11rem] h-[11rem] max-sm:w-[23rem]">
             <img
               src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695499027/medium_soccer_f95972066c.jpg"
-              className="w-full h-full object-cover opacity-70"
+              className="w-full h-full object-cover opacity-70 object-right-bottom"
             />
           </div>
           <p className="text-center py-3 font-semibold">Soccer</p>
@@ -80,7 +80,7 @@ export default function MobileHero() {
           <div className="bg-yellow-900 w-[11rem] h-[11rem]">
             <img
               src="https://res.cloudinary.com/dtyw96fds/image/upload/v1696024063/thumbnail_pexels_lebih_dari_ini_5908430_aa9caa08b9.jpg"
-              className="w-full h-full object-cover opacity-70"
+              className="w-full h-full object-cover opacity-70 object-bottom"
             />
           </div>
           <p className="text-center py-3 font-semibold">Tennis</p>

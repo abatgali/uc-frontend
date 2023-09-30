@@ -29,7 +29,7 @@ export default function Home() {
             </div>
           </Link>
         </div>
-        <div className="absolute top-0 left-0 w-full h-[32rem] aspect-video ">
+        <div className="absolute top-0 left-0 w-full h-[32rem] ">
           <video
             className="w-full h-screen object-cover opacity-70 mix-blend-multiply max-sm:opacity-90"
             controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar "
@@ -39,7 +39,6 @@ export default function Home() {
           >
             <source
               src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4"
-              // src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695761401/pexels-claudio-calaboica-5476886_2160p_ducohk.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -48,7 +47,7 @@ export default function Home() {
         <img
           src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695776983/pexels-harrison-haines-3696395_f81rd2.jpg"
           alt=""
-          className="h-full w-full  object-cover shadow-lg object-center mix-blend-multiply max-sm:hidden"
+          className="h-full w-full  object-cover shadow-lg object-center mix-blend-multiply"
         />
       </div>
       <MobileHero />
