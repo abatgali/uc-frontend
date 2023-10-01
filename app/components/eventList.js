@@ -14,7 +14,7 @@ const events = [
   },
   {
     id: 2,
-    name: "Chin iDol",
+    name: "Chin Idol",
     desc: "Singing competition",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156454/medium_idol_3aea1d1f22.jpg",
@@ -25,7 +25,7 @@ const events = [
   },
   {
     id: 3,
-    name: "Miss & Mister beauty pageant",
+    name: "Mister & Miss beauty pageant",
     desc: "Beauty pageant for men and women",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156454/medium_pageant2_5e5c687dd3.jpg",
@@ -111,7 +111,9 @@ export default function Eventlist() {
               />
             </div>
             <div className="bg-white p-4 h-3/5 md:h-full md:w-1/2">
-              <h2 className="text-lg leading-5 font-medium text-black">
+              <h2
+                className={`text-lg leading-5 font-medium text-black ${oswald.className} mb-2`}
+              >
                 {event.name}
               </h2>
               <p className="text-sm leading-5 text-gray-500">{event.desc}</p>
@@ -119,11 +121,10 @@ export default function Eventlist() {
               <p className="text-sm leading-5 text-gray-500">
                 {event.date} {event.time}
               </p>
-              <a
-                href={`/register/${event.id}`}
-                className="mt-2 text-blue-500 hover:text-blue-700"
-              >
-                Register
+              <a href={`/register/${event.id}`} className="mt-auto float-right">
+                <div className="p-2 text-center w-24 bg-black text-gray-200 hover:text-white hover:bg-orange-500 relative top-2">
+                  Register
+                </div>
               </a>
             </div>
           </div>
