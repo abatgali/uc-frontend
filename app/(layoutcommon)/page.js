@@ -24,7 +24,7 @@ export default function Home() {
             right in your community.
           </p>
           <Link href="/signup">
-            <div className="w-48 mx-auto p-2 mt-5 bg-black text-gray-200">
+            <div className=" mx-auto p-2 mt-5 bg-black text-gray-200 hover:bg-gray-200 hover:text-black font-semibold w-48">
               Join Now
             </div>
           </Link>

@@ -117,8 +117,8 @@ export default function MobileHero() {
         <h2 className={`text-2xl  text-center ${oswald.className}`}>
           Sign Up to Register. View Details.
         </h2>
-        <div className="p-2 mx-auto bg-black text-white my-3 w-fit">
-          <Link href="/signup" className="py-2 text-sm">
+        <div className="p-2 mx-auto bg-orange-500 text-white my-5 hover:bg-white hover:bg-transparent hover:text-black font-semibold w-48 text-center ">
+          <Link href="/signup" className="py-2 text-sm ">
             Sign Up
           </Link>
         </div>

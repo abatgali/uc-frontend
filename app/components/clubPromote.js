@@ -14,7 +14,7 @@ export default function ClubPromote() {
             Once you become a member join a club or create your own. We are chill like that. <a href="/#faqs" className=" italic hovercursor-pointer">Learn More.</a>
           </p>
           <Link href="/signup">
-            <div className="w-48 mx-auto p-2 mt-5 bg-orange-400 text-gray-200">
+            <div className="w-48 mx-auto p-2 mt-5 bg-black text-gray-200 hover:text-black hover:bg-gray-200 font-semibold">
               Create an Account
             </div>
           </Link>
@@ -29,17 +29,11 @@ export default function ClubPromote() {
           >
             <source
               src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695775459/pexels-kelly-lacy-5677397_2160p_mnl65a.mp4"
-              // src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695761401/pexels-claudio-calaboica-5476886_2160p_ducohk.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
         </div>
-        {/* <img
-          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695776983/pexels-harrison-haines-3696395_f81rd2.jpg"
-          alt=""
-          className="h-full w-full  object-cover shadow-lg object-center mix-blend-multiply "
-        /> */}
       </div>
   )
 }
