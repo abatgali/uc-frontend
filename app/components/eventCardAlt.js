@@ -1,5 +1,4 @@
-/*
-to be nested in a map cycling through events
+/* to be nested in a map cycling through events
 <div className="md:w-[40em] bg-gray-500 my-3 flex flex-col md:flex-row h-96 md:h-48 w-full hover:shadow-xl">
             <div className="bg-black w-full  h-3/5 md:h-full md:w-1/2 object-cover overflow-hidden">
               <img
