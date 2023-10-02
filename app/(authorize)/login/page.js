@@ -7,11 +7,13 @@ export default function SignIn() {
   return (
     <div className="mx-auto w-full max-w-sm lg:w-96 h-full">
       <div>
-        <Image
-          src={logoIcon}
-          className="w-6 h-6"
-          alt="United Chin International - UC Cup logo"
-        />
+        <Link href='/'>
+          <Image
+            src={logoIcon}
+            className="w-6 h-6"
+            alt="United Chin International - UC Cup logo"
+          />
+        </Link>
         <h2 className={`mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900 ${oswald.className}`}>
           Sign in to your account
         </h2>

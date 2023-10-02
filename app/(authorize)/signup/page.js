@@ -6,11 +6,13 @@ export default function SignUp() {
   return (
     <div className="mx-auto w-full max-w-sm lg:w-96 h-full">
       <div>
-        <Image
-          src={logoIcon}
-          className="w-6 h-6"
-          alt="United Chin International - UC Cup logo"
-        />
+        <Link href='/'>
+          <Image
+            src={logoIcon}
+            className="w-6 h-6"
+            alt="United Chin International - UC Cup logo"
+          />
+        </Link>
         <h2 className={`mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900 ${oswald.className}`}>
           Sign Up
         </h2>
@@ -98,7 +100,7 @@ export default function SignUp() {
               />
             </div>
           </div>
-          <div>
+          <div className="pt-4">
             <button
               type="submit"
               className="flex w-full justify-center bg-black px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

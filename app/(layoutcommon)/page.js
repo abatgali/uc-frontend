@@ -29,13 +29,14 @@ export default function Home() {
             </div>
           </Link>
         </div>
-        <div className="absolute top-0 left-0 w-full h-[32rem] ">
+        <div className="absolute top-0 left-0 w-full h-[32rem] " id="football">
           <video
             className="w-full h-screen object-cover opacity-70 mix-blend-multiply max-sm:opacity-90 z-40"
-            controlsList="play nofullscreen noremoteplayback noplaybackrate foobar "
+            controlsList="play nofullscreen noremoteplayback noplaybackrate foobar nodownload "
             autoPlay
             loop
             muted
+            disablePictureInPicture
           >
             <source
               src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4"

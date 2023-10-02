@@ -14,7 +14,7 @@ const events = [
   },
   {
     id: 2,
-    name: "Chin Idol",
+    name: "chiN iDol",
     desc: "Singing competition",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156454/medium_idol_3aea1d1f22.jpg",
@@ -25,10 +25,10 @@ const events = [
   },
   {
     id: 3,
-    name: "Mister & Miss beauty pageant",
-    desc: "Beauty pageant for men and women",
+    name: "Miss beauty pageant",
+    desc: "Beauty pageant ",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156454/medium_pageant2_5e5c687dd3.jpg",
+      "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_miss_0cd28af07e.jpg",
     user: "Indianapolis Beauty Association",
     venue: "Murat Theatre",
     date: "2022-06-15",
@@ -36,6 +36,17 @@ const events = [
   },
   {
     id: 4,
+    name: "Mister Chin",
+    desc: "Beauty pageant ",
+    imageURL:
+      "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_mister_723507ac98.jpg",
+    user: "Indianapolis Beauty Association",
+    venue: "Murat Theatre",
+    date: "2022-06-15",
+    time: "19:00",
+  },
+  {
+    id: 5,
     name: "Volleyball",
     desc: "Volleyball match between Indianapolis and Cincinnati",
     imageURL:
@@ -46,7 +57,7 @@ const events = [
     time: "15:00",
   },
   {
-    id: 5,
+    id: 6,
     name: "Men & Women Lai Paih / Lai Wrestling",
     desc: "Lai Paih / Lai Wrestling competition for men and women",
     imageURL:
@@ -57,7 +68,7 @@ const events = [
     time: "20:00",
   },
   {
-    id: 6,
+    id: 7,
     name: "Tennis - Badminton - Ping pong",
     desc: "Tennis, badminton, and ping pong tournament",
     imageURL:
@@ -68,8 +79,8 @@ const events = [
     time: "10:00",
   },
   {
-    id: 7,
-    name: "500m Race",
+    id: 8,
+    name: "400m Race",
     desc: "500m race for men and women",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499911/medium_pexels_andrea_piacquadio_3764011_d207c87973.jpg",
@@ -79,8 +90,8 @@ const events = [
     time: "12:00",
   },
   {
-    id: 8,
-    name: "Men & Women Boxing",
+    id: 9,
+    name: "Boxing",
     desc: "Boxing match for men and women",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499912/medium_hermes_rivera_ubb_N_Kj_L_Bvnc_unsplash_c8163dd75f.jpg",
@@ -94,17 +105,12 @@ const events = [
 export default function Eventlist() {
   return (
     <>
-      <h2
-        className={`text-3xl md:text-4xl font-semibold ${oswald.className} text-center pt-8`}
-      >
-        Upcoming Events
-      </h2>
-      <p className="text-center pt-3 pb-8">Let's help you make plans!</p>
-      <div className="flex flex-wrap justify-evenly h-auto mx-auto py-10 w-fit mb-10">
+      {/* <p className="text-center pt-3 pb-8">Let's help you make plans!</p> */}
+      <div className="flex flex-wrap justify-evenly h-auto mx-auto sm:py-10 w-fit ">
         {events.map((event) => (
-          <div className="md:w-[40em] bg-gradient-to-b object-cover from-yellow-700 to-black  w-full hover:shadow-xl relative">
+          <div className="md:w-[40em] bg-gradient-to-b object-cover from-yellow-700 to-black  w-full hover:shadow-xl relative transform transition-all duration-500 ease-in-out hover:scale-105">
             <img
-              className="  w-full opacity-70 h-72 object-cover"
+              className=" w-full opacity-70 h-72 object-cover max-sm:h-screen object-center"
               src={event.imageURL}
               alt={event.name}
             />

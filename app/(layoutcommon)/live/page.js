@@ -18,7 +18,9 @@ export default function Live() {
           className="h-full w-full  object-cover shadow-lg object-center"
         /> */}
         <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-center mt-10">
-          <h2 className={`text-6xl font-bold tracking-tight text-white sm:text-5xl ${oswald.className} `}>
+          <h2
+            className={`text-6xl font-bold tracking-tight text-white sm:text-5xl ${oswald.className} `}
+          >
             Watch Live
           </h2>
           <p className="mt-4 text-lg text-white max-sm:hidden z-50">
@@ -35,6 +37,7 @@ export default function Live() {
             autoPlay
             loop
             muted
+            disablePictureInPicture
           >
             <source
               src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695761401/pexels-claudio-calaboica-5476886_2160p_ducohk.mp4"
