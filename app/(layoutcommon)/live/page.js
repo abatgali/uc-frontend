@@ -2,6 +2,7 @@ import { oswald } from "@/app/pages/_app";
 import {
   Facebook,
   Rumble,
+  X,
   YouTube,
 } from "@/app/components/live_platform_logos";
 
@@ -67,6 +68,9 @@ export default function Live() {
             <div className=" m-4 ">
               <Facebook />
             </div>
+            <div className=" m-4 ">
+              <X />
+            </div>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <div className="bg-white overflow-hidden shadow rounded-lg">
@@ -91,6 +95,15 @@ export default function Live() {
                 <h3 className="text-lg font-medium text-gray-900">Facebook</h3>
                 <p className="mt-2 text-sm text-gray-500">
                   Follow our Facebook page for live streams and updates.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white overflow-hidden shadow rounded-lg">
+              <div className="p-5">
+                <h3 className="text-lg font-medium text-gray-900">X</h3>
+                <p className="mt-2 text-sm text-gray-500">
+                  Follow us on X (formerly Twitter) for exclusive live streams
+                  and updates.
                 </p>
               </div>
             </div>

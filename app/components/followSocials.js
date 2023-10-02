@@ -1,5 +1,5 @@
 import { oswald } from "../pages/_app";
-import { YouTube, Facebook, Instagram, TikTok } from "./live_platform_logos";
+import { YouTube, Facebook, Instagram, TikTok, X } from "./live_platform_logos";
 export default function FollowSocials() {
   return (
     <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 text-center pt-8">
@@ -17,10 +17,11 @@ export default function FollowSocials() {
             exclusive content.
           </h2>
           <div className="mx-auto mt-10 items-center w-full flex justify-evenly">
-            <Instagram/>
-            <YouTube/>
-            <TikTok/>
-            <Facebook/>
+            <Instagram />
+            <YouTube />
+            <TikTok />
+            <Facebook />
+            <X />
           </div>
         </div>
       </div>
