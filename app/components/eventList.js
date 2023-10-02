@@ -102,29 +102,29 @@ export default function Eventlist() {
       <p className="text-center pt-3 pb-8">Let's help you make plans!</p>
       <div className="flex flex-wrap justify-evenly h-auto mx-auto py-10 w-fit mb-10">
         {events.map((event) => (
-          <div className="md:w-[40em] bg-gray-500 my-3 flex flex-col md:flex-row h-96 md:h-48 w-full hover:shadow-xl">
-            <div className="bg-black w-full  h-3/5 md:h-full md:w-1/2 object-cover overflow-hidden">
-              <img
-                className="  h-auto w-full object-center"
-                src={event.imageURL}
-                alt={event.name}
-              />
-            </div>
-            <div className="bg-white p-4 h-3/5 md:h-full md:w-1/2">
-              <h2
-                className={`text-lg leading-5 font-medium text-black ${oswald.className} mb-2`}
-              >
+          <div className="md:w-[40em] bg-gradient-to-b object-cover from-yellow-700 to-black my-3 w-full hover:shadow-xl relative">
+            <img
+              className="  w-full opacity-70 h-72 object-cover"
+              src={event.imageURL}
+              alt={event.name}
+            />
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <h2 className={`text-4xl ${oswald.className} text-white`}>
                 {event.name}
               </h2>
-              <p className="text-sm leading-5 text-gray-500">{event.desc}</p>
-              <p className="text-sm leading-5 text-gray-500">{event.venue}</p>
-              <p className="text-sm leading-5 text-gray-500">
-                {event.date} {event.time}
-              </p>
-              <a href={`/register/${event.id}`} className="mt-auto float-right">
-                <div className="p-2 text-center w-24 bg-black text-gray-200 hover:text-white hover:bg-orange-500 relative top-2">
-                  Register
-                </div>
+              <a href={`/register/${event.id}`} className="mt-2 px-4 py-2 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#ffff"
+                  className="w-8 h-8"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </a>
             </div>
           </div>

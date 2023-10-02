@@ -96,17 +96,17 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <div className="flex justify-items-start">
+            <div className="flex justify-items-start max-sm:justify-center">
               <Image
                 src={logo}
                 className="w-64 h-auto"
                 alt="United Chin International - UC Cup logo"
               />
             </div>
-            <p className="text-sm leading-6 text-gray-200">
+            <p className="text-sm leading-6 text-gray-200 max-sm:text-center">
               Unlock a universe of excitement, camaraderie, and competition.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 w-fit max-sm:mx-auto">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
@@ -119,8 +119,8 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 max-sm:mx-auto max-sm:text-center">
+            <div className="md:grid md:grid-cols-2 md:gap-8 ">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-slate-700">
                   Events
