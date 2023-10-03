@@ -8,10 +8,9 @@ import { oswald } from "../pages/_app";
 import ClubPromote from "../components/clubPromote";
 
 export default function Home() {
-
-  const firstVideoSrc = 'https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4'
-  const secondVideoSrc = ''
-
+  const firstVideoSrc =
+    "https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4";
+  const secondVideoSrc = "";
 
   return (
     <>
@@ -36,23 +35,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="absolute top-0 left-0 w-full h-[32rem] " id="football">
-          {/* <video
-            className="w-full h-screen object-cover opacity-70 mix-blend-multiply max-sm:opacity-90 z-40"
-            controlsList="play nofullscreen noremoteplayback noplaybackrate foobar nodownload "
-            autoPlay
-            loop
-            playsInline
-            muted
-            disablePictureInPicture
-          >
-            <source
-              src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video> */}
-          <VideoPlayer videoSource={firstVideoSrc} muteButton={false}/>
-          
+          <VideoPlayer videoSource={firstVideoSrc} muteButton={false} />
         </div>
         <img
           src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695776983/pexels-harrison-haines-3696395_f81rd2.jpg"
