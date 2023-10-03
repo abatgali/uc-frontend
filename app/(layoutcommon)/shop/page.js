@@ -67,7 +67,7 @@ export default function Shop() {
                   </h2>
                   <div className="">
                     <p className="mt-2 text-3xl font-bold tracking-tight text-amber-500 sm:text-4xl">
-                      <span className={`${oswald.className} text-7xl`}>
+                      <span className={`${oswald.className} text-6xl`}>
                         Represent <br></br>your <br></br>Community{" "}
                       </span>
                     </p>

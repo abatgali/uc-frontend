@@ -1,3 +1,4 @@
+import VideoPlayer from "../components/videoPlayer";
 import FAQs from "../components/faq";
 import FollowSocials from "../components/followSocials";
 import SectionHome from "../components/homesection";
@@ -7,6 +8,11 @@ import { oswald } from "../pages/_app";
 import ClubPromote from "../components/clubPromote";
 
 export default function Home() {
+
+  const firstVideoSrc = 'https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4'
+  const secondVideoSrc = ''
+
+
   return (
     <>
       <div className="w-full h-screen object-cover relative bg-gradient-to-t from-gray-400 to-transparent">
@@ -30,11 +36,12 @@ export default function Home() {
           </Link>
         </div>
         <div className="absolute top-0 left-0 w-full h-[32rem] " id="football">
-          <video
+          {/* <video
             className="w-full h-screen object-cover opacity-70 mix-blend-multiply max-sm:opacity-90 z-40"
             controlsList="play nofullscreen noremoteplayback noplaybackrate foobar nodownload "
             autoPlay
             loop
+            playsInline
             muted
             disablePictureInPicture
           >
@@ -43,7 +50,9 @@ export default function Home() {
               type="video/mp4"
             />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+          <VideoPlayer videoSource={firstVideoSrc} muteButton={false}/>
+          
         </div>
         <img
           src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695776983/pexels-harrison-haines-3696395_f81rd2.jpg"
