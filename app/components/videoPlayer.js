@@ -82,9 +82,7 @@ function VideoPlayer({ videoSource, muteButton }) {
               </svg>
             )}
           </button>
-        ) : (
-          ""
-        )}
+        ) : null}
       </div>
     </div>
   );
