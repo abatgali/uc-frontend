@@ -6,10 +6,10 @@ export default function EventsLayout({ children }) {
         <img
           src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695784610/ticket-2974645_1280_araaqu.jpg"
           alt=""
-          className="h-full w-full  opacity-50 object-cover shadow-lg object-center"
+          className="h-full w-full  opacity-50 object-cover shadow-lg "
         />
         <h2
-          className={`text-3xl md:text-4xl font-semibold ${oswald.className} text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center`}
+          className={`text-3xl md:text-4xl font-semibold ${oswald.className} text-white absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center`}
         >
           Upcoming Events
         </h2>

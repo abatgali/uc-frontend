@@ -58,7 +58,7 @@ const events = [
   },
   {
     id: 6,
-    name: "Men & Women Lai Paih / Lai Wrestling",
+    name: "Lai Paih / Lai Wrestling",
     desc: "Lai Paih / Lai Wrestling competition for men and women",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156456/medium_wrestling_cdae7afd34.jpg",
@@ -105,7 +105,6 @@ const events = [
 export default function Eventlist() {
   return (
     <>
-      {/* <p className="text-center pt-3 pb-8">Let's help you make plans!</p> */}
       <div className="flex flex-wrap justify-evenly h-auto mx-auto sm:py-10 w-fit ">
         {events.map((event) => (
           <div className="md:w-[40em] bg-gradient-to-b object-cover from-yellow-700 to-black  w-full hover:shadow-xl relative transform transition-all duration-500 ease-in-out md:hover:scale-105 overflow-hidden h-auto">

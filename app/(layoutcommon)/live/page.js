@@ -10,7 +10,7 @@ export default function Live() {
   return (
     <>
       <div className="w-full h-screen object-cover relative bg-black">
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center mt-10">
+        <div className="absolute top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center mt-10">
           <h2
             className={`text-6xl font-bold tracking-tight text-white sm:text-5xl ${oswald.className} `}
           >
@@ -30,6 +30,7 @@ export default function Live() {
             autoPlay
             loop
             muted
+            playsInline
             disablePictureInPicture
           >
             <source
