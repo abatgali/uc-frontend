@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
-function VideoPlayer({ videoSource, muteButton }) {
+function VideoPlayer({ videoSource, muteButton, playButton }) {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
@@ -15,6 +15,10 @@ function VideoPlayer({ videoSource, muteButton }) {
     }
     setIsPlaying(!isPlaying);
   };
+  useEffect(() => {
+    videoRef.current.autoplay = true;
+    videoRef.current.disablePictureInPicture = true;
+  }, []);
 
   const handleMuteUnmute = () => {
     videoRef.current.muted = !isMuted;
@@ -25,41 +29,42 @@ function VideoPlayer({ videoSource, muteButton }) {
     <div>
       <video
         ref={videoRef}
-        className="w-full h-screen object-cover opacity-70 mix-blend-multiply  max-sm:opacity-90 z-30"
+        className="w-full h-screen object-cover opacity-90 mix-blend-multiply  max-sm:opacity-90 z-30"
         controlsList="play nofullscreen noremoteplayback noplaybackrate foobar nodownload "
         loop
         playsInline
-        disablePictureInPicture
         autoPlay
       >
         <source src={videoSource} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="z-40 absolute bottom-0 right-0 opacity-70 ">
-        <button onClick={handlePlayPause} className="p-2 bg-gray-800 ">
-          {isPlaying ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="#ffff"
-              className="w-6 h-6"
-            >
-              <path
-                d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
-                clipRule="evenodd"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="#ffff"
-              className="w-6 h-6 "
-            >
-              <path d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" />
-            </svg>
-          )}
-        </button>
+        {playButton ? (
+          <button onClick={handlePlayPause} className="p-2 bg-gray-800 ">
+            {isPlaying ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#ffff"
+                className="w-6 h-6"
+              >
+                <path
+                  d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#ffff"
+                className="w-6 h-6 "
+              >
+                <path d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" />
+              </svg>
+            )}
+          </button>
+        ) : null}
         {muteButton ? (
           <button onClick={handleMuteUnmute} className="p-2 bg-gray-800 ml-1">
             {isMuted ? (

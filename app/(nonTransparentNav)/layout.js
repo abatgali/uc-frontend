@@ -1,6 +1,5 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import SocialMediaBanner from "../components/socialmediaTopBanner";
 
 export const metadata = {
   title: "UC Cup - United Chin International",
@@ -11,8 +10,6 @@ export const metadata = {
 export default function CommonLayout({ children }) {
   return (
     <>
-      {/* <SocialMediaBanner /> */}
-
       <Nav />
       {children}
       <Footer />

@@ -56,10 +56,16 @@ const featuredProducts = [
 export default function Shop() {
   return (
     <>
-      <div className="overflow-hidden py-12 sm:py-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="h-fit bg-black w-full md:h-96 overflow-hidden object-cover">
+        <img
+          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1696411557/174-embossed-logo-mockup_w8porb.png"
+          className="object-cover md:object-bottom"
+        ></img>
+      </div>
+      <div className="overflow-hidden py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="lg:ml-auto lg:pl-4 lg:pt-4">
+            <div className="lg:ml-auto lg:pl-4 lg:pt-4 ">
               <div className="lg:max-w-lg ">
                 <div className="text-center">
                   <h2 className="text-base font-semibold leading-7 ">

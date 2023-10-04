@@ -10,14 +10,6 @@ export default function Live() {
   return (
     <>
       <div className="w-full h-screen object-cover relative bg-black">
-        {/* <img
-          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695776983/pexels-harrison-haines-3696395_f81rd2.jpg"
-          alt=""UC Cup isn't just about activities; it's a hub for building enduring
-            friendships and meaningful connections. Meet kindred spirits who
-            share your passions, aspirations, and dreams. Together, you'll craft
-            unforgettable memories that will stand the test of time.
-          className="h-full w-full  object-cover shadow-lg object-center"
-        /> */}
         <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-center mt-10">
           <h2
             className={`text-6xl font-bold tracking-tight text-white sm:text-5xl ${oswald.className} `}

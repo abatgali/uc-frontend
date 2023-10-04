@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, UserIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import SocialMediaBanner from "./socialmediaTopBanner";
 import Image from "next/image";
 import logo from "../primary.svg";
 
@@ -18,9 +17,29 @@ const navigation = [
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // navbar color change when scrolling
+  const [colorChange, setColorChange] = useState(false);
+
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (window.scrollY >= 80) setColorChange(true);
+      else setColorChange(false);
+    };
+
+    window.addEventListener("scroll", changeNavbarColor);
+
+    return () => window.removeEventListener("scroll", changeNavbarColor);
+  }, []);
+
   return (
-    <header className="bg-gradient-to-r  from-stone-950 to-gray-700">
-      <SocialMediaBanner />
+    <header
+      className={
+        ` ` +
+        (colorChange
+          ? " bg-gradient-to-r from-stone-950 to-gray-700 z-40 fixed w-full"
+          : "z-40 fixed w-full bg-transparent")
+      }
+    >
       <nav
         className="mx-auto flex max-w-full items-start justify-between p-5 lg:px-8"
         aria-label="Global"
@@ -53,6 +72,7 @@ export default function Nav() {
             src={logo}
             className="h-auto w-64 md:w-96"
             alt="United Chin International - UC Cup logo"
+            priority
           />
         </Link>
         <div className="flex flex-1 justify-end text-white">
