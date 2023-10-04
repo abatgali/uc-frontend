@@ -11,8 +11,6 @@ export const metadata = {
 export default function CommonLayout({ children }) {
   return (
     <>
-      {/* <SocialMediaBanner /> */}
-
       <Nav />
       {children}
       <Footer />

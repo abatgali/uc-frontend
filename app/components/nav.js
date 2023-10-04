@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
+import SocialMediaBanner from "./socialmediaTopBanner";
 import { Bars3Icon, XMarkIcon, UserIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
@@ -40,6 +41,7 @@ export default function Nav() {
           : "z-40 fixed w-full bg-transparent")
       }
     >
+      <SocialMediaBanner />
       <nav
         className="mx-auto flex max-w-full items-start justify-between p-5 lg:px-8"
         aria-label="Global"
