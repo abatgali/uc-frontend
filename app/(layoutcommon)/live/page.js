@@ -10,13 +10,13 @@ export default function Live() {
   return (
     <>
       <div className="w-full h-screen object-cover relative bg-black">
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-center mt-10">
+        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center mt-10">
           <h2
             className={`text-6xl font-bold tracking-tight text-white sm:text-5xl ${oswald.className} `}
           >
             Watch Live
           </h2>
-          <p className="mt-4 text-lg text-white max-sm:hidden z-50">
+          <p className="mt-4 text-lg text-white max-sm:hidden z-30">
             Welcome to the heart of the action! Tune in to watch all the UC Cup
             events live and immerse yourself in the excitement of our sporting
             competitions. Simply click on the platform icons below to access the
