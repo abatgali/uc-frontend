@@ -58,7 +58,7 @@ export default function Shop() {
     <>
       <div className="h-fit bg-black w-full md:h-96 overflow-hidden object-cover">
         <img
-          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1696411557/174-embossed-logo-mockup_w8porb.png"
+          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1696412716/174-embossed-logo-mockup_w8porb.png"
           className="object-cover md:object-bottom"
         ></img>
       </div>
