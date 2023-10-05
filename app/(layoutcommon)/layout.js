@@ -1,6 +1,5 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import SocialMediaBanner from "../components/socialmediaTopBanner";
 
 export const metadata = {
   title: "UC Cup - United Chin International",

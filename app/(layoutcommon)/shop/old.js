@@ -56,62 +56,73 @@ const featuredProducts = [
 export default function Shop() {
   return (
     <>
-      <div className="w-full h-screen bg-gradient-to-b from-black to-gray-600 object-cover">
+      <div className="h-fit bg-black w-full md:h-96 overflow-hidden object-cover">
         <img
-          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695883519/jzr5j7cumtr2sx9wy4p4.png"
-          alt="Product screenshot"
-          className="w-full h-full object-cover opacity-40"
-        />
+          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1696415055/174-embossed-logo-mockup_lmpzde.png"
+          className="object-cover "
+        ></img>
       </div>
-      <div className="text-center p-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-        <h2 className="text-base font-semibold leading-7 text-white font-bold max-sm:hidden">
-          Sporting Spirit
-        </h2>
-        <div className="">
-          <p className="mt-2 text-5xl font-bold tracking-tight text-white md:text-7xl">
-            <span className={`${oswald.className}`}>
-              Represent your Community
-            </span>
-          </p>
-        </div>
+      <div className="overflow-hidden py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div className="lg:ml-auto lg:pl-4 lg:pt-4 ">
+              <div className="lg:max-w-lg ">
+                <div className="text-center">
+                  <h2 className="text-base font-semibold leading-7 ">
+                    Sporting Spirit
+                  </h2>
+                  <div className="">
+                    <p className="mt-2 text-3xl font-bold tracking-tight text-amber-500 sm:text-4xl">
+                      <span className={`${oswald.className} text-6xl`}>
+                        Represent <br></br>your <br></br>Community{" "}
+                      </span>
+                    </p>
+                  </div>
 
-        <div className="my-10">
-          <Link
-            href="https://uci-clubconnect.myshopify.com/"
-            className="bg-black h-15  w-auto text-white font-semibold py-2 px-4 hover:bg-orange-500"
-          >
-            Go to Shop
-          </Link>
-        </div>
-      </div>
-      <div className=" text-center p-10 w-full  bg-white">
-          <p className="mt-6 text-lg leading-8 md:w-2/3 mx-auto">
-            Welcome to the UC Cup Shop, your one-stop destination for
-            official merchandise and gear to support your favorite teams
-            and commemorate your UC Cup experience.<span > Explore our curated
-            collection of high-quality products designed to elevate your
-            sporting spirit and showcase your UC Cup pride.</span>
-          </p>
-        </div>
-        
-      <div className="bg-white text-center p-10 md:w-2/3 mx-auto">
-       
-        <dl className="mt-10 max-w-xl space-y-8 text-base leading-7  lg:max-w-none">
-          {features.map((feature) => (
-            <div key={feature.name} className="relative pl-9">
-              <dt className="inline font-semibold ">
-                <feature.icon
-                  className="absolute left-1 top-1 h-5 w-5 text-amber-600"
-                  aria-hidden="true"
-                />
-                {feature.name}
-              </dt>{" "}
-              <dd className="inline">{feature.description}</dd>
+                  <div className="my-10">
+                    <Link
+                      href="https://uci-clubconnect.myshopify.com/"
+                      className="bg-black h-15  w-auto text-white font-semibold py-2 px-4 hover:bg-orange-500"
+                    >
+                      Go to Shop
+                    </Link>
+                  </div>
+                </div>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                  Welcome to the UC Cup Shop, your one-stop destination for
+                  official merchandise and gear to support your favorite teams
+                  and commemorate your UC Cup experience. Explore our curated
+                  collection of high-quality products designed to elevate your
+                  sporting spirit and showcase your UC Cup pride.
+                </p>
+                <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                  {features.map((feature) => (
+                    <div key={feature.name} className="relative pl-9">
+                      <dt className="inline font-semibold text-gray-900">
+                        <feature.icon
+                          className="absolute left-1 top-1 h-5 w-5 text-amber-600"
+                          aria-hidden="true"
+                        />
+                        {feature.name}
+                      </dt>{" "}
+                      <dd className="inline">{feature.description}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
             </div>
-          ))}
-        </dl>
+            <div className="flex items-start justify-end lg:order-first">
+              <img
+                src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695883519/jzr5j7cumtr2sx9wy4p4.png"
+                alt="Product screenshot"
+                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                width={2432}
+                height={1442}
+              />
+            </div>
+          </div>
+        </div>
       </div>
-
       <div className=" py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className={`text-3xl font-extrabold  ${oswald.className}`}>

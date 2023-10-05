@@ -2,7 +2,7 @@ import { oswald } from "../../pages/_app";
 export default function EventsLayout({ children }) {
   return (
     <>
-      <div className="w-full h-[20rem] object-cover bg-gradient-to-b from-black to-gray-900 relative">
+      <div className="w-full h-[20rem] object-cover bg-gradient-to-b from-black to-gray-900 relative max-sm:hidden">
         <img
           src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695784610/ticket-2974645_1280_araaqu.jpg"
           alt=""
