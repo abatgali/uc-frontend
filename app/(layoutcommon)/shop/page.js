@@ -64,7 +64,7 @@ export default function Shop() {
         />
       </div>
       <div className="text-center p-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-        <h2 className="text-base font-semibold leading-7 text-white font-bold max-sm:hidden">
+        <h2 className="text-base leading-7 text-white font-bold max-sm:hidden">
           Sporting Spirit
         </h2>
         <div className="">
@@ -85,18 +85,19 @@ export default function Shop() {
         </div>
       </div>
       <div className=" text-center p-10 w-full  bg-white">
-          <p className="mt-6 text-lg leading-8 md:w-2/3 mx-auto">
-            Welcome to the UC Cup Shop, your one-stop destination for
-            official merchandise and gear to support your favorite teams
-            and commemorate your UC Cup experience.<span > Explore our curated
-            collection of high-quality products designed to elevate your
-            sporting spirit and showcase your UC Cup pride.</span>
-          </p>
-        </div>
-        
-      <div className="bg-white text-center p-10 md:w-2/3 mx-auto">
-       
-        <dl className="mt-10 max-w-xl space-y-8 text-base leading-7  lg:max-w-none">
+        <p className="mt-6 text-lg leading-8 md:w-2/3 mx-auto">
+          Welcome to the UC Cup Shop, your one-stop destination for official
+          merchandise and gear to support your favorite teams and commemorate
+          your UC Cup experience.
+          <span>
+            {" "}
+            Explore our curated collection of high-quality products designed to
+            elevate your sporting spirit and showcase your UC Cup pride.
+          </span>
+        </p>
+      </div>
+      <div className="bg-white  p-10  mx-auto">
+        <dl className="mt-10 max-w-xl w-2/3 mx-auto pb-5 space-y-8 text-base leading-7  lg:max-w-none">
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-9">
               <dt className="inline font-semibold ">
@@ -111,7 +112,6 @@ export default function Shop() {
           ))}
         </dl>
       </div>
-
       <div className=" py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className={`text-3xl font-extrabold  ${oswald.className}`}>

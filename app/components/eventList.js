@@ -107,7 +107,7 @@ export default function Eventlist() {
     <>
       <div className="flex flex-wrap justify-evenly h-auto mx-auto sm:py-10 w-fit ">
         {events.map((event) => (
-          <div className="md:w-[40em] bg-gradient-to-t object-cover from-amber-700 to-black w-full hover:shadow-xl relative transform transition-all duration-500 ease-in-out md:hover:scale-105 overflow-hidden h-auto">
+          <div className="md:w-[40em] bg-gradient-to-t object-cover from-indigo-800 to-black w-full hover:shadow-xl relative transform transition-all duration-500 ease-in-out md:hover:scale-105 overflow-hidden h-auto">
             <img
               className=" w-full opacity-50 h-72 object-cover max-sm:h-screen object-center"
               src={event.imageURL}
