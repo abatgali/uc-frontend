@@ -9,8 +9,8 @@ import Image from "next/image";
 import logo from "../primary.svg";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Events", href: "/events" },
+  { name: "Explore", href: "/events" },
+  { name: "About", href: "/" },
   { name: "Live", href: "/live" },
   { name: "Shop", href: "/shop" },
 ];
@@ -52,7 +52,7 @@ export default function Nav() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-white"
+                className=" text-xs font-semibold leading-6 text-white"
               >
                 {item.name}
               </a>
@@ -111,13 +111,13 @@ export default function Nav() {
           </div>
           <div className="mt-6 space-y-2">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:bg-yellow-600"
+                className="-mx-3 block rounded-lg px-3 py-2 text-xs font-semibold leading-7 text-gray-100 hover:bg-yellow-600"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </Dialog.Panel>

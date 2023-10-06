@@ -18,7 +18,7 @@ export default function NotFound() {
             Page not found
           </h1>
           <p className='mt-4 text-base text-white/70 sm:mt-6'>
-            Sorry, we couldn&apost find the page you&aposre looking for.
+            Sorry, we couldn&apos;t find the page you&apos;re looking for.
           </p>
           <div className='mt-10 flex justify-center'>
             <Link

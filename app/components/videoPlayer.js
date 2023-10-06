@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react";
 
-function VideoPlayer({ videoSource, muteButton, playButton }) {
+function VideoPlayer({ videoSource, opacity, muteButton, playButton }) {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);

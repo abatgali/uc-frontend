@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { oswald } from "../pages/_app";
 
 const events = [
@@ -14,7 +15,7 @@ const events = [
   },
   {
     id: 2,
-    name: "chiN iDol",
+    name: "ChiN iDol",
     desc: "Singing competition",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156454/medium_idol_3aea1d1f22.jpg",
@@ -25,7 +26,7 @@ const events = [
   },
   {
     id: 3,
-    name: "Miss beauty pageant",
+    name: "Miss UCI",
     desc: "Beauty pageant ",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_miss_0cd28af07e.jpg",
@@ -36,7 +37,7 @@ const events = [
   },
   {
     id: 4,
-    name: "Mister Chin",
+    name: "Mister UCI",
     desc: "Beauty pageant ",
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_mister_723507ac98.jpg",
@@ -117,7 +118,7 @@ export default function Eventlist() {
               <h2 className={`text-4xl ${oswald.className} text-white`}>
                 {event.name}
               </h2>
-              <a href={`/register/${event.id}`} className="mt-2 px-4 py-2 ">
+              <Link href={`/events/${encodeURIComponent(event.id)}`} className="mt-2 px-4 py-2 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -130,7 +131,7 @@ export default function Eventlist() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

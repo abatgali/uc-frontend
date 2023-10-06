@@ -10,11 +10,10 @@ import ClubPromote from "../components/clubPromote";
 export default function Home() {
   const firstVideoSrc =
     "https://res.cloudinary.com/dtyw96fds/video/upload/v1695156461/soccer_net_89176b6663.mp4";
-  const secondVideoSrc = "";
 
   return (
     <>
-      <div className="w-full h-screen object-cover relative bg-gradient-to-b from-black to-transparent">
+      <div className="w-full h-screen object-cover relative bg-gradient-to-b from-black to-white">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center mt-10">
           <h2
             className={` ${oswald.className} text-5xl font-bold tracking-tight text-white sm:text-4xl `}
@@ -28,14 +27,14 @@ export default function Home() {
             entertained, and energized. Say hello to limitless opportunities
             right in your community.
           </p>
-          <Link href="/signup">
+          <Link href="/events">
             <div className=" mx-auto p-2 mt-5 bg-black text-gray-200 hover:bg-gray-200 hover:text-black font-semibold w-48">
-              Join Now
+              Explore
             </div>
           </Link>
         </div>
         <div className="absolute top-0 left-0 w-full h-[32rem] " id="football">
-          <VideoPlayer videoSource={firstVideoSrc} muteButton={false} />
+          <VideoPlayer videoSource={firstVideoSrc} />
         </div>
         <img
           src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695776983/pexels-harrison-haines-3696395_f81rd2.jpg"
@@ -43,9 +42,9 @@ export default function Home() {
           className="h-full w-full  object-cover shadow-lg object-center mix-blend-multiply"
         />
       </div>
-      <MobileHero />
+      {/* <MobileHero /> */}
       <ClubPromote />
-      <SectionHome />
+      {/* <SectionHome /> */}
 
       <FollowSocials />
       <FAQs />

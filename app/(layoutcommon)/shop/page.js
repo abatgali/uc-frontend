@@ -96,8 +96,8 @@ export default function Shop() {
           </span>
         </p>
       </div>
-      <div className="bg-white  p-10  mx-auto">
-        <dl className="mt-10 max-w-xl w-2/3 mx-auto pb-5 space-y-8 text-base leading-7  lg:max-w-none">
+      <div className="bg-white  p-8  mx-auto">
+        <dl className="mt-10 max-w-xl w-2/3 mx-auto pb-5 space-y-8 text-base leading-7 max-sm:w-full lg:max-w-none">
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-9">
               <dt className="inline font-semibold ">
@@ -112,7 +112,7 @@ export default function Shop() {
           ))}
         </dl>
       </div>
-      <div className=" py-12">
+      <div className=" py-12 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className={`text-3xl font-extrabold  ${oswald.className}`}>
             Featured Products
@@ -136,7 +136,7 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      <div className=" py-12">
+      <div className="text-center py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className={`text-3xl font-extrabold ${oswald.className}`}>
             Stay Connected
