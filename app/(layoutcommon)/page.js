@@ -27,9 +27,9 @@ export default function Home() {
             entertained, and energized. Say hello to limitless opportunities
             right in your community.
           </p>
-          <Link href="/events">
+          <Link href="/signup">
             <div className=" mx-auto p-2 mt-5 bg-black text-gray-200 hover:bg-gray-200 hover:text-black font-semibold w-48">
-              Explore
+              Join Now
             </div>
           </Link>
         </div>

@@ -9,8 +9,8 @@ import Image from "next/image";
 import logo from "../primary.svg";
 
 const navigation = [
-  { name: "Explore", href: "/events" },
-  { name: "About", href: "/" },
+  { name: "Home", href: "/" },
+  { name: "Events", href: "/events" },
   { name: "Live", href: "/live" },
   { name: "Shop", href: "/shop" },
 ];

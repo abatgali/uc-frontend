@@ -115,10 +115,10 @@ export default function SignIn() {
             </Link>
           </div>
         </div>
-        <div className="mt-10 flex">
+        <div className="mt-10 flex ">
           <Link
             href="/"
-            className="text-sm font-semibold leading-7 text-gray-700"
+            className="text-sm font-semibold leading-7 text-gray-700 ml-auto"
           >
             <span aria-hidden="true">&larr;</span> Back to home
           </Link>
