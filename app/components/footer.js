@@ -11,7 +11,7 @@ const navigation = {
   company: [
     { name: "FAQ", href: "/#faqs" },
     { name: "Jobs", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Partners", href: "/boardmember" },
   ],
   Contact: [
     { name: "Info", href: "/contact" },

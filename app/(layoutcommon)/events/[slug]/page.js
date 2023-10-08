@@ -19,14 +19,16 @@ export default function EventDetails() {
       {Object.keys(teamsByState).map((teamId, index) => (
         <div
           className={`h-screen w-screen flex flex-col items-center justify-center ${
-            index % 2 === 0 ? "bg-indigo-500" : "bg-red-300"
+            index % 2 === 0 ? "bg-gray-500" : "bg-red-300"
           }`}
           style={{
             backgroundImage:
-              "url('https://res.cloudinary.com/dtyw96fds/image/upload/v1696724261/another_sample_tuvpc1.png')",
+              // "url('https://res.cloudinary.com/dtyw96fds/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1696730459/AdobeStock_308708016_zw8jwa.jpg')",
+              "url('https://res.cloudinary.com/dtyw96fds/image/upload/v1696730631/u4gxky68ha5w1ttnqgat.png')",
             opacity: 0.7,
             backgroundBlendMode: "multiply",
             backgroundPosition: "center",
+
           }}
         >
           <h2
