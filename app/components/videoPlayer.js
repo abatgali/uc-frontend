@@ -1,12 +1,9 @@
 "use client";
-
 import React, { useRef, useState, useEffect } from "react";
-
 function VideoPlayer({ videoSource, opacity, muteButton, playButton }) {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
-
   const handlePlayPause = () => {
     if (isPlaying) {
       videoRef.current.pause();
@@ -24,7 +21,6 @@ function VideoPlayer({ videoSource, opacity, muteButton, playButton }) {
     videoRef.current.muted = !isMuted;
     setIsMuted(!isMuted);
   };
-
   return (
     <div>
       <video
@@ -91,6 +87,5 @@ function VideoPlayer({ videoSource, opacity, muteButton, playButton }) {
       </div>
     </div>
   );
-}
-
+};
 export default VideoPlayer;
