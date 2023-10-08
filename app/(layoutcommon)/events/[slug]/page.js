@@ -24,7 +24,7 @@ export default function EventDetails() {
           style={{
             backgroundImage:
               // "url('https://res.cloudinary.com/dtyw96fds/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1696730459/AdobeStock_308708016_zw8jwa.jpg')",
-              "url('https://res.cloudinary.com/dtyw96fds/image/upload/v1696730631/u4gxky68ha5w1ttnqgat.png')",
+              "url('https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
             opacity: 0.7,
             backgroundBlendMode: "multiply",
             backgroundPosition: "center",
@@ -32,7 +32,7 @@ export default function EventDetails() {
           }}
         >
           <h2
-            className="text-4xl font-extrabold mb-4 z-30"
+            className="text-6xl font-extrabold mb-4 z-30"
             style={{ fontFamily: "Merriweather, serif" }}
           >
             {teamsByState[teamId]}
