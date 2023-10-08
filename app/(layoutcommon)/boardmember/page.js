@@ -11,7 +11,7 @@ export default function Pitch() {
         </p>
         {/* <button className="mt-4 bg-white text-black px-6 py-2 rounded shadow">Apply Now</button> */}
       </div>
-      <div className="h-screen mx-auto flex items-center justify-center pY-10">
+      <div className="h-screen mx-auto flex items-center justify-center py-10">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeoO8lqzYXItHzYr8E_wcd6bHmpZRAZVu259C128RTSRmLxfA/viewform?embedded=true"
           width="778"
