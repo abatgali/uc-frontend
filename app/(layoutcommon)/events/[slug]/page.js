@@ -24,10 +24,11 @@ export default function EventDetails() {
           style={{
             backgroundImage:
               // "url('https://res.cloudinary.com/dtyw96fds/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1696730459/AdobeStock_308708016_zw8jwa.jpg')",
-              "url('https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+              "url('https://res.cloudinary.com/dtyw96fds/image/upload/v1696733331/AdobeStock_630099020_bhbykr.gif')",
             opacity: 0.7,
             backgroundBlendMode: "multiply",
             backgroundPosition: "center",
+            objectFit: "scale-down"
 
           }}
         >
