@@ -25,7 +25,7 @@ export default function EventDetails() {
             backgroundImage:
               // "url('https://res.cloudinary.com/dtyw96fds/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1696730459/AdobeStock_308708016_zw8jwa.jpg')",
               "url('https://res.cloudinary.com/dtyw96fds/image/upload/v1696733331/AdobeStock_630099020_bhbykr.gif')",
-            opacity: 0.7,
+            opacity: 0.9,
             backgroundBlendMode: "multiply",
             backgroundPosition: "center",
             objectFit: "scale-down"
