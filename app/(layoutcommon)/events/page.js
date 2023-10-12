@@ -144,7 +144,7 @@ export default function Events() {
       <div className="flex flex-wrap justify-evenly h-auto mx-auto sm:py-10 w-fit ">
         {events.map((event) => (
           <div className="md:w-[40em] bg-black w-full hover:shadow-xl relative transform transition-all duration-500 ease-in-out md:hover:scale-105 overflow-hidden h-auto">
-            {event.videoURL != "" ? (
+            {event.videoURL !== "" ? (
               <>
                 <video
                   className=" w-full opacity-80 h-72 object-cover max-sm:h-screen object-center"

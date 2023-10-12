@@ -4,7 +4,6 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Team from "@/app/components/team";
 
 export default function ContactUs() {
-
   return (
     <>
       <div className="isolate bg-gradient-to-b from-black to-slate-800 px-6 py-24 sm:py-32 lg:px-8">

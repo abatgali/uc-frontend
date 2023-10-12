@@ -1,16 +1,16 @@
-'use client'
+"use client";
 import Link from "next/link";
 import { oswald } from "@/app/pages/_app";
 import { useContext, useEffect, useState } from "react";
 
 export default function Pitch() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(email, password, name)
-  }
+    e.preventDefault();
+    console.log(email, password, name);
+  };
 
   return (
     <div className="h-auto w-full bg-gray-900 ">
@@ -26,10 +26,7 @@ export default function Pitch() {
       <div className="p-24"></div>
       <div className="h-screen mx-auto flex items-center justify-center py-10">
         <div className="w-full h-auto shadow-xl">
-          <form onSubmit={handleSubmit}>
-           
-
-          </form>
+          <form onSubmit={handleSubmit}></form>
         </div>
       </div>
       <div className="p-24"></div>
