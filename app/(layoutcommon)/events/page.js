@@ -97,7 +97,7 @@ const events = [
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499911/medium_pexels_andrea_piacquadio_3764011_d207c87973.jpg",
     videoURL:
-      "https://storage.googleapis.com/uci-public/running_events_vid.mp4",
+      "https://storage.googleapis.com/uci-public/running_events_vidc.mp4",
     user: "Indianapolis Running Club",
     venue: "Indianapolis Motor Speedway",
     date: "2022-08-15",

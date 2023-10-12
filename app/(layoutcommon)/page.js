@@ -1,4 +1,3 @@
-import VideoPlayer from "../components/videoPlayer";
 import FAQs from "../components/faq";
 import FollowSocials from "../components/followSocials";
 import Link from "next/link";
