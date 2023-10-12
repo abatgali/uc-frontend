@@ -3,16 +3,6 @@ import Eventlist from "../../components/eventList";
 import { oswald } from "@/app/pages/_app";
 import Link from "next/link";
 
-// import { getFilesUrl } from "@/app/utils/storage";
-
-// // Get URLs of all files in a folder
-// getFilesUrl('imagevids/')
-//   .then(urls => {
-//     // Use the URLs
-//     console.log(urls);
-//   })
-//   .catch(console.error);
-
 const events = [
   {
     id: 1,
@@ -21,7 +11,7 @@ const events = [
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499027/medium_soccer_f95972066c.jpg",
     videoURL:
-      "https://player.vimeo.com/external/347925915.sd.mp4?s=a362bd16943275194dfd58119f7605c1357931aa&profile_id=164&oauth2_token_id=57447761",
+      "https://storage.googleapis.com/uci-public/soccer_events_vidc.mp4",
     user: "Indianapolis Soccer Club",
     venue: "Lucas Oil Stadium",
     date: "2022-05-15",
@@ -70,7 +60,7 @@ const events = [
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499912/medium_steven_abraham_WYJ_Nl4_D_H7_Y_unsplash_92e3b03a32.jpg",
     videoURL:
-      "https://player.vimeo.com/external/492122721.sd.mp4?s=16a231d4f2fc3bc371693fe5c46c0b255680daf9&profile_id=165&oauth2_token_id=57447761",
+      "https://storage.googleapis.com/uci-public/volleyball_events_vidc.mp4",
     user: "Indianapolis Volleyball Club",
     venue: "Bankers Life Fieldhouse",
     date: "2022-07-01",
@@ -107,7 +97,7 @@ const events = [
     imageURL:
       "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499911/medium_pexels_andrea_piacquadio_3764011_d207c87973.jpg",
     videoURL:
-      "https://player.vimeo.com/external/427668458.sd.mp4?s=c88710c4b73e4b4f6c781d6c79d7385211b640be&profile_id=164&oauth2_token_id=57447761",
+      "https://storage.googleapis.com/uci-public/running_events_vid.mp4",
     user: "Indianapolis Running Club",
     venue: "Indianapolis Motor Speedway",
     date: "2022-08-15",
