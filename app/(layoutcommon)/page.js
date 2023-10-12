@@ -6,11 +6,10 @@ import { oswald } from "../pages/_app";
 import ClubPromote from "../components/clubPromote";
 
 export default function Home() {
-
   return (
     <>
       <div className="w-full h-screen object-cover relative ">
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center mt-10">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center mt-10">
           <h2
             className={` ${oswald.className} text-5xl font-bold tracking-tight text-white sm:text-4xl `}
           >
@@ -30,22 +29,22 @@ export default function Home() {
           </Link>
         </div>
         <div className="absolute top-0 left-0 w-full h-[32rem] " id="football">
-        <video
-          className="w-full h-screen object-cover "
-          controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar "
-          autoPlay
-          loop
-          muted
-          disablePictureInPicture
-        >
-          <source
-            src="https://storage.googleapis.com/uci-public/uci_homepage_vidc.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+          <video
+            className="w-full h-screen object-cover "
+            controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar "
+            autoPlay
+            loop
+            muted
+            disablePictureInPicture
+            playsInline
+          >
+            <source
+              src="https://storage.googleapis.com/uci-public/uci_homepage_vidc.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
-    
       </div>
       <ClubPromote />
       <FollowSocials />
