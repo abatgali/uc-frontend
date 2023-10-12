@@ -1,5 +1,3 @@
-import VideoPlayer from "@/app/components/videoPlayer";
-import Eventlist from "../../components/eventList";
 import { oswald } from "@/app/pages/_app";
 import Link from "next/link";
 
