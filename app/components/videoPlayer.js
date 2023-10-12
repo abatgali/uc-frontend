@@ -32,7 +32,6 @@ function VideoPlayer({ videoSource, opacity, muteButton, playButton }) {
         autoPlay
       >
         <source src={videoSource} type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
       <div className="z-40 absolute bottom-0 right-0 opacity-70 ">
         {playButton ? (
@@ -87,5 +86,5 @@ function VideoPlayer({ videoSource, opacity, muteButton, playButton }) {
       </div>
     </div>
   );
-};
+}
 export default VideoPlayer;

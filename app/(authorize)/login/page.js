@@ -1,9 +1,22 @@
+'use client'
+
 import Image from "next/image";
 import logoIcon from "../../logo.svg";
 import Link from "next/link";
 import { oswald } from "@/app/pages/_app";
+import { useEffect, useContext, useState } from "react";
+
 
 export default function SignIn() {
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(email, password)
+  }
+
   return (
     <div className="mx-auto w-full max-w-sm lg:w-96 h-full">
       <div>
@@ -28,7 +41,7 @@ export default function SignIn() {
         </p>
       </div>
       <div className="mt-10 mb-10">
-        <form action="#" method="POST" className="space-y-6">
+        <form onSubmit={handleSubmit}  className="space-y-6">
           <div>
             <label
               htmlFor="email"
@@ -42,6 +55,9 @@ export default function SignIn() {
                 name="email"
                 type="email"
                 autoComplete="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+
                 required
                 className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -61,7 +77,9 @@ export default function SignIn() {
                 name="password"
                 type="password"
                 autoComplete="current-password"
+                value={password}
                 required
+                onChange={(e) => setPassword(e.target.value)}
                 className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>

@@ -13,8 +13,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full h-screen object-cover relative bg-gradient-to-b from-black to-white">
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center mt-10">
+      <div className="w-full h-screen object-cover relative bg-gradient-to-b from-gray-300 to-white">
+        <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-center mt-10">
           <h2
             className={` ${oswald.className} text-5xl font-bold tracking-tight text-white sm:text-4xl `}
           >

@@ -1,6 +1,6 @@
-import Logo from "./logo";
 import Image from "next/image";
 import logo from "../primary.svg";
+import Link from "next/link";
 
 const navigation = {
   Events: [
@@ -132,11 +132,15 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+            <div className="text-amber-700 max-sm:text-center text-sm hover:text-white">
+              <Link href="/boardmember">Board Member Portal</Link>
+            </div>
           </div>
+
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 max-sm:mx-auto max-sm:text-center">
             <div className="md:grid md:grid-cols-2 md:gap-8 ">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-amber-700">
+                <h3 className="text-sm font-semibold leading-6 text-gray-500">
                   Events
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -153,7 +157,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-amber-700">
+                <h3 className="text-sm font-semibold leading-6 text-gray-500">
                   Shop
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -172,7 +176,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-amber-700">
+                <h3 className="text-sm font-semibold leading-6 text-gray-500">
                   Company{" "}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -189,7 +193,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-amber-700">
+                <h3 className="text-sm font-semibold leading-6 text-gray-500">
                   Contact
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -210,7 +214,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
           <p className={`text-xs leading-5 text-gray-500`}>
-            &copy; 2023 United Chin International. All rights reserved.
+            &copy; 2023 United Chin International Ltd. All rights reserved.
           </p>
         </div>
       </div>
