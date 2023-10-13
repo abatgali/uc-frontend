@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "../primary.svg";
 import Link from "next/link";
+import { oswald } from "../pages/_app";
 
 const navigation = {
   Events: [
@@ -132,7 +133,9 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <div className="text-amber-700 max-sm:text-center text-sm hover:text-white">
+            <div
+              className={` ${oswald.className} text-amber-700 max-sm:text-center text-lg hover:text-white`}
+            >
               <Link href="/boardmember">Board Member Portal</Link>
             </div>
           </div>

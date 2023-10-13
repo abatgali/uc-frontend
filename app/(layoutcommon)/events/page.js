@@ -19,42 +19,6 @@ const events = [
   },
   {
     id: 2,
-    name: "ChiN iDol",
-    desc: "Singing competition",
-    imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156454/medium_idol_3aea1d1f22.jpg",
-    videoURL: "",
-    user: "Chin Student Association",
-    venue: "Indiana University Auditorium",
-    date: "2022-06-01",
-    time: "18:00",
-  },
-  {
-    id: 3,
-    name: "Miss United Chin International",
-    desc: "Beauty pageant ",
-    imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_miss_0cd28af07e.jpg",
-    videoURL: "",
-    user: "Indianapolis Beauty Association",
-    venue: "Murat Theatre",
-    date: "2022-06-15",
-    time: "19:00",
-  },
-  {
-    id: 4,
-    name: "Mister United Chin International",
-    desc: "Beauty pageant ",
-    imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_mister_723507ac98.jpg",
-    videoURL: "",
-    user: "Indianapolis Beauty Association",
-    venue: "Murat Theatre",
-    date: "2022-06-15",
-    time: "19:00",
-  },
-  {
-    id: 5,
     name: "Volleyball",
     desc: "Volleyball match between Indianapolis and Cincinnati",
     imageURL:
@@ -66,6 +30,46 @@ const events = [
     date: "2022-07-01",
     time: "15:00",
   },
+  {
+    id: 3,
+    name: "ChiN iDol",
+    desc: "Singing competition",
+    imageURL:
+      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156454/medium_idol_3aea1d1f22.jpg",
+    videoURL: "",
+    user: "Chin Student Association",
+    venue: "Indiana University Auditorium",
+    date: "2022-06-01",
+    time: "18:00",
+  },
+  {
+    id: 4,
+    name: "Miss ",
+    desc: "Beauty pageant ",
+    detail: "United Chin International 2024",
+    imageURL:
+      "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_miss_0cd28af07e.jpg",
+    videoURL: "",
+    user: "Indianapolis Beauty Association",
+    venue: "Murat Theatre",
+    date: "2022-06-15",
+    time: "19:00",
+  },
+  {
+    id: 5,
+    name: "Mister",
+    desc: "Beauty pageant ",
+    detail: "United Chin International 2024",
+
+    imageURL:
+      "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_mister_723507ac98.jpg",
+    videoURL: "",
+    user: "Indianapolis Beauty Association",
+    venue: "Murat Theatre",
+    date: "2022-06-15",
+    time: "19:00",
+  },
+
   {
     id: 6,
     name: "Lai Paih / Lai Wrestling",
@@ -144,28 +148,6 @@ export default function Events() {
                   autoPlay
                   controlsList="play nofullscreen noremoteplayback noplaybackrate foobar nodownload "
                 ></video>
-                <div className="absolute inset-0 flex flex-col items-center justify-center z-50">
-                  <h2 className={`text-4xl ${oswald.className} text-white`}>
-                    {event.name}
-                  </h2>
-                  <Link
-                    href={`/events/${encodeURIComponent(event.id)}`}
-                    className="mt-2 px-4 py-2 z-40"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="#ffff"
-                      className="w-8 h-8"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Link>
-                </div>
               </>
             ) : (
               <>
@@ -174,32 +156,37 @@ export default function Events() {
                   src={event.imageURL}
                   alt={event.name}
                 />
-                <div className="absolute inset-0 flex flex-col items-center justify-center z-50">
-                  <h2
-                    className={`text-4xl ${oswald.className} text-white text-center`}
-                  >
-                    {event.name}
-                  </h2>
-                  <Link
-                    href={`/events/${encodeURIComponent(event.id)}`}
-                    className="mt-2 px-4 py-2 z-40"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="#ffff"
-                      className="w-8 h-8"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Link>
-                </div>
               </>
             )}
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-50">
+              <h2
+                className={`text-4xl ${oswald.className} text-white text-center`}
+              >
+                {event.name}
+              </h2>
+              <Link
+                href={`/events/${encodeURIComponent(event.id)}`}
+                className="mt-2 px-4 py-2 z-40"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#ffff"
+                  className="w-8 h-8"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Link>
+              <h2
+                className={`text-2xl ${oswald.className} text-white text-center`}
+              >
+                {event.detail}
+              </h2>
+            </div>
           </div>
         ))}
       </div>
