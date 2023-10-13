@@ -18,12 +18,13 @@ export const AuthContextProvider = ({ children }) => {
     signInWithPopup(auth, provider);
   };
 
-
   const logOut = () => {
-    signOut(auth).then(() => {
-        console.log("Sign Out successful.")
-      }).catch((error) => {
-        console.log(error)
+    signOut(auth)
+      .then(() => {
+        console.log("Sign Out successful.");
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
 

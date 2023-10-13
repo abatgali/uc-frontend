@@ -41,24 +41,6 @@ export default function Pitch() {
   return (
     <div className="h-screen w-full bg-gradient-to-b from-gray-950 to-blue-300 ">
       <BoardLogin />
-
-      {/* <div className="h-fit shadow-xl bg-gray-800 mx-auto flex text-white justify-center mt-4 w-fit p-5">
-         {loading ? (
-          <div>Loading...</div>
-        ) : !user ? (
-          <button onClick={handleSignIn} className="m-2 w-24 bg-gray-200 p-2">
-            Sign In
-          </button>
-        ) : (
-          <button onClick={handleSignOut} className="m-2 w-24">
-            Sign Out
-          </button>
-        )} 
-      </div>
-          
-      <div className="p-24"></div>
-      <div className="h-screen mx-auto flex items-center justify-center py-10"></div>
-      <div className="p-24"></div> */}
     </div>
   );
 }
