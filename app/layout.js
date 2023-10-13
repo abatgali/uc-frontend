@@ -1,5 +1,6 @@
 import "./globals.css";
 import { openSans } from "./pages/_app";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
