@@ -9,7 +9,7 @@ const events = [
     name: "Soccer",
     desc: "Soccer match between Indianapolis and Chicago",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499027/medium_soccer_f95972066c.jpg",
+      "",
     videoURL:
       "https://storage.googleapis.com/uci-public/soccer_events_vidc.mp4",
     user: "Indianapolis Soccer Club",
@@ -22,7 +22,7 @@ const events = [
     name: "Volleyball",
     desc: "Volleyball match between Indianapolis and Cincinnati",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499912/medium_steven_abraham_WYJ_Nl4_D_H7_Y_unsplash_92e3b03a32.jpg",
+      "",
     videoURL:
       "https://storage.googleapis.com/uci-public/volleyball_events_vidc.mp4",
     user: "Indianapolis Volleyball Club",
@@ -35,7 +35,7 @@ const events = [
     name: "ChiN iDol",
     desc: "Singing competition",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156454/medium_idol_3aea1d1f22.jpg",
+      "https://storage.googleapis.com/uci-public/events/chin_idol.png",
     videoURL: "",
     user: "Chin Student Association",
     venue: "Indiana University Auditorium",
@@ -48,7 +48,7 @@ const events = [
     desc: "Beauty pageant ",
     detail: "United Chin International 2024",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_miss_0cd28af07e.jpg",
+      "https://storage.googleapis.com/uci-public/events/beauty_pageant.png",
     videoURL: "",
     user: "Indianapolis Beauty Association",
     venue: "Murat Theatre",
@@ -62,7 +62,7 @@ const events = [
     detail: "United Chin International 2024",
 
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1696043444/medium_mister_723507ac98.jpg",
+      "https://storage.googleapis.com/uci-public/events/mister_pageant.png",
     videoURL: "",
     user: "Indianapolis Beauty Association",
     venue: "Murat Theatre",
@@ -75,7 +75,7 @@ const events = [
     name: "Lai Paih / Lai Wrestling",
     desc: "Lai Paih / Lai Wrestling competition for men and women",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695156456/medium_wrestling_cdae7afd34.jpg",
+      "https://storage.googleapis.com/uci-public/events/large_wrestling_cdae7afd34.jpg",
     videoURL: "",
     user: "Indianapolis Lai Paih Association",
     venue: "Indiana Farmers Coliseum",
@@ -87,7 +87,7 @@ const events = [
     name: "Tennis - Badminton - Ping pong",
     desc: "Tennis, badminton, and ping pong tournament",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499026/medium_badminton_95851d4596.jpg",
+      "https://storage.googleapis.com/uci-public/events/events_tennis.jpg",
     videoURL: "",
     user: "Indianapolis Racquet Sports Association",
     venue: "Indianapolis Racquet Club",
@@ -99,7 +99,7 @@ const events = [
     name: "400m Race",
     desc: "500m race for men and women",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499911/medium_pexels_andrea_piacquadio_3764011_d207c87973.jpg",
+      "",
     videoURL:
       "https://storage.googleapis.com/uci-public/running_events_vidc.mp4",
     user: "Indianapolis Running Club",
@@ -112,7 +112,7 @@ const events = [
     name: "Boxing",
     desc: "Boxing match for men and women",
     imageURL:
-      "https://res.cloudinary.com/dtyw96fds/image/upload/v1695499912/medium_hermes_rivera_ubb_N_Kj_L_Bvnc_unsplash_c8163dd75f.jpg",
+      "https://storage.googleapis.com/uci-public/events/boxing_events.jpg",
     videoURL: "",
     user: "Indianapolis Boxing Association",
     venue: "Indiana Convention Center",

@@ -36,7 +36,7 @@ export default function ClubPromote() {
           disablePictureInPicture
         >
           <source
-            src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695775459/pexels-kelly-lacy-5677397_2160p_mnl65a.mp4"
+            src="https://storage.googleapis.com/uci-public/unearth_homepage.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
