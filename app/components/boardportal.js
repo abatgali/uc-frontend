@@ -30,7 +30,7 @@ export default function BoardLogin() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-100 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-950 sm:text-sm sm:leading-6"
+                  className="relative block w-full border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-100 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-950 sm:text-sm sm:leading-6"
                   placeholder="Email address"
                 />
               </div>
@@ -44,29 +44,17 @@ export default function BoardLogin() {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="relative block w-full rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-100 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-950 sm:text-sm sm:leading-6"
+                  className="relative block w-full border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-100 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-950 sm:text-sm sm:leading-6"
                   placeholder="Password"
                 />
               </div>
             </div>
 
             <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                {/* <input
-                    id="remember-me"
-                    name="remember-me"
-                    type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300 text-white focus:ring-indigo-600"
-                  />
-                  <label htmlFor="remember-me" className="ml-3 block text-sm leading-6 text-gray-900">
-                    Remember me
-                  </label> */}
-              </div>
-
               <div className="text-sm leading-6">
                 <a
                   href="#"
-                  className="font-semibold text-gray-200 hover:text-gray-500"
+                  className="font-semibold text-gray-200 hover:text-gray-900"
                 >
                   Forgot password?
                 </a>
@@ -83,15 +71,13 @@ export default function BoardLogin() {
             </div>
           </form>
 
-          <p className="text-center text-sm leading-6 text-gray-800">
-            Want to join our board?{" "}
-            <a
-              href="/contact"
-              className="font-semibold text-white hover:text-gray-500"
-            >
-              Contact Us
-            </a>
-          </p>
+          <p className="text-center text-sm leading-6 text-white">Or</p>
+          <button
+            type="submit"
+            className="flex w-full justify-center bg-stone-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
+          >
+            Sign Up
+          </button>
           <div className="w-auto flex items-center justify-center">
             <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
