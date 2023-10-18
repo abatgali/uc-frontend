@@ -58,7 +58,7 @@ export default function Shop() {
     <>
       <div className="w-full h-screen bg-gradient-to-b from-black to-gray-600 object-cover">
         <img
-          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695883519/jzr5j7cumtr2sx9wy4p4.png"
+          src="https://storage.googleapis.com/uci-public/shop_hero.png"
           alt="Product screenshot"
           className="w-full h-full object-cover opacity-40"
         />

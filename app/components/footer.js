@@ -40,7 +40,7 @@ const navigation = {
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/unitedchin/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -53,7 +53,7 @@ const navigation = {
     },
     {
       name: "Tiktok",
-      href: "#",
+      href: "https://www.tiktok.com/@unitedchin/",
       icon: (props) => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const navigation = {
     },
     {
       name: "YouTube",
-      href: "#",
+      href: "https://www.youtube.com/@UnitedChin/featured",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -84,7 +84,7 @@ const navigation = {
     },
     {
       name: "X",
-      href: "#",
+      href: "https://twitter.com/UnitedChin",
       icon: (props) => (
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -3,7 +3,12 @@
 import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import SocialMediaBanner from "./socialmediaTopBanner";
-import { Bars3Icon, XMarkIcon, UserIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  UserIcon,
+  CurrencyDollarIcon,
+} from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../primary.svg";
@@ -78,9 +83,12 @@ export default function Nav() {
           />
         </Link>
         <div className="flex flex-1 justify-end text-white">
-          <Link href="/login" className="text-sm font-semibold leading-6 ">
-            <UserIcon className="w-6 h-6 " />
-          </Link>
+          <a
+            href="https://donate.stripe.com/test_5kAeYm8MvaXg9FudQR"
+            className="text-sm font-semibold leading-6 "
+          >
+            <CurrencyDollarIcon className="w-6 h-6 " />
+          </a>
           <Link
             href="/contact"
             className=" hidden md:text-sm ml-3 font-semibold leading-6 "

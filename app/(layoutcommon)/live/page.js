@@ -34,7 +34,7 @@ export default function Live() {
             disablePictureInPicture
           >
             <source
-              src="https://res.cloudinary.com/dtyw96fds/video/upload/v1695761401/pexels-claudio-calaboica-5476886_2160p_ducohk.mp4"
+              src="https://storage.googleapis.com/uci-public/live_hero_vid.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -42,7 +42,7 @@ export default function Live() {
         </div>
       </div>
       <div className=" py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className={`text-3xl font-extrabold  ${oswald.className}`}>
             Live Stream Channels
           </h2>
