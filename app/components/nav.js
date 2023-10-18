@@ -84,7 +84,7 @@ export default function Nav() {
         </Link>
         <div className="flex flex-1 justify-end text-white">
           <a
-            href="https://donate.stripe.com/test_5kAeYm8MvaXg9FudQR"
+            href="https://donate.stripe.com/7sI9ChdkhcsF0PC3cc"
             className="text-sm font-semibold leading-6 "
           >
             <CurrencyDollarIcon className="w-6 h-6 " />

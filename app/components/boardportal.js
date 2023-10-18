@@ -81,10 +81,15 @@ export default function BoardLogin() {
           <div className="w-auto flex items-center justify-center">
             <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
+            <script async
+              src="https://js.stripe.com/v3/buy-button.js">
+            </script>
+
             <stripe-buy-button
-              buy-button-id="buy_btn_1O0pL5AkvwHnCGKIvpSKsIvN"
-              publishable-key="pk_test_51NzC35AkvwHnCGKIqMzjuLyfHnvmF8MdzPu19KHz9fURueaSAHtGFL9FxD2XHQUigEml8hdb3tEUXpbiXsQQGJQF00S0SiKlRh"
-            ></stripe-buy-button>
+              buy-button-id="buy_btn_1O2gajAkvwHnCGKIrk2sKWOa"
+              publishable-key="pk_live_51NzC35AkvwHnCGKIPiIwJhBZZ9jL5QtpAE8UCjJXY74tnz26BeGQddkjSZbSTw9FcE6ZtAT5A8CF35UljCbkdVfw006qJjDcCA"
+            >
+            </stripe-buy-button>
           </div>
         </div>
       </div>
