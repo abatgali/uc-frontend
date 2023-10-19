@@ -23,12 +23,11 @@ export default function EventDetails() {
           }`}
           style={{
             backgroundImage:
-              "url('https://res.cloudinary.com/dtyw96fds/image/upload/v1696733331/AdobeStock_630099020_bhbykr.gif')",
+              "url('https://storage.googleapis.com/uci-public/soccer_teams.gif')",
             opacity: 0.9,
             backgroundBlendMode: "multiply",
             backgroundPosition: "center",
-            objectFit: "scale-down"
-
+            objectFit: "scale-down",
           }}
         >
           <h2

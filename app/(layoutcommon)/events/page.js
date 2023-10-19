@@ -1,5 +1,3 @@
-import VideoPlayer from "@/app/components/videoPlayer";
-import Eventlist from "../../components/eventList";
 import { oswald } from "@/app/pages/_app";
 import Link from "next/link";
 
@@ -8,8 +6,7 @@ const events = [
     id: 1,
     name: "Soccer",
     desc: "Soccer match between Indianapolis and Chicago",
-    imageURL:
-      "",
+    imageURL: "",
     videoURL:
       "https://storage.googleapis.com/uci-public/soccer_events_vidc.mp4",
     user: "Indianapolis Soccer Club",
@@ -21,8 +18,7 @@ const events = [
     id: 2,
     name: "Volleyball",
     desc: "Volleyball match between Indianapolis and Cincinnati",
-    imageURL:
-      "",
+    imageURL: "",
     videoURL:
       "https://storage.googleapis.com/uci-public/volleyball_events_vidc.mp4",
     user: "Indianapolis Volleyball Club",
@@ -34,8 +30,7 @@ const events = [
     id: 3,
     name: "ChiN iDol",
     desc: "Singing competition",
-    imageURL:
-      "https://storage.googleapis.com/uci-public/events/chin_idol.png",
+    imageURL: "https://storage.googleapis.com/uci-public/events/chin_idol.png",
     videoURL: "",
     user: "Chin Student Association",
     venue: "Indiana University Auditorium",
@@ -98,8 +93,7 @@ const events = [
     id: 8,
     name: "400m Race",
     desc: "500m race for men and women",
-    imageURL:
-      "",
+    imageURL: "",
     videoURL:
       "https://storage.googleapis.com/uci-public/running_events_vidc.mp4",
     user: "Indianapolis Running Club",
@@ -125,8 +119,8 @@ export default function Events() {
     <>
       <div className="w-full h-[20rem] object-cover bg-gradient-to-b from-black to-gray-900 relative max-sm:hidden">
         <img
-          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695784610/ticket-2974645_1280_araaqu.jpg"
-          alt=""
+          src="https://storage.googleapis.com/uci-public/events_home.jpg"
+          alt="tix banner"
           className="h-full w-full  opacity-70 object-cover shadow-lg "
         />
         <h2

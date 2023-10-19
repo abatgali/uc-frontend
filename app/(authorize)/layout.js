@@ -15,7 +15,7 @@ export default function AuthorizeLayout({ children }) {
       <div className="relative hidden w-0 flex-1 lg:block">
         <img
           className="absolute inset-0 h-screen w-full object-cover"
-          src="https://res.cloudinary.com/dtyw96fds/image/upload/v1695202052/registerPage_ya8bha.jpg"
+          src="https://storage.googleapis.com/uci-public/registerPage.jpg"
           alt="people looking towards the sunset on a shoreline where waves are almost hitting their legs"
         />
         <div className="absolute inset-0 bg-black h-screen opacity-50"></div>
@@ -31,7 +31,9 @@ export default function AuthorizeLayout({ children }) {
               </p>
             </Link>
           </div>
-          <h2 className={` ${oswald.className} mt-20 text-5xl font-extrabold text-white`}>
+          <h2
+            className={` ${oswald.className} mt-20 text-5xl font-extrabold text-white`}
+          >
             Experience Community, Join Today!
           </h2>
           <p className="text-white mt-20 text-2xl w-2/3">
