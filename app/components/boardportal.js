@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { oswald } from "../pages/_app";
 
 export default function BoardLogin() {
@@ -71,14 +72,19 @@ export default function BoardLogin() {
             </div>
           </form>
 
-          <p className="text-center text-sm leading-6 text-white">Or</p>
-          <button
-            type="submit"
-            className="flex w-full justify-center bg-stone-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
-          >
-            Sign Up
-          </button>
-          <div className="w-auto flex items-center justify-center">
+          <div className="text-center text-sm leading-6 text-white ">Or</div>
+
+
+          <div className="w-auto flex flex-col items-center justify-center">
+            <Link href="/signup" className="mb-5 w-1/2">
+
+              <button
+                className="flex w-full justify-center bg-stone-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
+              >
+
+                Sign Up
+              </button>
+            </Link>
             <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
             <script async

@@ -59,12 +59,12 @@ export default function FAQs() {
 
   return (
     <div className="bg-white" id="faqs">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-        <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 text">
+        <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900 text-center">
           Frequently asked questions
         </h2>
-        <p className="mt-6 max-w-2xl text-base leading-7 text-gray-600">
-          Have a different question and can&apost find the answer you&apos;re
+        <p className="mt-6 max-w-2xl text-base leading-7 text-gray-600 text-center mx-auto">
+          Have a different question and can&apos;t find the answer you&apos;re
           looking for? Reach out to our support team by{" "}
           <Link
             href="/contact"
@@ -74,8 +74,8 @@ export default function FAQs() {
           </Link>{" "}
           and we&apos;ll get back to you as soon as we can.
         </p>
-        <div className="mt-20">
-          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
+        <div className="mt-20 mx-auto sm:w-4/5">
+          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10 ">
             {faqs.map((faq) => (
               <div key={faq.id} className=" ">
                 <dt

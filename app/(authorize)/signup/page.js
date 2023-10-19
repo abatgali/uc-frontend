@@ -5,17 +5,22 @@ import Link from "next/link";
 import { oswald } from "@/app/pages/_app";
 import { useState, useEffect, useContext } from "react";
 
-export default function SignUp() {
-  const [name, setName] = useState("");
+export default function NewUser() {
+  const [fname, setfName] = useState("");
+  const [lname, setlName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email, password, name);
-  };
+    console.log(email, password, fname, lname, passwordConfirm);
 
+    // if (password !== passwordConfirm) {
+    //   alert("Passwords do not match");
+    //   return;
+    // }
+  };
   return (
     <div className="mx-auto w-full max-w-sm lg:w-96 h-full">
       <div>
@@ -42,23 +47,45 @@ export default function SignUp() {
         </p>
       </div>
       <div className="mt-5 mb-10">
-        <form action="#" method="POST" className="space-y-6">
-          <div>
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium leading-6 text-gray-900"
-            >
-              Name
-            </label>
-            <div className="mt-2">
-              <input
-                id="name"
-                name="name"
-                value={name}
-                type="text"
-                required
-                className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
+        <form method="POST" className="space-y-6">
+          <div className="flex justify-between space-x-2">
+            <div>
+              <label
+                htmlFor="fname"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
+                First Name
+              </label>
+              <div className="mt-2">
+                <input
+                  id="fname"
+                  name="fname"
+                  value={fname}
+                  onChange={(e) => setfName(e.target.value)}
+                  type="text"
+                  required
+                  className="block w-full  border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                htmlFor="lname"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
+                Last Name
+              </label>
+              <div className="mt-2">
+                <input
+                  id="lname"
+                  name="lname"
+                  value={lname}
+                  onChange={(e) => setlName(e.target.value)}
+                  type="text"
+                  required
+                  className="block w-full  border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
           </div>
           <div>
@@ -73,10 +100,11 @@ export default function SignUp() {
                 id="email"
                 name="email"
                 value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 autoComplete="email"
                 required
-                className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full  border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -93,10 +121,11 @@ export default function SignUp() {
                 id="password"
                 name="password"
                 value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 type="password"
                 autoComplete="current-password"
                 required
-                className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full  border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -112,16 +141,18 @@ export default function SignUp() {
               <input
                 value={passwordConfirm}
                 id="passwordConfirm"
+                onChange={(e) => setPasswordConfirm(e.target.value)}
                 name="passwordConfirm"
                 type="password"
                 required
-                className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full  border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <div className="pt-4">
             <button
               type="submit"
+              onClick={handleSubmit}
               className="flex w-full justify-center bg-black px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Sign up

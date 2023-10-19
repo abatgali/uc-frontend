@@ -38,7 +38,7 @@ export default function Home() {
             playsInline
           >
             <source
-              src="https://storage.googleapis.com/uci-public/uci_homepage_vidc.mp4"
+              src="https://storage.googleapis.com/uci-public/homepage_herovid_edited.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
