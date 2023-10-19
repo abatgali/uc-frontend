@@ -74,28 +74,20 @@ export default function BoardLogin() {
 
           <div className="text-center text-sm leading-6 text-white ">Or</div>
 
-
           <div className="w-auto flex flex-col items-center justify-center">
             <Link href="/signup" className="mb-5 w-1/2">
-
-              <button
-                className="flex w-full justify-center bg-stone-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
-              >
-
+              <button className="flex w-full justify-center bg-stone-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600">
                 Sign Up
               </button>
             </Link>
             <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
-            <script async
-              src="https://js.stripe.com/v3/buy-button.js">
-            </script>
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
             <stripe-buy-button
               buy-button-id="buy_btn_1O2gajAkvwHnCGKIrk2sKWOa"
               publishable-key="pk_live_51NzC35AkvwHnCGKIPiIwJhBZZ9jL5QtpAE8UCjJXY74tnz26BeGQddkjSZbSTw9FcE6ZtAT5A8CF35UljCbkdVfw006qJjDcCA"
-            >
-            </stripe-buy-button>
+            ></stripe-buy-button>
           </div>
         </div>
       </div>
