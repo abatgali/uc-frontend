@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import AuthContext from "../context/AuthContext";
 import { Dialog } from "@headlessui/react";
-import SocialMediaBanner from "./socialmediaTopBanner";
 import {
   Bars3Icon,
   XMarkIcon,
@@ -18,9 +18,11 @@ const navigation = [
   { name: "Events", href: "/events" },
   { name: "Live", href: "/live" },
   { name: "Shop", href: "/shop" },
+  { name: "Board", href: "/board" },
 ];
 
 export default function Nav() {
+  // const { user, logout } = useContext(AuthContext);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // navbar color change when scrolling
@@ -42,11 +44,10 @@ export default function Nav() {
       className={
         ` ` +
         (colorChange
-          ? " bg-gradient-to-r from-stone-950 to-gray-700 z-40 fixed w-full"
+          ? " bg-gradient-to-r from-stone-950 to-gray-900 z-40 fixed w-full"
           : "z-40 fixed w-full bg-transparent")
       }
     >
-      <SocialMediaBanner />
       <nav
         className="mx-auto flex max-w-full items-start justify-between p-5 lg:px-8"
         aria-label="Global"
