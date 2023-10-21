@@ -1,7 +1,5 @@
 "use client";
-
 import { useState, useEffect, useContext } from "react";
-import AuthContext from "../context/AuthContext";
 import { Dialog } from "@headlessui/react";
 import {
   Bars3Icon,
