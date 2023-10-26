@@ -1,3 +1,4 @@
+'use client'
 import FAQs from "../components/faq";
 import FollowSocials from "../components/followSocials";
 import Link from "next/link";

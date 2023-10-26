@@ -3,7 +3,10 @@ import Image from "next/image";
 import logoIcon from "../../logo.svg";
 import Link from "next/link";
 import { oswald } from "@/app/pages/_app";
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { useRouter } from 'next/navigation'
 import { useState, useEffect, useContext } from "react";
+import Notification from "@/app/components/notification";
 
 export default function NewUser() {
   const [fname, setfName] = useState("");
@@ -11,15 +14,36 @@ export default function NewUser() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
+  const supabase = createClientComponentClient()
+  const router = useRouter()
+  const [error, setError] = useState(false)
+  const [msg, setMsg] = useState("")
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email, password, fname, lname, passwordConfirm);
 
-    // if (password !== passwordConfirm) {
-    //   alert("Passwords do not match");
-    //   return;
-    // }
+    if (password.length < 6) {
+      setError(true)
+      setMsg("Password must be at least 6 characters.")
+      return false;
+    } else if (password !== passwordConfirm) {
+      setError(true)
+      setMsg("Passwords don't match.")
+      return false;
+    } else if (password === passwordConfirm) {
+      await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          emailRedirectTo: `${location.origin}/auth/callback`,
+          data: {
+            first_name: fname,
+            last_name: lname,
+          }
+        },
+      })
+      router.push('/login') // redirect to /signin
+    }
   };
   return (
     <div className="mx-auto w-full max-w-sm lg:w-96 h-full">
@@ -31,6 +55,10 @@ export default function NewUser() {
             alt="United Chin International - UC Cup logo"
           />
         </Link>
+        {error
+          ? <Notification msg={msg} />
+          : null
+        }
         <h2
           className={`mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900 ${oswald.className}`}
         >

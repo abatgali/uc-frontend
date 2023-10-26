@@ -4,16 +4,25 @@ import Image from "next/image";
 import logoIcon from "../../logo.svg";
 import Link from "next/link";
 import { oswald } from "@/app/pages/_app";
-import { useEffect, useContext, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 
-export default function SignIn() {
+export default function SignIn({ supabaseClient, initialSession }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter();
+  const supabase = createClientComponentClient();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(email, password);
-  };
+  async function handleSignIn() {
+    if (supabase && supabase.auth) {
+      await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      router.refresh();
+    }
+  }
 
   return (
     <div className="mx-auto w-full max-w-sm lg:w-96 h-full">
@@ -41,7 +50,7 @@ export default function SignIn() {
         </p>
       </div>
       <div className="mt-10 mb-10">
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSignIn} className="space-y-6" method="POST">
           <div>
             <label
               htmlFor="email"
@@ -85,20 +94,6 @@ export default function SignIn() {
           </div>
 
           <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <input
-                id="remember-me"
-                name="remember-me"
-                type="checkbox"
-                className="h-4 w-4 rounded border-gray-300 text-amber-600 focus:ring-orange-600"
-              />
-              <label
-                htmlFor="remember-me"
-                className="ml-3 block text-sm leading-6 text-gray-700"
-              >
-                Remember me
-              </label>
-            </div>
 
             <div className="text-sm leading-6">
               <a

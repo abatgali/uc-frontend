@@ -1,3 +1,4 @@
+'use client'
 import { oswald } from "@/app/pages/_app";
 import {
   Facebook,
