@@ -12,15 +12,21 @@ export default function SignIn({ supabaseClient, initialSession }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+  const [error, setError] = useState(null);
   const supabase = createClientComponentClient();
 
   async function handleSignIn() {
-    if (supabase && supabase.auth) {
-      await supabase.auth.signInWithPassword({
-        email,
-        password,
-      });
-      router.refresh();
+    try {
+      if (supabase && supabase.auth) {
+        await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
+        router.refresh();
+      }
+    } catch (error) {
+      console.error(error);
+      setError(error.message);
     }
   }
 
@@ -39,6 +45,7 @@ export default function SignIn({ supabaseClient, initialSession }) {
         >
           Sign in to your account
         </h2>
+        {error && <p className="text-red-500">{error}</p>}
         <p className="mt-2 text-sm leading-6 text-gray-500">
           Not a member?{" "}
           <Link
