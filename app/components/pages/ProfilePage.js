@@ -1,6 +1,6 @@
 'use client'
-import { oswald } from "@/app/pages/_app"
-export default function Profile({ name, email }) {
+import { oswald } from "../../pages/_app"
+export default function ProfilePage({ name, email }) {
   return (
     <div className='h-screen bg-gradient-to-b from-slate-600 to-slate-400 pt-24 md:px-24'>
       <div className="px-4 sm:px-0 mt-16">

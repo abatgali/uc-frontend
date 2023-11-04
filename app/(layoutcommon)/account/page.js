@@ -1,6 +1,6 @@
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
-import ProfilePage from '@/app/components/pages/ProfilePage'
+import ProfilePage from '../../components/pages/ProfilePage'
 
 export default async function Account() {
   const cookieStore = cookies()

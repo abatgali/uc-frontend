@@ -3,7 +3,7 @@
 import Image from "next/image";
 import logoIcon from "../../logo.svg";
 import Link from "next/link";
-import { oswald } from "@/app/pages/_app";
+import { oswald } from "../../pages/_app";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";

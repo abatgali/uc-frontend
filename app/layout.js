@@ -4,7 +4,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>United Chin International | UC Cup</title>
+        <title>UMAA | United Myanmar American Association</title>
         <link rel="company icon" type="image/x-icon" href="./favicon.ico" />
       </head>
       <body >{children}</body>

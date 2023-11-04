@@ -11,15 +11,14 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        
       },
       colors: {
-
+        "brand-gray": "#A3A3A3",
+        "brand-orange": "#F9BA40",
+        "brand-yellow": "#FFCC33",
+        "brand-black": "#020202",
+        "brand-brown": "#3D2B08",
       },
-      fontFamily: {
-        "brand": "oswald, sans-serif",
-        "content": "openSans, system-ui, sans-serif"
-      }
     },
   },
   plugins: [require("@tailwindcss/forms")],

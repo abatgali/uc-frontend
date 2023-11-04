@@ -1,12 +1,11 @@
 "use client";
 
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import Team from "@/app/components/team";
 
 export default function ContactUs() {
   return (
     <>
-      <div className="isolate bg-gradient-to-b from-black to-slate-800 px-6 py-24 sm:py-32 lg:px-8">
+      <div className="isolate bg-gradient-to-b from-black to-slate-300 px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl pt-24">
             Contact Organizers

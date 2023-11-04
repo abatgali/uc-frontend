@@ -1,5 +1,5 @@
 'use client'
-import { oswald } from "@/app/pages/_app";
+import { oswald } from "../../pages/_app";
 
 const people = [
   {
@@ -94,7 +94,7 @@ export default function MeetBoardMembers() {
         </div>
         <ul
           role="list"
-          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2 bg-white rounded-lg shadow-lg overflow-hidden p-5 opacity-70"
+          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2 bg-white rounded-lg shadow-lg overflow-hidden p-5 bg-opacity-80 backdrop-blur-md"
         >
           {people.map((person) => (
             <li key={person.name}>

@@ -1,11 +1,11 @@
 'use client'
-import { oswald } from "@/app/pages/_app";
+import { oswald } from "../../pages/_app";
 import {
   Facebook,
   Rumble,
   X,
   YouTube,
-} from "@/app/components/live_platform_logos";
+} from "../../components/live_platform_logos";
 
 export default function Live() {
   return (
@@ -26,7 +26,7 @@ export default function Live() {
         </div>
         <div className="absolute top-0 left-0 w-full h-[32rem] aspect-video">
           <video
-            className="w-full h-screen object-cover opacity-40"
+            className="w-full h-screen object-cover opacity-80"
             controlsList="play nofullscreen nodownload noremoteplayback noplaybackrate foobar "
             autoPlay
             loop
@@ -53,16 +53,16 @@ export default function Live() {
             to stay updated.
           </p>
           <div className=" w-full  h-32 flex justify-around flex-wrap p-5">
-            <div className=" m-4 ">
+            <div className=" m-3 ">
               <YouTube />
             </div>
-            <div className=" m-4 ">
+            <div className=" m-3 ">
               <Rumble />
             </div>
-            <div className=" m-4 ">
+            <div className=" m-3 ">
               <Facebook />
             </div>
-            <div className=" m-4 ">
+            <div className=" m-3 ">
               <X />
             </div>
           </div>

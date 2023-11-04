@@ -61,7 +61,7 @@ export default function Shop() {
         <img
           src="https://storage.googleapis.com/uci-public/shop_hero.png"
           alt="Product screenshot"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-80"
         />
       </div>
       <div className="text-center p-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">

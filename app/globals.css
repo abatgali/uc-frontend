@@ -25,3 +25,20 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+h1 {
+  font-family: 'oswald', sans-serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.bg-image-donate {
+  background-image: url('https://storage.googleapis.com/uci-public/umaa/donatehomepic.jpg');
+  background-size: cover;
+  background-position: center;
+}

@@ -2,11 +2,11 @@
 import Image from "next/image";
 import logoIcon from "../../logo.svg";
 import Link from "next/link";
-import { oswald } from "@/app/pages/_app";
+import { oswald } from "../../pages/_app";
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect, useContext } from "react";
-import Notification from "@/app/components/notification";
+import Notification from "../../components/notification";
 
 export default function NewUser() {
   const [fname, setfName] = useState("");

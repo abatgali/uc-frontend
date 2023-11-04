@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useContext } from "react";
+import { useRouter } from "next/navigation";
 import { Dialog } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -17,6 +18,8 @@ const navigation = [
   { name: "Live", href: "/live" },
   { name: "Shop", href: "/shop" },
   { name: "Board", href: "/board" },
+  // { name: "Contact", href: "/contact" },
+  { name: "UC Cup", href: "/uc-cup" },
 ];
 
 export default function Nav() {
@@ -37,22 +40,75 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", changeNavbarColor);
   }, []);
 
+  // finding page's pathname
+  const router = useRouter();
+  const path = router.pathname;
+  console.log(router);
   return (
     <header
       className={
         ` ` +
         (colorChange
-          ? " bg-gradient-to-r from-stone-950 to-gray-900 z-40 fixed w-full"
-          : "z-40 fixed w-full bg-transparent")
+          ? " bg-gradient-to-r from-amber-900 to-gray-800 z-40 fixed w-full"
+          : "z-40 fixed w-full bg-black bg-opacity-20 backdrop-blur-sm")
       }
     >
       <nav
-        className="mx-auto flex max-w-full items-start justify-between p-5 lg:px-8"
+        className="mx-auto flex max-w-full  p-3 lg:px-8 flex-col"
         aria-label="Global"
       >
-        <div className="flex flex-1">
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
+        <div className="items-start justify-between flex w-full">
+          {/* navigation for smaller screens */}
+          <div className="flex flex-1">
+            <div className="flex lg:hidden">
+              <button
+                type="button"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+                onClick={() => setMobileMenuOpen(true)}
+              >
+                <span className="sr-only">Open main menu</span>
+                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
+          {/* logo */}
+          <Link href="/" className="">
+            <img
+              src={
+                path === "/uc-cup"
+                  ? "https://storage.googleapis.com/uci-public/Branding/primary%20logo/3x/UCI%20primary%403x.png"
+                  : "https://storage.googleapis.com/uci-public/umaa/white-logo%403x.png"
+              }
+              className="h-auto w-48 md:w-64"
+              alt="UMAA logo"
+            />
+          </Link>
+          <div className="flex flex-1 justify-end text-white">
+            <a
+              href="https://donate.stripe.com/7sI9ChdkhcsF0PC3cc"
+              className="text-sm font-semibold leading-6 "
+            >
+              <CurrencyDollarIcon className="w-6 h-6 " />
+            </a>
+            <Link
+              href="/contact"
+              className=" hidden md:text-sm ml-3 font-semibold leading-6 "
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
+        {/* nav links for larger screens */}
+        <div className="hidden lg:flex lg:gap-x-12 mx-auto pt-5">
+          {navigation.map((item) =>
+            item.name === "UC Cup" ? (
+              <a
+                href="/uc-cup"
+                className=" text-xs font-semibold leading-6 text-white bg-amber-800 px-2 hover:shadow-md hover:bg-black"
+              >
+                UC Cup
+              </a>
+            ) : (
               <a
                 key={item.name}
                 href={item.href}
@@ -60,40 +116,8 @@ export default function Nav() {
               >
                 {item.name}
               </a>
-            ))}
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-        </div>
-        <Link href="/" className="">
-          <Image
-            src={logo}
-            className="h-auto w-64 md:w-96"
-            alt="United Chin International - UC Cup logo"
-            priority
-          />
-        </Link>
-        <div className="flex flex-1 justify-end text-white">
-          <a
-            href="https://donate.stripe.com/7sI9ChdkhcsF0PC3cc"
-            className="text-sm font-semibold leading-6 "
-          >
-            <CurrencyDollarIcon className="w-6 h-6 " />
-          </a>
-          <Link
-            href="/contact"
-            className=" hidden md:text-sm ml-3 font-semibold leading-6 "
-          >
-            Contact
-          </Link>
+            ),
+          )}
         </div>
       </nav>
       <Dialog

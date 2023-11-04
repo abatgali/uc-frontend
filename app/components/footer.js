@@ -113,10 +113,10 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <div className="flex justify-items-start max-sm:justify-center">
-              <Image
-                src={logo}
-                className="w-64 h-auto"
-                alt="United Chin International - UC Cup logo"
+              <img
+                src="https://storage.googleapis.com/uci-public/umaa/white-logo%403x.png"
+                className="w-48 h-auto"
+                alt="United Myanmar American Association logo"
               />
             </div>
             <p className="text-sm leading-6 text-gray-200 max-sm:text-center">
@@ -218,7 +218,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 mb-10 sm:mt-20 lg:mt-24">
           <p className={`text-xs leading-5 text-gray-500 max-sm:text-center`}>
-            &copy; 2023 United Chin International Ltd. All rights reserved.
+            &copy; 2023 United Myanmar American Association Corp. All rights reserved.
           </p>
         </div>
       </div>
