@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Dialog } from "@headlessui/react";
 import {
@@ -43,7 +43,7 @@ export default function Nav() {
   // finding page's pathname
   const router = useRouter();
   const path = router.pathname;
-  console.log(router);
+  // console.log(router);
   return (
     <header
       className={

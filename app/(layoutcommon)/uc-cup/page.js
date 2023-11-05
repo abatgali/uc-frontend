@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import FAQs from "../../components/faq";
 import FollowSocials from "../../components/followSocials";
 import Link from "next/link";
@@ -10,6 +10,10 @@ export default function UCup() {
     <>
       <div className="w-full h-screen object-cover relative ">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center mt-10">
+          <img
+            src="https://storage.googleapis.com/uci-public/Branding/primary%20logo/3x/UCI%20primary%403x.png"
+            className="mb-12 w-64 h-auto mx-auto"
+          />
           <h2
             className={` ${oswald.className} text-5xl font-bold tracking-tight text-white sm:text-4xl `}
           >

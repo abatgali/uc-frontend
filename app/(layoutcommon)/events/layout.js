@@ -1,4 +1,3 @@
-import { oswald } from "../../pages/_app";
 export default function EventsLayout({ children }) {
   return (
     <>

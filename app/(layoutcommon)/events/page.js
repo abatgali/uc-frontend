@@ -122,7 +122,7 @@ export default function Events() {
         <img
           src="https://storage.googleapis.com/uci-public/events_home.jpg"
           alt="tix banner"
-          className="h-full w-full  opacity-80 object-cover shadow-lg "
+          className="h-full w-full opacity-90 object-cover shadow-lg "
         />
         <h2
           className={`text-3xl md:text-4xl font-semibold ${oswald.className} text-white absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center`}

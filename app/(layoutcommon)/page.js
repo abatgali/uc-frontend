@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <>
       <div className="w-full h-max relative">
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center mt-10 bg-black p-5 bg-opacity-25">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center mt-10 border-solid border-s-white border-1">
           <h2
             className={` ${oswald.className} text-5xl font-bold text-white sm:text-4xl `}
           >
             UNITED MYANMAR AMERICAN ASSOCIATION
           </h2>
           <p className="mt-4 text-2xl text-white max-sm:hidden ">
-            Celebrating and Empowering Our Community
+            Celebrating and Empowering Burmese Community
           </p>
           {/*  <Link href="/signup">
             <div className=" mx-auto p-2 mt-5 bg-black text-gray-200 hover:bg-gray-200 hover:text-black font-semibold w-48">
@@ -133,17 +133,18 @@ export default function Home() {
         className="w-full h-96 object-cover bg-image-donate relative flex items-center justify-center"
         objectfit="cover"
       >
-        <div className="z-20 text-center mt-10 bg-white backdrop-blur-md w-3/4 h-fit mx-auto p-5 bg-opacity-30 ">
+        <div className="z-20 text-center mt-10 bg-white backdrop-blur-md w-3/4 h-fit mx-auto py-5 bg-opacity-30 ">
           <h1>Support the Community</h1>
-          <p className="my-5">
+          <p className="my-5 w-3/4 mx-auto">
             Your donation will help us continue to provide resources and
             services to the American Burmese community and expand our reach.
           </p>
-          <div>
+          <div className="mx-auto">
             <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
             <stripe-buy-button
               buy-button-id="buy_btn_1O2gajAkvwHnCGKIrk2sKWOa"
+              className="max-sm:w-16"
               publishable-key="pk_live_51NzC35AkvwHnCGKIPiIwJhBZZ9jL5QtpAE8UCjJXY74tnz26BeGQddkjSZbSTw9FcE6ZtAT5A8CF35UljCbkdVfw006qJjDcCA"
             ></stripe-buy-button>
           </div>
