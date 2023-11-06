@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { Dialog } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -9,8 +8,7 @@ import {
   CurrencyDollarIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../primary.svg";
+import { useRouter } from "next/navigation";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -23,7 +21,8 @@ const navigation = [
 ];
 
 export default function Nav() {
-  // const { user, logout } = useContext(AuthContext);
+  const router = useRouter();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // navbar color change when scrolling
@@ -40,9 +39,6 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", changeNavbarColor);
   }, []);
 
-  // finding page's pathname
-  const router = useRouter();
-  const path = router.pathname;
   // console.log(router);
   return (
     <header
@@ -75,9 +71,7 @@ export default function Nav() {
           <Link href="/" className="">
             <img
               src={
-                path === "/uc-cup"
-                  ? "https://storage.googleapis.com/uci-public/Branding/primary%20logo/3x/UCI%20primary%403x.png"
-                  : "https://storage.googleapis.com/uci-public/umaa/white-logo%403x.png"
+                "https://storage.googleapis.com/uci-public/umaa/white-logo%403x.png"
               }
               className="h-auto w-48 md:w-64"
               alt="UMAA logo"
@@ -102,20 +96,20 @@ export default function Nav() {
         <div className="hidden lg:flex lg:gap-x-12 mx-auto pt-5">
           {navigation.map((item) =>
             item.name === "UC Cup" ? (
-              <a
+              <Link
                 href="/uc-cup"
                 className=" text-xs font-semibold leading-6 text-white bg-amber-800 px-2 hover:shadow-md hover:bg-black"
               >
                 UC Cup
-              </a>
+              </Link>
             ) : (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className=" text-xs font-semibold leading-6 text-white"
               >
                 {item.name}
-              </a>
+              </Link>
             ),
           )}
         </div>
@@ -127,7 +121,7 @@ export default function Nav() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 w-1/4 overflow-y-auto z-50  bg-gradient-to-r from-stone-950 to-gray-700 px-6 py-6">
+        <Dialog.Panel className="fixed inset-y-0 left-0 w-1/4 overflow-y-auto z-50  bg-amber-800 px-6 py-6 backdrop-blur-sm bg-opacity-90">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
@@ -145,7 +139,7 @@ export default function Nav() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 text-xs font-semibold leading-7 text-gray-100 hover:bg-yellow-600"
+                className="-mx-3 block px-3 py-2 text-xs font-semibold leading-7 text-gray-100 hover:bg-yellow-700"
               >
                 {item.name}
               </Link>

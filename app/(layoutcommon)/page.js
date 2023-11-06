@@ -144,7 +144,6 @@ export default function Home() {
 
             <stripe-buy-button
               buy-button-id="buy_btn_1O2gajAkvwHnCGKIrk2sKWOa"
-              className="max-sm:w-16"
               publishable-key="pk_live_51NzC35AkvwHnCGKIPiIwJhBZZ9jL5QtpAE8UCjJXY74tnz26BeGQddkjSZbSTw9FcE6ZtAT5A8CF35UljCbkdVfw006qJjDcCA"
             ></stripe-buy-button>
           </div>
