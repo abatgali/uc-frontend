@@ -44,7 +44,7 @@ export default function Home() {
         </video>
       </div>
       <div className="w-full text-center py-12 h-max">
-        <h1>Our Mission</h1>
+        <h1 className={`${oswald.className}`}>Our Mission</h1>
         <div className="flex justify-evenly mt-10 max-sm:flex-col">
           <div className="w-1/5 h-48 text-center mt-5 border-solid border-2 border-amber-600 max-sm:w-full">
             <svg
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full text-center py-12 h-max">
-        <h1>Who We Are</h1>
+        <h1 className={`${oswald.className}`}>Who We Are</h1>
         <p className="p-2 my-5 md:w-3/4 mx-auto">
           The United Myanmar American Association (UMAA) is a non-profit
           organization that is committed to fostering a vibrant and connected
@@ -134,7 +134,7 @@ export default function Home() {
         objectfit="cover"
       >
         <div className="z-20 text-center mt-10 bg-white backdrop-blur-md w-3/4 h-fit mx-auto py-5 bg-opacity-30 ">
-          <h1>Support the Community</h1>
+          <h1 className={`${oswald.className}`}>Support the Community</h1>
           <p className="my-5 w-3/4 mx-auto">
             Your donation will help us continue to provide resources and
             services to the American Burmese community and expand our reach.
@@ -150,7 +150,7 @@ export default function Home() {
         </div>
       </div>
       <div className="p-10">
-        <h1 className="text-center my-5">Follow Our Journey</h1>
+        <h1 className={`${oswald.className} text-center my-5`}>Follow Our Journey</h1>
         <p className="mx-auto w-fit">
           Follow us on social media to stay updated on our latest events and
           news.
