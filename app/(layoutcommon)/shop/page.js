@@ -78,10 +78,12 @@ export default function Shop() {
 
         <div className="my-10">
           <Link
-            href="https://uci-clubconnect.myshopify.com/"
+            // href="https://uci-clubconnect.myshopify.com/"
+            href="#"
             className="bg-black h-15  w-auto text-white font-semibold py-2 px-4 hover:bg-orange-500"
+            aria-disabled="true"
           >
-            Go to Shop
+            Coming Soon
           </Link>
         </div>
       </div>
