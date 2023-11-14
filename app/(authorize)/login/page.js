@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import logoIcon from "../../logo.svg";
+import toast from "react-hot-toast";
 import Link from "next/link";
 import { oswald } from "../../pages/_app";
 import { useRouter } from "next/navigation";
@@ -14,21 +15,58 @@ export default function SignIn() {
   const router = useRouter();
   const [error, setError] = useState(null);
   const supabase = createClientComponentClient();
+  const [isLoading, setIsLoading] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
 
-  async function handleSignIn() {
+  // async function handleSignIn() {
+  //   try {
+  //     if (supabase && supabase.auth) {
+  //       await supabase.auth.signInWithPassword({
+  //         email,
+  //         password,
+  //       });
+  //       router.refresh();
+  //     }
+  //   } catch (error) {
+  //     console.error(error);
+  //     setError(error.message);
+  //   }
+  // }
+
+  const handleSignup = async (e, options) => {
+    e?.preventDefault();
+
+    setIsLoading(true);
+
     try {
-      if (supabase && supabase.auth) {
-        await supabase.auth.signInWithPassword({
-          email,
-          password,
+      const { type, provider } = options;
+      const redirectURL = window.location.origin + "/api/auth/callback";
+
+      if (type === "oauth") {
+        await supabase.auth.signInWithOAuth({
+          provider,
+          options: {
+            redirectTo: redirectURL,
+          },
         });
-        router.refresh();
+      } else if (type === "magic_link") {
+        await supabase.auth.signInWithOtp({
+          email,
+          options: {
+            emailRedirectTo: redirectURL,
+          },
+        });
+
+        toast.success("Check your emails!");
+
+        setIsDisabled(true);
       }
     } catch (error) {
-      console.error(error);
-      setError(error.message);
+      console.log(error);
+    } finally {
+      setIsLoading(false);
     }
-  }
+  };
 
   return (
     <div className="mx-auto w-full max-w-sm lg:w-96 h-full">
@@ -45,8 +83,9 @@ export default function SignIn() {
         >
           Sign in to your account
         </h2>
+        {/* Commenting out prompt to sign up */}
         {error && <p className="text-red-500">{error}</p>}
-        <p className="mt-2 text-sm leading-6 text-gray-500">
+        {/* <p className="mt-2 text-sm leading-6 text-gray-500">
           Not a member?{" "}
           <Link
             href="/signup"
@@ -54,10 +93,13 @@ export default function SignIn() {
           >
             Sign Up
           </Link>
-        </p>
+        </p> */}
       </div>
       <div className="mt-10 mb-10">
-        <form onSubmit={handleSignIn} className="space-y-6" method="POST">
+        <form
+          className="space-y-6"
+          onSubmit={(e) => handleSignup(e, { type: "magic_link" })}
+        >
           <div>
             <label
               htmlFor="email"
@@ -78,7 +120,7 @@ export default function SignIn() {
               />
             </div>
           </div>
-
+          {/* 
           <div>
             <label
               htmlFor="password"
@@ -98,7 +140,7 @@ export default function SignIn() {
                 className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
-          </div>
+          </div> 
 
           <div className="flex items-center justify-between">
 
@@ -110,30 +152,34 @@ export default function SignIn() {
                 Forgot password?
               </a>
             </div>
-          </div>
+          </div> */}
 
           <div>
             <button
+              disabled={isLoading || isDisabled}
               type="submit"
               className="flex w-full justify-center  bg-black px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Sign In
+              {isLoading && (
+                <span className="loading loading-spinner loading-xs"></span>
+              )}
+              Send Sign In Link
             </button>
           </div>
         </form>
-        <div className="text-center p-5">
+        {/* <div className="text-center p-5">
           <p className="mb-2 text-sm">Or</p>
           <div>
             <Link href="/signup">
               <button
                 type=""
-                className="flex w-full justify-center bg-yellow-400 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full justify-center bg-orange-800 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Create Account
               </button>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div className="mt-10 flex ">
           <Link
             href="/"

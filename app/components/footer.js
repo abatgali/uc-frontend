@@ -1,6 +1,4 @@
-'use client'
-import Image from "next/image";
-import logo from "../primary.svg";
+"use client";
 import Link from "next/link";
 import { oswald } from "../pages/_app";
 
@@ -137,7 +135,7 @@ export default function Footer() {
             <div
               className={` ${oswald.className} text-amber-700 max-sm:text-center text-lg hover:text-white`}
             >
-              <Link href="/boardmember">Board Member Portal</Link>
+              <Link href="/login">Board Member Portal</Link>
             </div>
           </div>
 
@@ -218,7 +216,8 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 mb-10 sm:mt-20 lg:mt-24">
           <p className={`text-xs leading-5 text-gray-500 max-sm:text-center`}>
-            &copy; 2023 United Myanmar American Association Corp. All rights reserved.
+            &copy; 2023 United Myanmar American Association Corp. All rights
+            reserved.
           </p>
         </div>
       </div>

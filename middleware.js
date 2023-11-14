@@ -1,34 +1,10 @@
 import { createMiddlewareClient } from "@supabase/auth-helpers-nextjs";
 import { NextResponse } from "next/server";
 
+// The middleware is used to refresh the user's session before loading Server Component routes
 export async function middleware(req) {
   const res = NextResponse.next();
   const supabase = createMiddlewareClient({ req, res });
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  // if user is signed in and the current path is / redirect the user to /account
-  if (user && req.nextUrl.pathname === "/login") {
-    // console.log(user)
-    return NextResponse.redirect(new URL("/account", req.url));
-  }
-
-  // if user is signed in and the current path is /boardmember redirect the user to /account
-  if (user && req.nextUrl.pathname === "/boardmember") {
-    // console.log(user)
-    return NextResponse.redirect(new URL("/account", req.url));
-  }
-
-  // if user is not signed in and the current path is not /login redirect the user to /login
-  if (!user && req.nextUrl.pathname !== "/login") {
-    return NextResponse.redirect(new URL("/login", req.url));
-  }
-
+  await supabase.auth.getSession();
   return res;
 }
-
-export const config = {
-  matcher: ["/account", "/boardmember", "/login"],
-};
