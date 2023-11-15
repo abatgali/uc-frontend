@@ -1,18 +1,17 @@
-import dynamic from "next/dynamic";
-import { createClientComponentClient } from "@supabase/auth-helpers-nextjs/dist";
-import { cookies } from "next/headers";
-import apiClient from "../../../libs/api";
+"use client";
 import Image from "next/image";
-const ButtonWithHandler = dynamic(
-  () => import("../../components/ButtonWithHandler"),
-  {
-    ssr: false, // This line is important. It disables server-side render for this component.
-  },
-);
+import { useRouter } from "next/navigation";
+// import { createClientComponentClient } from "@supabase/auth-helpers-nextjs/dist";
+// import { cookies } from "next/headers";
 
-export default async function Dashboard() {
-  const supabase = createClientComponentClient({ cookies });
-
+export default function Dashboard() {
+  // const supabase = createClientComponentClient();
+  const router = useRouter();
+  const handleSignOut = () => {
+    // supabase.auth.signOut();
+    window.location.href = "/";
+    // router.push("/");
+  };
   return (
     <>
       <div className="min-h-full w-full flex">
@@ -24,16 +23,12 @@ export default async function Dashboard() {
               <div className="bg-gray-500 w-full h-1"></div>
             </div> */}
             <Image
-          src="https://storage.googleapis.com/uci-public/Branding/icon%20only/white%20icon/3x/UCI%20white%20icon%403x.png"
-          alt="UMAA - United Myanmar American Association Logo"
-          width={48}
-          height={48}
-          className="mx-auto mb-5"
-        />
-            {/* <span className="grid h-10 w-32 place-content-center rounded-lg bg-transparent text-xs text-gray-600">
-              <image src="../public/logo.svg" alt="logo" />
-            </span> */}
-
+              src="https://storage.googleapis.com/uci-public/Branding/icon%20only/white%20icon/3x/UCI%20white%20icon%403x.png"
+              alt="UMAA - United Myanmar American Association Logo"
+              width={48}
+              height={48}
+              className="mx-auto mb-5"
+            />
             <ul className="mt-6 space-y-1">
               <li>
                 <a
@@ -119,7 +114,14 @@ export default async function Dashboard() {
                     </li>
 
                     <li>
-                      <ButtonWithHandler />
+                      <form onSubmit={handleSignOut}>
+                        <button
+                          type="submit"
+                          className="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
+                        >
+                          Logout
+                        </button>
+                      </form>
                     </li>
                   </ul>
                 </details>
