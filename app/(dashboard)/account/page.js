@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs/dist";
 import { cookies } from "next/headers";
 import apiClient from "../../../libs/api";
-
+import Image from "next/image";
 const ButtonWithHandler = dynamic(
   () => import("../../components/ButtonWithHandler"),
   {
@@ -18,11 +18,18 @@ export default async function Dashboard() {
       <div className="min-h-full w-full flex">
         <div className=" float-left flex h-screen flex-col justify-between border-e w-[200px] bg-white backdrop-blur-sm bg-opacity-30 ">
           <div className="px-4 py-6">
-            <div className="w-6 flex gap-1 flex-col ml-2">
+            {/* <div className="w-6 flex gap-1 flex-col ml-2">
               <div className="bg-gray-500 w-full h-1"></div>
               <div className="bg-gray-500 w-full h-1"></div>
               <div className="bg-gray-500 w-full h-1"></div>
-            </div>
+            </div> */}
+            <Image
+          src="https://storage.googleapis.com/uci-public/Branding/icon%20only/white%20icon/3x/UCI%20white%20icon%403x.png"
+          alt="UMAA - United Myanmar American Association Logo"
+          width={48}
+          height={48}
+          className="mx-auto mb-5"
+        />
             {/* <span className="grid h-10 w-32 place-content-center rounded-lg bg-transparent text-xs text-gray-600">
               <image src="../public/logo.svg" alt="logo" />
             </span> */}
