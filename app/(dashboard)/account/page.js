@@ -1,17 +1,8 @@
-"use client";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-// import { createClientComponentClient } from "@supabase/auth-helpers-nextjs/dist";
-// import { cookies } from "next/headers";
+import ButtonAccount from "../../components/ButtonAccount";
+export const dynamic = "force-dynamic";
 
-export default function Dashboard() {
-  // const supabase = createClientComponentClient();
-  const router = useRouter();
-  const handleSignOut = () => {
-    // supabase.auth.signOut();
-    window.location.href = "/";
-    // router.push("/");
-  };
+export default async function Dashboard() {
   return (
     <>
       <div className="min-h-full w-full flex">
@@ -29,7 +20,7 @@ export default function Dashboard() {
               height={48}
               className="mx-auto mb-5"
             />
-            <ul className="mt-6 space-y-1">
+            <ul className="mt-6 space-y-2">
               <li>
                 <a
                   href=""
@@ -39,7 +30,7 @@ export default function Dashboard() {
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <details className="group [&_summary::-webkit-details-marker]:hidden">
                   <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
                     <span className="text-sm font-medium"> Events </span>
@@ -71,7 +62,7 @@ export default function Dashboard() {
                     </li>
                   </ul>
                 </details>
-              </li>
+              </li> */}
 
               <li>
                 <a
@@ -81,9 +72,9 @@ export default function Dashboard() {
                   Members
                 </a>
               </li>
-
               <li>
-                <details className="group [&_summary::-webkit-details-marker]:hidden">
+                <ButtonAccount />
+                {/* <details className="group [&_summary::-webkit-details-marker]:hidden">
                   <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
                     <span className="text-sm font-medium"> Account </span>
 
@@ -112,42 +103,28 @@ export default function Dashboard() {
                         Details
                       </a>
                     </li>
-
                     <li>
-                      <form onSubmit={handleSignOut}>
+                    </li>
+                    <li>
                         <button
                           type="submit"
                           className="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
                         >
                           Logout
                         </button>
-                      </form>
                     </li>
                   </ul>
-                </details>
+                </details> */}
               </li>
             </ul>
           </div>
 
           <div className="sticky inset-x-0 bottom-0 border-t border-gray-100">
-            <a
-              href="#"
-              className="flex items-center gap-2 bg-white p-4 hover:bg-gray-50"
-            >
-              {/* <img
+            {/* <img
                 alt="Man"
                 src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 className="h-10 w-10 rounded-full object-cover"
               /> */}
-
-              <div>
-                <p className="text-xs">
-                  {/* <strong className="block font-medium"></strong> */}
-
-                  <span> </span>
-                </p>
-              </div>
-            </a>
           </div>
         </div>
         <div className="flex flex-col w-full p-16">
