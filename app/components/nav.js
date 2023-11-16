@@ -8,7 +8,6 @@ import {
   CurrencyDollarIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -21,7 +20,6 @@ const navigation = [
 ];
 
 export default function Nav() {
-  const router = useRouter();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -39,7 +37,6 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", changeNavbarColor);
   }, []);
 
-  // console.log(router);
   return (
     <header
       className={
@@ -140,6 +137,7 @@ export default function Nav() {
                 key={item.name}
                 href={item.href}
                 className="-mx-3 block px-3 py-2 text-xs font-semibold leading-7 text-gray-100 hover:bg-yellow-700"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>

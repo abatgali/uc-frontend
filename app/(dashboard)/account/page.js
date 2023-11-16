@@ -1,8 +1,20 @@
 import Image from "next/image";
 import ButtonAccount from "../../components/ButtonAccount";
-export const dynamic = "force-dynamic";
+import createServerComponentClient from "@supabase/auth-helpers-nextjs";
+import cookies from "next/headers";
 
+export const dynamic = "force-dynamic";
 export default async function Dashboard() {
+  // const supabase = createServerComponentClient({ cookies });
+
+  // const {
+  //   data: { session },
+  // } = await supabase.auth.getSession();
+
+  // if (!session) {
+  //   redirect("/login");
+  // }
+
   return (
     <>
       <div className="min-h-full w-full flex">
