@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import config from "../../config"
-// import { cookies } from "next/headers";
+import { cookies } from "next/headers";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 
 // This is a server-side component to ensure the user is logged in.

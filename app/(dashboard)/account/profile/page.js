@@ -3,8 +3,10 @@ import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+export const dynamic = "force-dynamic";
 
-export default function Profile() {
+
+export default async function Profile() {
   const router = useRouter();
   const [username, setUsername] = useState("");
   const [about, setAbout] = useState("");
