@@ -57,51 +57,37 @@ const PrivacyPolicy = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: 2023-08-25
+          {`Last Updated: November 25, 2023*
 
-Thank you for visiting ShipFast ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our website located at https://shipfa.st (the "Website").
+1. Introduction
+This Privacy Policy applies to the website https://unitedmyanmar.org ("Site"), operated by UMAA (United Myanmar American Association Corp.), a non-profit organization for the American Burmese community. By using the Site, you consent to the data practices described in this policy.
 
-By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
+2. Data Collection
+- We collect personal data such as name, email, and payment information primarily for order processing.
+- Non-personal data, like web cookies, is collected to enhance user experience on the Site.
 
-1. Information We Collect
+3. Use of Data
+- Personal data is used solely for processing orders and providing services requested by the users.
+- Non-personal data may be used to improve the Site's functionality and user experience.
 
-1.1 Personal Data
+4. Data Sharing
+- We do not share personal data with any third parties except as necessary to process orders or comply with legal obligations.
 
-We collect the following personal information from you:
+5. Children's Privacy
+- The Site does not knowingly collect any personal information from children under the age of 13.
 
-Name: We collect your name to personalize your experience and communicate with you effectively.
-Email: We collect your email address to send you important information regarding your orders, updates, and communication.
-Payment Information: We collect payment details to process your orders securely. However, we do not store your payment information on our servers. Payments are processed by trusted third-party payment processors.
+6. Security of Your Information
+- We take reasonable measures to protect the personal information provided via the Site from loss, misuse, and unauthorized access, disclosure, alteration, or destruction.
 
-1.2 Non-Personal Data
+7. Changes to This Privacy Policy
+- UMAA reserves the right to update or change our Privacy Policy at any time.
+- Users will be notified of any changes via email.
 
-We may use web cookies and similar technologies to collect non-personal information such as your IP address, browser type, device information, and browsing patterns. This information helps us to enhance your browsing experience, analyze trends, and improve our services.
+8. Contact Information
+For any questions or concerns regarding this Privacy Policy, please contact us at unitedchin.uci@gmail.com.
 
-2. Purpose of Data Collection
-
-We collect and use your personal data for the sole purpose of order processing. This includes processing your orders, sending order confirmations, providing customer support, and keeping you updated about the status of your orders.
-
-3. Data Sharing
-
-We do not share your personal data with any third parties except as required for order processing (e.g., sharing your information with payment processors). We do not sell, trade, or rent your personal information to others.
-
-4. Children's Privacy
-
-ShipFast is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at the email address provided below.
-
-5. Updates to the Privacy Policy
-
-We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted on this page, and we may notify you via email about significant changes.
-
-6. Contact Information
-
-If you have any questions, concerns, or requests related to this Privacy Policy, you can contact us at:
-
-Email: marc@shipfa.st
-
-For all other inquiries, please visit our Contact Us page on the Website.
-
-By using ShipFast, you consent to the terms of this Privacy Policy.`}
+9. Acknowledgement
+By using the Site, you acknowledge that you have read, understood, and agree to the terms of this Privacy Policy.`}
         </pre>
       </div>
     </main>

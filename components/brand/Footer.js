@@ -16,8 +16,8 @@ const navigation = {
   ],
   Contact: [
     { name: "Info", href: "/contact" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "Privacy", href: "/privacy-policy" },
+    { name: "Terms", href: "/tos" },
   ],
   Shop: [
     { name: "Merch", href: "/shop" },

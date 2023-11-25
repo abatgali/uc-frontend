@@ -57,39 +57,45 @@ const TOS = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: September 26, 2023
+          {`Last Updated: November 25, 2023
 
-Welcome to ShipFast!
+**1. Acceptance of Terms**
+By accessing or using the website https://unitedmyanmar.org ("Site"), operated by UMAA (United Myanmar American Association Corp.), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to all of these Terms, do not use the Site.
 
-These Terms of Service ("Terms") govern your use of the ShipFast website at https://shipfa.st ("Website") and the services provided by ShipFast. By using our Website and services, you agree to these Terms.
+**2. Description of Service**
+The Site provides a platform for the American Burmese community, offering memberships, merchandise, and event tickets. Access to certain content may be restricted to members only.
 
-1. Description of ShipFast
+**3. Membership and Purchases**
+- Users may purchase memberships, merchandise, and event tickets through the Site.
+- Ownership of purchased items is restricted to personal use; resale is prohibited.
+- A full refund for merchandise is available within 7 days of purchase, subject to conditions outlined on the Site.
 
-ShipFast is a platform that offers a JavaScript code boilerplate to assist entrepreneurs in launching their startups more efficiently.
+**4. User Information**
+- The Site collects personal information such as name, email, and payment information for transactions.
+- Users consent to the collection and use of their data in accordance with our Privacy Policy, available at https://unitedmyanmar.org/privacy-policy.
 
-2. Ownership and Usage Rights
+**5. Non-Personal Data Collection**
+- The Site uses cookies to enhance user experience. By using the Site, you consent to the use of cookies.
 
-When you purchase a package from ShipFast, you gain the right to download and use the code provided for creating applications. You own the code you create but do not have the right to resell it. We offer a full refund within 7 days of purchase, as specified in our refund policy.
+**6. User Conduct**
+- Users must comply with all applicable laws and regulations.
+- Misuse of the Site or its services is strictly prohibited.
 
-3. User Data and Privacy
+**7. Intellectual Property**
+- All content on the Site, including text, graphics, logos, and software, is the property of UMAA or its licensors and is protected by copyright and other laws.
 
-We collect and store user data, including name, email, and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://shipfa.st/privacy-policy.
+**8. Governing Law**
+- These Terms are governed by the laws of the United States.
 
-4. Non-Personal Data Collection
+**9. Changes to Terms**
+- UMAA reserves the right to modify these Terms at any time.
+- Users will be notified of any changes via email.
 
-We use web cookies to collect non-personal data for the purpose of improving our services and user experience.
+**10. Contact Information**
+For any questions or concerns regarding these Terms, please contact unitedchin.uci@gmail.com.
 
-5. Governing Law
-
-These Terms are governed by the laws of France.
-
-6. Updates to the Terms
-
-We may update these Terms from time to time. Users will be notified of any changes via email.
-
-For any questions or concerns regarding these Terms of Service, please contact us at marc@shipfa.st.
-
-Thank you for using ShipFast!`}
+**11. Acknowledgement**
+By using the Site, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.`}
         </pre>
       </div>
     </main>
