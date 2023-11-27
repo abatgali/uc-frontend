@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import {
@@ -40,10 +40,10 @@ export default function Nav() {
   return (
     <header
       className={
-        ` ` +
+        `z-40 fixed w-full ` +
         (colorChange
-          ? " bg-gradient-to-r from-amber-900 to-gray-800 z-40 fixed w-full"
-          : "z-40 fixed w-full bg-black bg-opacity-20 backdrop-blur-sm")
+          ? " bg-gradient-to-r from-amber-900 to-gray-800 "
+          : " bg-black bg-opacity-20 backdrop-blur-sm")
       }
     >
       <nav

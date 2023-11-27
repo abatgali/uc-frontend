@@ -1,5 +1,6 @@
 import ButtonAccount from "@/components/ButtonAccount";
 import MembersList from "@/components/brand/MembersList";
+import NewPost from "@/components/feed/NewPost";
 export const dynamic = "force-dynamic";
 
 // This is a private page: It's protected by the layout.js component which ensures the user is authenticated.
@@ -10,7 +11,8 @@ export default async function Dashboard() {
     <main className="min-h-screen p-8 pb-24">
       <section className="max-w-xl mx-auto space-y-8">
         <ButtonAccount />
-        <h1 className="text-3xl md:text-4xl font-extrabold">Members</h1>
+        <NewPost />
+        <h4 className="">Your Feed</h4>
         <MembersList />
       </section>
     </main>
