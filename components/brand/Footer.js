@@ -2,6 +2,8 @@
 import Link from "next/link";
 // import { oswald } from "../pages/_app";
 import Image from "next/image";
+import ButtonAccount from "../ButtonAccount";
+import ButtonSignin from "../ButtonSignin";
 
 const navigation = {
   Events: [
@@ -139,6 +141,8 @@ export default function Footer() {
               className={` text-amber-700 max-sm:text-center text-lg hover:text-white`}
             >
               <Link href="/signin">Board Member Portal</Link>
+              <br/>
+              <ButtonSignin />
             </div>
           </div>
 

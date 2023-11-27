@@ -5,6 +5,7 @@ import { useState } from "react";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import toast from "react-hot-toast";
 import config from "@/config";
+import ButtonSignin from "@/components/ButtonSignin";
 
 // This a login/singup page for Supabase Auth.
 // Successfull login redirects to /api/auth/callback where the Code Exchange is processed (see app/api/auth/callback/route.js).
@@ -108,6 +109,11 @@ export default function Login() {
           )}
           Sign-up with Google
         </button>
+        {/* // !TODO: make this button work } */}
+        {/* <div className="flex justify-center">
+
+        <ButtonSignin />
+        </div> */}
 
         <div className="divider text-xs text-base-content/50 font-medium">
           OR

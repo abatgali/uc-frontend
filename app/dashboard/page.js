@@ -1,5 +1,5 @@
-import ButtonAccount from "@/components/ButtonAccount";
 import MembersList from "@/components/brand/MembersList";
+import Feed from "@/components/feed/Feed";
 import NewPost from "@/components/feed/NewPost";
 export const dynamic = "force-dynamic";
 
@@ -10,9 +10,12 @@ export default async function Dashboard() {
   return (
     <main className="min-h-screen p-8 pb-24">
       <section className="max-w-xl mx-auto space-y-8">
-        <ButtonAccount />
         <NewPost />
-        <h4 className="">Your Feed</h4>
+        <span className="flex items-center">
+          <span className="pr-6">UMAA Feed & News</span>
+          <span className="h-px flex-1 bg-gray-200"></span>
+        </span>
+        <Feed />
         <MembersList />
       </section>
     </main>
