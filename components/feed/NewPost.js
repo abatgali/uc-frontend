@@ -11,15 +11,18 @@ export default function NewPost() {
     e?.preventDefault();
 
     try {
-      const { error } = await supabase.from("posts").insert({
-        content: content,
-      });
-      if (error) console.log(error);
+      if (!content) {
+        return toast.error("Please enter a post.");
+      } else {
+        const { error } = await supabase.from("posts").insert({
+          content: content,
+        });
+        if (!error) toast.success("Post created!");
+      }
     } catch (error) {
       toast.error(error.message);
     } finally {
       setContent("");
-      toast.success("Post created!");
     }
   };
 

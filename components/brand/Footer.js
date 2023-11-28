@@ -138,11 +138,12 @@ export default function Footer() {
               ))}
             </div>
             <div
-              className={` text-amber-700 max-sm:text-center text-lg hover:text-white`}
+              className={` text-amber-700 text-lg hover:text-white flex items-center gap-3 max-sm:justify-around`}
             >
               <Link href="/signin">Board Member Portal</Link>
-              <br/>
-              <ButtonSignin />
+              <div className="">
+                <ButtonSignin />
+              </div>
             </div>
           </div>
 
@@ -223,8 +224,8 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 mb-10 sm:mt-20 lg:mt-24">
           <p className={`text-xs leading-5 text-gray-500 max-sm:text-center`}>
-            &copy; 2023 United Myanmar American Association Corp. All rights
-            reserved.
+            United Myanmar American Association Corp. ©{" "}
+            {new Date().getFullYear()} - All rights reserved
           </p>
         </div>
       </div>

@@ -37,3 +37,13 @@ h2 {
   font-size: 1.5rem;
   font-weight: bolder;
 }
+
+#newpost {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+#newpost:focus {
+  border-color: none;
+}

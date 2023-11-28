@@ -13,7 +13,7 @@ export default function Feed() {
   const fetchPosts = async () => {
     const { data, error } = await supabase
       .from("posts")
-      .select("*")
+      .select("*, profiles(username, avatar_url, full_name))")
       .order("created_at", { ascending: false });
     if (error) {
       console.log(error);
@@ -36,7 +36,6 @@ export default function Feed() {
 
   return (
     <>
-      
       {posts.map((post) => (
         <article
           className="rounded-xl border-2 border-gray-100 bg-white"
@@ -44,64 +43,49 @@ export default function Feed() {
         >
           <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8">
             <a href="#" className="block shrink-0">
-                {/* // TODO: Add post author's profile picture 
-              {user?.user_metadata?.avatar_url ? (
-              <img
-                src={user?.user_metadata?.avatar_url}
-                alt={user?.user_metadata?.name || "Account"}
-                className="w-6 h-6 rounded-full shrink-0"
-                referrerPolicy="no-referrer"
-                width={24}
-                height={24}
-              />
-            ) : (
-              <span className="w-6 h-6 bg-base-300 flex justify-center items-center rounded-full shrink-0">
-                {user?.user_metadata?.name?.charAt(0) || user?.email?.charAt(0)}
-              </span>
-            )} */}
-              {post?.user_metadata?.avatar_url ? (
-              <Image
-                src={post?.user_metadata?.avatar_url}
-                alt={"Profile picture"}
-                className="w-10 h-10 rounded-full shrink-0 "
-                referrerPolicy="no-referrer"
-                width={24}
-                height={24}
-              />
-            ) : (
-              <span className="w-8 h-8 bg-base-200 flex justify-center items-center rounded-md shrink-0 capitalize">
-                {post?.content?.charAt(0)}
-              </span>
-            )}
+              {post?.profiles?.avatar_url ? (
+                <Image
+                  src={post?.profiles?.avatar_url}
+                  alt={"Profile picture"}
+                  className="w-10 h-10 rounded-md shrink-0 "
+                  referrerPolicy="no-referrer"
+                  width={24}
+                  height={24}
+                />
+              ) : (
+                <span className="w-8 h-8 bg-base-200 flex justify-center items-center rounded-md shrink-0 capitalize">
+                  {post?.profiles?.full_name?.charAt(0)}
+                </span>
+              )}
             </a>
 
             <div>
-              <p className="line-clamp-5 text-lg text-gray-700">
+              <p className="line-clamp-5 text-md text-gray-700">
                 {post.content}
               </p>
-              <div className="mt-2 sm:flex sm:items-center sm:gap-2">
-                <div className="flex items-center gap-1 text-gray-500">
-                  {/* // TODO: Author name <p className=" sm:text-xs sm:text-gray-500">
+              <div className="mt-2 sm:flex sm:items-center sm:gap-2 justify-between">
+                <div className="flex items-baseline gap-1 text-gray-500">
+                  <p className=" sm:text-xs sm:text-gray-500">
                     Posted by
                     <a href="#" className="font-medium hover:text-gray-700">
-                      {" " + post.created_by}
+                      {" " + post.profiles.full_name}
                     </a>
-                  </p> 
-                  <span className="hidden sm:block" aria-hidden="true">
+                  </p>
+                  <span
+                    // className="{hidden sm:block}"
+                    aria-hidden="true"
+                  >
                     &middot;
                   </span>
-                  */}
-
-                </div>
-              </div>
-              <div className="mt-2 sm:flex sm:items-center sm:gap-2">
-                <div className="flex items-center gap-1 text-gray-500">
-                  <p className=" sm:text-xs sm:text-gray-500"> 
-                  {/* Created at: {" "} */}
+                  <p className=" text-xs sm:text-gray-500">
+                    {/* Created at: {" "} */}
                     {new Date(post.created_at).toLocaleDateString()}{" "}
                     {new Date(post.created_at).toLocaleTimeString()}
                   </p>
                 </div>
+              </div>
+              <div className="mt-2 sm:flex sm:items-center sm:gap-2">
+                <div className="flex items-center gap-1 text-gray-500"></div>
               </div>
             </div>
           </div>
@@ -120,7 +104,8 @@ export default function Feed() {
             <p className="line-clamp-5 text-normal text-gray-700">
               Welcome to the UMAA Feed & News! This is a place for you to share
               your thoughts, ideas, and questions with the UMAA community.
-              Please be respectful and kind to others. We look forward to your participation!
+              Please be respectful and kind to others. We look forward to your
+              participation!
             </p>
           </div>
         </div>
