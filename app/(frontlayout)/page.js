@@ -43,10 +43,10 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="w-full text-center py-12 h-max">
+      <div className="sm:w-4/5 w-full text-center py-12 h-max mx-auto">
         <h1 className={``}>Our Mission</h1>
-        <div className="flex justify-evenly mt-10 max-sm:flex-col">
-          <div className="w-1/5 h-48 text-center mt-5 border-solid border-2 border-amber-600 max-sm:w-full">
+        <div className="flex justify-between mt-10 max-sm:flex-col">
+          <div className="w-[300px] h-48 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -64,7 +64,7 @@ export default function Home() {
 
             <h2>Cultural Preservation</h2>
           </div>
-          <div className="w-1/5 h-48 text-center mt-5 border-solid border-2 border-amber-600 max-sm:w-full">
+          <div className="w-[300px] h-48 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -81,7 +81,7 @@ export default function Home() {
             </svg>
             <h2>Education</h2>
           </div>
-          <div className="w-1/5 h-48 text-center mt-5 border-solid border-2 border-amber-600 max-sm:w-full">
+          <div className="w-[300px] h-48 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -98,7 +98,7 @@ export default function Home() {
             </svg>
             <h2>Personal Growth</h2>
           </div>
-          <div className="w-1/5 h-48 text-center mt-5 border-solid border-2 border-amber-600 max-sm:w-full">
+          <div className="w-[300px] h-48 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -120,7 +120,7 @@ export default function Home() {
       </div>
       <div className="w-full text-center py-12 h-max">
         <h1 className={``}>Who We Are</h1>
-        <p className="p-2 my-5 md:w-3/4 mx-auto">
+        <p className="p-2 my-5 md:w-3/4 mx-auto lg:w-1/2">
           The United Myanmar American Association (UMAA) is a non-profit
           organization that is committed to fostering a vibrant and connected
           Burmese community. The UMAA&apos;s primary goal is to promote cultural
@@ -151,7 +151,7 @@ export default function Home() {
       </div>
       <div className="p-10">
         <h1 className={`text-center my-5`}>Follow Our Journey</h1>
-        <p className="mx-auto w-fit">
+        <p className="mx-auto w-fit text-center">
           Follow us on social media to stay updated on our latest events and
           news.
         </p>
