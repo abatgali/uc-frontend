@@ -22,7 +22,7 @@ export default async function Dashboard() {
   }
 
   return (
-    <main className="min-h-screen pt-8 px-2 pb-24">
+    <main className="min-h-screen">
       <section className="max-w-xl mx-auto space-y-8">
         <NewPost />
         <span className="flex items-center">

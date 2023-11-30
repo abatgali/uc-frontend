@@ -1,30 +1,30 @@
-"use client"; // This is a client component 👈🏽
+"use client";
 
-// @/components/Layout/SideBarMobile.js
 import React from "react";
 import Link from "next/link";
 import { FiMenu as Icon } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
-import logo from "@/public/umaa-white.png";
+import LogoWhite from "./LogoWhite";
 
 export default function MenuBarMobile({ setter }) {
   return (
-    <nav className="md:hidden z-20 fixed top-0 left-0 right-0 h-[60px] bg-black flex [&>*]:my-auto px-2">
-      <button
-        className="text-4xl flex text-white"
-        onClick={() => {
-          setter((oldVal) => !oldVal);
-        }}
-      >
-        <Icon />
-      </button>
-      <Link href="/" className="mx-auto">
-        {/*eslint-disable-next-line*/}
-        <img src={logo.src} alt="Company Logo" width={50} height={50} />
-      </Link>
-      <Link className="text-3xl flex text-white" href="/login">
-        <FaUser />
-      </Link>
-    </nav>
+    <>
+      <nav className="md:hidden z-20 fixed top-0 left-0 right-0 h-[60px] bg-gradient-to-r from-amber-800 via-amber-600 to-orange-600 flex [&>*]:my-auto px-2 justify-between shadow-md shadow-white">
+        <button
+          className="text-4xl flex text-white"
+          onClick={() => {
+            setter((oldVal) => !oldVal);
+          }}
+        >
+          <Icon />
+        </button>
+        <div className="pt-1">
+          <LogoWhite />
+        </div>
+        <Link className="text-3xl flex text-white" href="/dashboard/account">
+          <FaUser />
+        </Link>
+      </nav>
+    </>
   );
 }

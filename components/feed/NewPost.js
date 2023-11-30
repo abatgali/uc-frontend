@@ -28,7 +28,7 @@ export default function NewPost() {
 
   return (
     <>
-      <div>
+      <div className="max-md:mt-12">
         <label htmlFor="newpost" className="sr-only">
           New Post
         </label>

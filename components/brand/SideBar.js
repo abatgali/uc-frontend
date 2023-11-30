@@ -8,8 +8,8 @@ import { SlHome } from "react-icons/sl";
 import { BsInfoSquare, BsEnvelopeAt } from "react-icons/bs";
 import { FaTshirt, FaRedhat } from "react-icons/fa";
 import { useRouter } from "next/navigation";
-
-import logo from "@/public/umaa-white.png";
+import LogoWhite from "./LogoWhite";
+import ButtonAccount from "../ButtonAccount";
 
 export default function Sidebar({ show, setter }) {
   const router = useRouter();
@@ -56,33 +56,29 @@ export default function Sidebar({ show, setter }) {
     <>
       <div className={`${className}${appendClass}`}>
         <div className="p-2 flex justify-center">
-          <Link href="/">
-            {/*eslint-disable-next-line*/}
-            <img
-              className="py-3"
-              src={logo.src}
-              alt="Company Logo"
-              width={120}
-              height={120}
-            />
-          </Link>
+          <LogoWhite />
         </div>
-        <div className="flex flex-col">
-          <MenuItem name="Dashboard" route="/dashboard" icon={<SlHome />} />
+        <div className="flex flex-col justify-between h-[300px]">
+          <div>
+            <MenuItem name="Dashboard" route="/dashboard" icon={<SlHome />} />
 
-          <MenuItem name="Board" route="/dashboard/board" icon={<SlHome />} />
-          <MenuItem
-            name="Events"
-            route="/dashboard/events"
-            icon={<FaTshirt />}
-          />
-          <MenuItem
-            name="Account"
-            route="/dashboard/account"
-            icon={<BsInfoSquare />}
-          />
-          <MenuItem name="Contact" route="/contact" icon={<BsEnvelopeAt />} />
+            <MenuItem name="Board" route="/dashboard/board" icon={<SlHome />} />
+            <MenuItem
+              name="Events"
+              route="/dashboard/events"
+              icon={<FaTshirt />}
+            />
+            <MenuItem
+              name="Account"
+              route="/dashboard/account"
+              icon={<BsInfoSquare />}
+            />
+            <MenuItem name="Contact" route="/contact" icon={<BsEnvelopeAt />} />
+          </div>
         </div>
+        <span className="items-center justify-center flex">
+          <ButtonAccount />
+        </span>
       </div>
       {show ? <ModalOverlay /> : <></>}
     </>
