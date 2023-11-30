@@ -1,5 +1,4 @@
 import React from "react";
-import BtmNav from "@/components/brand/BtmNav";
 
 export default function MembersList() {
   return (
@@ -12,7 +11,6 @@ export default function MembersList() {
           <p>content</p>
         </div>
       </details>
-      <BtmNav />
     </>
   );
 }
