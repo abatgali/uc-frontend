@@ -3,9 +3,17 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
-// import { oswald } from "../../pages/_app";
+import { getSEOTags } from "@/libs/seo";
+
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata = getSEOTags({
+  title: "Shop",
+  description: "Shop United Myanmar",
+  canonicalUrlRelative: "/shop",
+});
+
 const features = [
   {
     name: "Official Merchandise.",

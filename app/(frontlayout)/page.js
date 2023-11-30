@@ -1,5 +1,4 @@
-"use client";
-// import { oswald } from "../pages/_app";
+import { getSEOTags } from "@/libs/seo";
 import {
   Facebook,
   Instagram,
@@ -7,6 +6,11 @@ import {
   X,
   YouTube,
 } from "@/components/brand/LivePlatformLogos";
+
+export const metadata = getSEOTags({
+  title: "UMAA Home",
+  canonicalUrlRelative: "/",
+});
 
 export default function Home() {
   return (

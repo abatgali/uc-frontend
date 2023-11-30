@@ -1,4 +1,11 @@
 import { Facebook, YouTube, X, Rumble } from "@/components/brand/LivePlatformLogos";
+import { getSEOTags } from "@/libs/seo";
+
+export const metadata = getSEOTags({
+  title: "Live",
+  description: "United Myanmar American Association | UMAA",
+  canonicalUrlRelative: "/live",
+});
 
 export default function Live() {
   return (
