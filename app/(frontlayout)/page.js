@@ -25,11 +25,6 @@ export default function Home() {
           <p className="mt-4 text-2xl text-white max-sm:hidden ">
             Celebrating and Empowering Burmese Community
           </p>
-          {/*  <Link href="/signup">
-            <div className=" mx-auto p-2 mt-5 bg-black text-gray-200 hover:bg-gray-200 hover:text-black font-semibold w-48">
-              Join Now
-            </div>
-          </Link> */}
         </div>
         <video
           className="w-full h-screen object-cover "

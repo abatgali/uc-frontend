@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ButtonSignin from "../ButtonSignin";
+import ButtonLead from "../ButtonLead";
 
 const navigation = {
   Events: [
@@ -218,6 +219,9 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
+          </div>
+          <div className="mt-16 max-sm:mx-auto max-sm:text-center max-sm:ml-16">
+            <ButtonLead />
           </div>
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 mb-10 sm:mt-20 lg:mt-24">
