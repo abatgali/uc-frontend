@@ -13,7 +13,7 @@ export async function POST(req) {
 
   try {
     const supabase = createRouteHandlerClient({ cookies });
-    await supabase.from("leads").insert({ email: body.email });
+    await supabase.from("subscribers").insert({ email: body.email });
 
     return NextResponse.json({});
   } catch (e) {
