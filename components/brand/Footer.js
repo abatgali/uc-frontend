@@ -220,7 +220,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="mt-16 max-sm:mx-auto max-sm:text-center max-sm:ml-16">
+          <div className="mt-16 max-sm:text-center max-md:ml-16 max-sm:mr-12">
             <ButtonLead />
           </div>
         </div>
