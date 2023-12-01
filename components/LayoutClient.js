@@ -4,7 +4,7 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Crisp } from "crisp-sdk-web";
-import NextTopLoader from "nextjs-toploader";
+// import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "react-hot-toast";
 import { Tooltip } from "react-tooltip";
 import config from "@/config";
@@ -69,7 +69,7 @@ const ClientLayout = ({ children }) => {
   return (
     <>
       {/* Show a progress bar at the top when navigating between pages */}
-      <NextTopLoader color={config.colors.main} showSpinner={false} />
+      {/* <NextTopLoader color={config.colors.main} showSpinner={false} /> */}
 
       {/* Content inside app/page.js files  */}
       {children}
