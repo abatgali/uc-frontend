@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import ButtonSignin from "../ButtonSignin";
 import ButtonLead from "../ButtonLead";
@@ -12,7 +11,7 @@ const navigation = {
   company: [
     { name: "FAQ", href: "/#faqs" },
     { name: "Jobs", href: "#" },
-    { name: "Partners", href: "/boardmember" },
+    { name: "Partners", href: "/board" },
   ],
   Contact: [
     { name: "Info", href: "/contact" },
@@ -139,7 +138,7 @@ export default function Footer() {
             <div
               className={` text-amber-700 text-lg hover:text-white flex items-center gap-3 max-sm:justify-around`}
             >
-              <Link href="/signin">Member Portal</Link>
+              Member Portal
               <div className="">
                 <ButtonSignin />
               </div>
