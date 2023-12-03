@@ -12,7 +12,9 @@ export default function NewPost() {
 
     try {
       if (!content) {
-        return toast.error("Please enter a post.");
+        return toast.error("Please write something.");
+      } else if (content.length > 280) {
+        return toast.error("Your post is too long.");
       } else {
         const { error } = await supabase.from("posts").insert({
           content: content,
@@ -20,7 +22,7 @@ export default function NewPost() {
         if (!error) toast.success("Post created!");
       }
     } catch (error) {
-      toast.error(error.message);
+      toast.error(`Something went wrong, please try later. (${error.message})`);
     } finally {
       setContent("");
     }
@@ -28,11 +30,10 @@ export default function NewPost() {
 
   return (
     <>
-      <div className="max-md:mt-12">
+      <div className="max-md:mt-6">
         <label htmlFor="newpost" className="sr-only">
           New Post
         </label>
-
         <div className="overflow-hidden rounded-lg border border-gray-200 shadow-sm">
           <textarea
             id="newpost"
