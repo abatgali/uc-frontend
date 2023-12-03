@@ -14,11 +14,11 @@ export default function NewUser() {
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
   const supabase = createClientComponentClient();
-  const redirectURL = window.location.origin + "/api/auth/callback";
 
   const handleSubmit = async (e) => {
     e?.preventDefault();
     try {
+      const redirectURL = window.location.origin + "/api/auth/callback";
       if (fname === "" || lname === "") {
         toast.error("Please enter your full name.");
       } else if (email === "") {
