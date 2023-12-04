@@ -11,6 +11,7 @@ import config from "@/config";
 export default function Login() {
   const supabase = createClientComponentClient();
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
 
@@ -30,15 +31,21 @@ export default function Login() {
             redirectTo: redirectURL,
           },
         });
-      } else if (type === "magic_link") {
-        await supabase.auth.signInWithOtp({
+      } else if (type === "email") {
+        const { data, error } = await supabase.auth.signInWithPassword({
           email,
+          password,
           options: {
-            emailRedirectTo: redirectURL,
+            redirectTo: redirectURL,
           },
         });
-
-        toast.success("Check your emails!");
+        if (data) {
+          toast.success("Logging in...");
+          // Redirect to dashboard
+          window.location.href = redirectURL;
+        } else if (error) {
+          toast.error(error.message);
+        }
 
         setIsDisabled(true);
       }
@@ -69,10 +76,94 @@ export default function Login() {
         </Link>
       </div>
       <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-center mb-12">
-        Sign-in to UMAA
+        Sign in
       </h1>
 
-      <div className="space-y-8 max-w-xl mx-auto">
+      <form
+        className="space-y-8 max-w-xl mx-auto"
+        onSubmit={(e) => handleSignup(e, { type: "email" })}
+      >
+        <div>
+          <label
+            htmlFor="email"
+            className="form-control w-full space-y-4 text-sm font-medium leading-6 text-gray-900 block"
+          >
+            Email address
+          </label>
+          <div className="mt-2">
+            <input
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              autoComplete="email"
+              required
+              className="block w-full  border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label
+            htmlFor="password"
+            className="block text-sm font-medium leading-6 text-gray-900"
+          >
+            Password
+          </label>
+          <div className="mt-2">
+            <input
+              id="password"
+              name="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              type="password"
+              autoComplete="current-password"
+              required
+              className="block w-full  border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+          <button
+            className="btn btn-primary btn-block mt-4"
+            disabled={isLoading || isDisabled}
+            type="submit"
+          >
+            {isLoading && (
+              <span className="loading loading-spinner loading-xs"></span>
+            )}
+            Submit
+          </button>
+        </div>
+        <div className="divider text-xs text-base-content/50 font-medium">
+          OR
+        </div>
+
+        {/* <form
+          className="form-control w-full space-y-4"
+          onSubmit={(e) => handleSignup(e, { type: "magic_link" })}
+        >
+          <input
+            required
+            type="email"
+            value={email}
+            autoComplete="email"
+            placeholder="tom@cruise.com"
+            className="input input-bordered w-full placeholder:opacity-60"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <button
+            className="btn btn-primary btn-block"
+            disabled={isLoading || isDisabled}
+            type="submit"
+          >
+            {isLoading && (
+              <span className="loading loading-spinner loading-xs"></span>
+            )}
+            Send Link
+          </button>
+         
+        </form> */}
         <button
           className="btn btn-block"
           onClick={(e) =>
@@ -106,38 +197,12 @@ export default function Login() {
               />
             </svg>
           )}
-          Sign-up with Google
+          Sign up with Google
         </button>
-        <div className="divider text-xs text-base-content/50 font-medium">
-          OR
-        </div>
-
-        <form
-          className="form-control w-full space-y-4"
-          onSubmit={(e) => handleSignup(e, { type: "magic_link" })}
-        >
-          <input
-            required
-            type="email"
-            value={email}
-            autoComplete="email"
-            placeholder="tom@cruise.com"
-            className="input input-bordered w-full placeholder:opacity-60"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-
-          <button
-            className="btn btn-primary btn-block"
-            disabled={isLoading || isDisabled}
-            type="submit"
-          >
-            {isLoading && (
-              <span className="loading loading-spinner loading-xs"></span>
-            )}
-            Send Link
-          </button>
-        </form>
-      </div>
+        <Link href="/signup">
+          <div className="btn mt-2 btn-block bg-black text-white hover:text-black">Create Account</div>
+        </Link>
+      </form>
     </main>
   );
 }

@@ -1,3 +1,4 @@
+import AddEventModal from "@/components/brand/AddEventModal";
 import React from "react";
 export const dynamic = "force-dynamic";
 
@@ -7,16 +8,13 @@ const DashboardEvents = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <header className="text-center">
           <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
-            All Events
+            New Events
           </h2>
-
           <p className="mx-auto mt-4 max-w-md text-gray-500">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-            praesentium cumque iure dicta incidunt est ipsam, officia dolor
-            fugit natus?
+            Publish new events and manage existing ones.
           </p>
         </header>
-
+        <AddEventModal />
         <ul className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
           <li>
             <a href="#" className="group relative block">

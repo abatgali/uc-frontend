@@ -1,80 +1,29 @@
+"use client";
 import Image from "next/image";
-
-const people = [
-  {
-    name: "Chairman",
-    role: "United Chin International Ltd",
-    imageUrl:
-      "https://storage.googleapis.com/uci-public/Branding/transparentonblack/1x/transparent.png",
-  },
-  {
-    name: "CEO",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Marketing Executive",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Marketing Assistant",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Finance Executive",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Finance Assistant",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "HR Executive",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Event Manager",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Sports Director",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Assistant Sports Director",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "IDoL Director",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Assistant IDoL Director",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Pageant Director",
-    role: "",
-    imageUrl: "",
-  },
-  {
-    name: "Assistant Pageant Director",
-    role: "",
-    imageUrl: "",
-  },
-];
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { useEffect, useState } from "react";
+import logo from "@/app/icon.png";
 
 export default function MeetBoardMembers() {
+  const supabase = createClientComponentClient();
+  const [people, setPeople] = useState([]);
+
+  const fetchRoles = async () => {
+    let { data, error } = await supabase
+      .from("roles")
+      .select(` *, profiles (*)`)
+      .order("id", { ascending: true });
+    if (error) {
+      console.log(error);
+    } else {
+      // console.log(data);
+      setPeople(data);
+    }
+  };
+  useEffect(() => {
+    fetchRoles();
+  }, [supabase]);
+
   return (
     <div className="bg-transparent py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
@@ -96,28 +45,42 @@ export default function MeetBoardMembers() {
           className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2 bg-white rounded-lg shadow-lg overflow-hidden p-5 bg-opacity-80 backdrop-blur-md"
         >
           {people.map((person) => (
-            <li key={person.name}>
+            <li key={person.id}>
               <div className="flex items-center gap-x-6">
                 <div className="object-cover">
-                  {person.imageUrl ? (
+                  {!person.profile_id || !person.profiles.avatar_url ? (
+                    <>
+                      {person.role == "Chairman" ? (
+                        <Image
+                          width={64}
+                          height={64}
+                          className="h-16 w-16 rounded-full object-cover"
+                          src={logo}
+                          alt="UMAA logo"
+                        />
+                      ) : (
+                        <div
+                          className={`h-16 w-16 rounded-full bg-gray-950 flex items-center justify-center text-white text-2xl font-bold`}
+                        >
+                          {person.role.charAt(0)}
+                        </div>
+                      )}
+                    </>
+                  ) : (
                     <Image
                       width={64}
                       height={64}
                       className="h-16 w-16 rounded-full "
-                      src={person.imageUrl}
+                      src={person.profiles.avatar_url}
                       alt="Profile Picture"
                     />
-                  ) : (
-                    <div
-                      className={`h-16 w-16 rounded-full bg-gray-950 flex items-center justify-center text-white text-2xl font-bold`}
-                    >
-                      {person.name.charAt(0)}
-                    </div>
                   )}
                 </div>
                 <div>
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    {person.name}
+                    {!person.profile_id || !person.profiles.full_name
+                      ? ""
+                      : person.profiles.full_name}
                   </h3>
                   <p className="text-sm font-semibold leading-6 text-orange-800">
                     {person.role}

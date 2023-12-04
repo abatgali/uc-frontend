@@ -23,7 +23,7 @@ export default async function Dashboard() {
 
   return (
     <main className="min-h-screen">
-      <section className="max-w-xl mx-auto space-y-8">
+      <section className="max-w-xl mx-auto space-y-8 sm:py-5">
         <NewPost />
         <span className="flex items-center">
           <span className="pr-6">UMAA Feed & News</span>
