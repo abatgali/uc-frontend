@@ -1,4 +1,5 @@
 import React from "react";
+import BoardMemberInfoModal from "./BoardMemberInfoModal";
 
 const BoardMemberCard = () => {
   return (
@@ -20,9 +21,7 @@ const BoardMemberCard = () => {
             sequi dicta impedit aperiam ipsum!
           </p>
 
-          <span className="mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-            Details
-          </span>
+          <BoardMemberInfoModal />
         </div>
       </div>
     </div>

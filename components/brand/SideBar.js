@@ -4,9 +4,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-import { SlHome } from "react-icons/sl";
 import { BsInfoSquare, BsEnvelopeAt } from "react-icons/bs";
-import { FaTshirt, FaRedhat } from "react-icons/fa";
+import { FaUserTie, FaUsers, FaHome } from "react-icons/fa";
+import { MdEmojiEvents } from "react-icons/md";
+
 import { useRouter } from "next/navigation";
 import LogoWhite from "./LogoWhite";
 import ButtonAccount from "../ButtonAccount";
@@ -60,19 +61,30 @@ export default function Sidebar({ show, setter }) {
         </div>
         <div className="flex flex-col justify-between h-[300px]">
           <div>
-            <MenuItem name="Dashboard" route="/dashboard" icon={<SlHome />} />
+            <MenuItem name="Dashboard" route="/dashboard" icon={<FaHome />} />
 
-            <MenuItem name="Board" route="/dashboard/board" icon={<SlHome />} />
+            <MenuItem
+              name="Board"
+              route="/dashboard/board"
+              icon={<FaUserTie />}
+            />
             <MenuItem
               name="Events"
               route="/dashboard/events"
-              icon={<FaTshirt />}
+              icon={<MdEmojiEvents />}
             />
-            <MenuItem
+            {/* <MenuItem
               name="Account"
               route="/dashboard/account"
               icon={<BsInfoSquare />}
+            /> */}
+
+            <MenuItem
+              name="Members"
+              route="/dashboard/members"
+              icon={<FaUsers />}
             />
+
             <MenuItem name="Contact" route="/contact" icon={<BsEnvelopeAt />} />
           </div>
         </div>

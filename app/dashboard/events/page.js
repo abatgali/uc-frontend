@@ -14,7 +14,7 @@ const DashboardEvents = () => {
             Publish new events and manage existing ones.
           </p>
         </header>
-        <AddEventModal /> 
+        <AddEventModal />
         <ul className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
           <li>
             <a href="#" className="group relative block">
