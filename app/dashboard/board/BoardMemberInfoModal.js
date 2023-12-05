@@ -18,7 +18,7 @@ const BoardMemberInfoModal = () => {
           <div className="rounded-lg bg-white p-4 shadow-lg lg:col-span-5 lg:p-4">
             <form action="" className="space-y-4">
               <div>
-                <label className="sr-only" for="name">
+                <label className="sr-only" htmlFor="name">
                   Name
                 </label>
                 <input
@@ -31,7 +31,7 @@ const BoardMemberInfoModal = () => {
 
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="sr-only" for="email">
+                  <label className="sr-only" htmlFor="email">
                     Email
                   </label>
                   <input
@@ -43,7 +43,7 @@ const BoardMemberInfoModal = () => {
                 </div>
 
                 <div>
-                  <label className="sr-only" for="phone">
+                  <label className="sr-only" htmlFor="phone">
                     Phone
                   </label>
                   <input
@@ -56,7 +56,7 @@ const BoardMemberInfoModal = () => {
               </div>
 
               <div>
-                <label className="sr-only" for="remark">
+                <label className="sr-only" htmlFor="remark">
                   Remark
                 </label>
 

@@ -11,7 +11,7 @@ export default function DashboardAccount({ children }) {
               <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-5 lg:p-12">
                 <form action="" className="space-y-4">
                   <div>
-                    <label className="sr-only" for="name">
+                    <label className="sr-only" htmlFor="name">
                       Name
                     </label>
                     <input
@@ -24,7 +24,7 @@ export default function DashboardAccount({ children }) {
 
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div>
-                      <label className="sr-only" for="email">
+                      <label className="sr-only" htmlFor="email">
                         Email
                       </label>
                       <input
@@ -36,7 +36,7 @@ export default function DashboardAccount({ children }) {
                     </div>
 
                     <div>
-                      <label className="sr-only" for="phone">
+                      <label className="sr-only" htmlFor="phone">
                         Phone
                       </label>
                       <input
@@ -49,7 +49,7 @@ export default function DashboardAccount({ children }) {
                   </div>
 
                   <div>
-                    <label className="sr-only" for="message">
+                    <label className="sr-only" htmlFor="message">
                       Message
                     </label>
 

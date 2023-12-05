@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import UpdateMemberStatusModal from "./UpdateMemberStatusModal";
 
 const users = [
   {
@@ -27,6 +29,7 @@ const users = [
   },
 ];
 const DashboardMembers = () => {
+  const [currentUser, setCurrentUser] = useState({});
   return (
     <div className="mx-auto px-4 py-8 overflow-x-auto sm:py-12 lg:px-8">
       <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
@@ -67,24 +70,31 @@ const DashboardMembers = () => {
                   {user?.dob}
                 </td>
                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                  {user.role}
+                  {user?.role}
                 </td>
                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                   $120,000
                 </td>
                 <td className="whitespace-nowrap px-4 py-2">
-                  <a
-                    href="#"
-                    className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
+                  <button
+                    className="btn"
+                    onClick={() => {
+                      setCurrentUser(user);
+                      document
+                        .getElementById("member_detail_modal")
+                        .showModal();
+                    }}
                   >
-                    View
-                  </a>
+                    UPDATE
+                  </button>
                 </td>
               </tr>
             );
           })}
         </tbody>
       </table>
+
+      <UpdateMemberStatusModal userInfo={currentUser} />
     </div>
   );
 };
