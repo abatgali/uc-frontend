@@ -94,7 +94,7 @@ export default function RolesListSuperAdmin() {
               <>
                 <div
                   key={role.id}
-                  className="flex flex-row w-full justify-around"
+                  className="flex flex-row w-full justify-around hover:bg-gray-100"
                 >
                   <div className=" whitespace-nowrap px-4 py-2 font-medium text-gray-900 flex-1 gap-2 mx-auto">
                     {role.role}
