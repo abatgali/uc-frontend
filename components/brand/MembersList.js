@@ -69,14 +69,6 @@ export default function MembersList() {
                       </span>
                       {member.full_name}
                     </td>
-                    {/* <td className="whitespace-nowrap px-4 py-2">
-                      <a
-                        href="#"
-                        className="inline-block rounded bg-amber-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
-                      >
-                        Edit Role
-                      </a>
-                    </td> */}
                   </tr>
                 ))}
               </tbody>

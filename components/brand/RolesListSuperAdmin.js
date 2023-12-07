@@ -6,8 +6,30 @@ import toast from "react-hot-toast";
 export default function RolesListSuperAdmin() {
   const supabase = createClientComponentClient();
   const [roles, setRoles] = useState([]);
-  const [editrole, setEditRole] = useState([]);
+  const [profile, setProfile] = useState([]);
+  const [members, setMembers] = useState([]);
 
+
+  const fetchMembers = async () => {
+    const { data, error } = await supabase
+      .from("profiles")
+      .select("id, full_name, email");
+
+    if (error) {
+      console.log(error);
+      toast.error(error.message);
+    } else {
+      setMembers(data);
+    }
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetchMembers();
+    };
+
+    fetchData();
+  }, []);
   const fetchRoles = async () => {
     const { data, error } = await supabase
       .from("roles")
@@ -23,43 +45,6 @@ export default function RolesListSuperAdmin() {
   };
 
   useEffect(() => {
-    const addEventListeners = () => {
-      const editButtons = document.querySelectorAll(".edit-button");
-      console.log(editButtons);
-      editButtons.forEach((button) => {
-        button.addEventListener("click", (event) => {
-          const role_id = event.target.dataset.roleId;
-          const role_name = event.target.dataset.roleName;
-  
-          openModal(role_id, role_name);
-        });
-      });
-    };
-    // This function will be called after the roles are set
-
-    // Call the function to add the event listeners
-    addEventListeners();
-  }, [roles]);
-
-  const openModal = (role_id, role_name) => {
-    document.getElementById(role_name + "_modal").showModal();
-  };
-
-  //   const { data, error } = await supabase
-  //     .from("roles")
-  //     .update({ profile_id: member })
-  //     .eq("id", role)
-  //     // .select();
-
-  //   if (error) {
-  //     console.log(error);
-  //     toast.error(error.message);
-  //   } else {
-  //     setEditRole(data);
-  //   }
-  // };
-
-  useEffect(() => {
     const fetchData = async () => {
       await fetchRoles();
     };
@@ -67,68 +52,109 @@ export default function RolesListSuperAdmin() {
     fetchData();
   }, []);
 
+  const appointMember = async (e, role, profile) => {
+    // e.preventDefault();
+    // const { data, error } = await supabase
+    //   .from("roles")
+    //   .update({ profile_id: profile })
+    //   .eq("id", role)
+    //   .select();
+
+    console.log(role, profile);
+    // if (error) {
+    //   console.log(error);
+    //   toast.error(error.message);
+    // } else {
+    //   console.log(data);
+    //   toast.success("Role updated.");
+    // }
+  };
+
   return (
     <>
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm text-left">
-          <thead className="">
-            <tr>
-              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-500">
+        <div className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm text-left">
+          <div className="">
+            <div>
+              <div className="whitespace-nowrap px-4 py-2 font-medium text-gray-500">
                 Role
-              </th>
-              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-500"></th>
-              <th></th>
-            </tr>
-          </thead>
+              </div>
+              <div className="whitespace-nowrap px-4 py-2 font-medium text-gray-500"></div>
+              <div></div>
+            </div>
+          </div>
 
-          <tbody className="divide-y divide-gray-200">
+          <div className="divide-y divide-gray-200">
             {roles.map((role) => (
               <>
-                <tr key={role.id}>
-                  <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900 flex items-center gap-2 mx-auto">
+                <div
+                  key={role.id}
+                  className="flex flex-row w-full justify-around"
+                >
+                  <div className=" whitespace-nowrap px-4 py-2 font-medium text-gray-900 flex-1 gap-2 mx-auto">
                     {role.role}
-                  </td>
-                  <td className="hidden">
-                    <div>
-                      <select
-                        name="HeadlineAct"
-                        id="HeadlineAct"
-                        className="mt-1.5 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm"
-                      >
-                        <option value="">Please select</option>
-                        <option value="JM">John Mayer</option>
-                        <option value="SRV">Stevie Ray Vaughn</option>
-                      </select>
-                    </div>
-                  </td>
+                  </div>
                   {role.id === 1 ? (
-                    <td></td>
+                    <div></div>
                   ) : (
-                    <td>
+                    <div id={`${role.id}_edit`}>
                       <button
-                        key={role.id}
-                        onClick={openModal(role.id, role.role)}
+                        onClick={() =>
+                          document
+                            .getElementById(role.role + "_modal")
+                            .showModal()
+                        }
                         className="edit-button bg-blue-300 hover:bg-gray-700 text-white font-bold py-2 px-4"
                       >
                         Edit
                       </button>
-                    </td>
+                    </div>
                   )}
-                </tr>
-                <div id="modal_content">
+                </div>
+                <div key={`${role.id}_modal_content`}>
                   <dialog
                     id={role.role + "_modal"}
                     className="modal modal-bottom sm:modal-middle"
                   >
                     <div className="modal-box">
-                      <h3 className="font-bold text-lg">Hello!</h3>
+                      <h3 className="font-bold text-lg">Appoint {role.role}</h3>
                       <p className="py-4">
-                        Press ESC key or click the button below to close
+                        You may appoint a member to this role by selecting their
+                        name from the dropdown below.
                       </p>
+                      <div>
+                        <select
+                          name={"pickMember_" + role.id}
+                          id={"pickMember_" + role.id}
+                          key={`pickMember_${role.id}`}
+                          onChange={(e) => setProfile(e.target.value)}
+                          className="mt-1.5 w-full rounded-lg border-gray-300 text-gray-700 sm:text-lg"
+                        >
+                          <option value="">Please select</option>
+                          {members.map((member) => (
+                            <option key={member.id} value={member.id}>
+                              {member.full_name} ({member.email})
+                            </option>
+                          ))}
+                        </select>
+                      </div>
                       <div className="modal-action">
-                        <form method="dialog">
+                        <form
+                          method="dialog"
+                          onSubmit={(e) => {
+                            appointMember(e, role.id, profile);
+                          }}
+                        >
                           {/* if there is a button in form, it will close the modal */}
-                          <button className="btn">Close</button>
+                          <button className="btn mr-5 bg-red-400  hover:bg-red-700">
+                            Close
+                          </button>
+                          <button
+                            className="btn bg-green-400  hover:bg-green-600"
+                            type="submit"
+                          >
+                            Save
+                          </button>
                         </form>
                       </div>
                     </div>
@@ -136,8 +162,8 @@ export default function RolesListSuperAdmin() {
                 </div>
               </>
             ))}
-          </tbody>
-        </table>
+          </div>
+        </div>
       </div>
     </>
   );
