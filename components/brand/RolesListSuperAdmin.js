@@ -152,7 +152,7 @@ export default function RolesListSuperAdmin() {
                         >
                           {/* if there is a button in form, it will close the modal */}
                           <button
-                            className="btn mr-5 bg-red-400  hover:bg-red-700"
+                            className="btn mr-5 bg-red-400  hover:bg-red-700 text-white rounded-none"
                             type="button"
                             onClick={() => {
                               document
@@ -163,7 +163,7 @@ export default function RolesListSuperAdmin() {
                             Close
                           </button>
                           <button
-                            className="btn bg-green-400  hover:bg-green-600"
+                            className="btn bg-green-700 text-white hover:bg-green-600 rounded-none"
                             type="submit"
                           >
                             Save
