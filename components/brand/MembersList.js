@@ -10,7 +10,7 @@ export default function MembersList() {
   const fetchMembers = async () => {
     const { data, error } = await supabase
       .from("profiles")
-      .select("username, full_name, avatar_url");
+      .select("id, username, full_name, avatar_url");
 
     if (error) {
       console.log(error);
@@ -42,13 +42,12 @@ export default function MembersList() {
                   <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                     Name
                   </th>
-                  {/* <th className="px-4 py-2"></th> */}
                 </tr>
               </thead>
 
               <tbody className="divide-y divide-gray-200">
                 {members.map((member) => (
-                  <tr key={member.username}>
+                  <tr key={member.id}>
                     <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900 flex items-center gap-2 mx-auto">
                       <span>
                         {member.avatar_url === null ? (

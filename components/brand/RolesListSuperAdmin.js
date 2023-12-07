@@ -9,7 +9,6 @@ export default function RolesListSuperAdmin() {
   const [profile, setProfile] = useState([]);
   const [members, setMembers] = useState([]);
 
-
   const fetchMembers = async () => {
     const { data, error } = await supabase
       .from("profiles")
@@ -53,21 +52,27 @@ export default function RolesListSuperAdmin() {
   }, []);
 
   const appointMember = async (e, role, profile) => {
-    // e.preventDefault();
-    // const { data, error } = await supabase
-    //   .from("roles")
-    //   .update({ profile_id: profile })
-    //   .eq("id", role)
-    //   .select();
-
-    console.log(role, profile);
-    // if (error) {
-    //   console.log(error);
-    //   toast.error(error.message);
-    // } else {
-    //   console.log(data);
-    //   toast.success("Role updated.");
-    // }
+    try {
+      const { data, error } = await supabase
+        .from("roles")
+        .update({ profile_id: profile })
+        .eq("id", role)
+        .select();
+      // console.log(role, profile);
+      if (error) {
+        console.log(error);
+        toast.error(error.message);
+      } else if (data.length === 0) {
+        console.log("No data found");
+        toast.error("Something went wrong. Please try again later. (no data))");
+      } else {
+        console.log(data);
+        toast.success("Role updated.");
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message);
+    }
   };
 
   return (
@@ -146,7 +151,15 @@ export default function RolesListSuperAdmin() {
                           }}
                         >
                           {/* if there is a button in form, it will close the modal */}
-                          <button className="btn mr-5 bg-red-400  hover:bg-red-700">
+                          <button
+                            className="btn mr-5 bg-red-400  hover:bg-red-700"
+                            type="button"
+                            onClick={() => {
+                              document
+                                .getElementById(role.role + "_modal")
+                                .close();
+                            }}
+                          >
                             Close
                           </button>
                           <button
