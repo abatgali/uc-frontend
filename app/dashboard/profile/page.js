@@ -1,5 +1,4 @@
 "use client";
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -45,7 +44,7 @@ export default function Profile() {
   };
   return (
     <>
-      <div className="my-16 sm:px-8 px-4">
+      <div className=" sm:px-8 px-4">
         <Image
           src="https://storage.googleapis.com/uci-public/Branding/icon%20only/white%20icon/3x/UCI%20white%20icon%403x.png"
           alt="UMAA - United Myanmar American Association Logo"
@@ -53,7 +52,7 @@ export default function Profile() {
           height={48}
           className="mx-auto mb-5"
         />
-        <form onSubmit={handleSubmit()}>
+        <form onSubmit={handleSubmit}>
           <div className="space-y-12 sm:space-y-16">
             <div>
               <h2 className="text-xl font-semibold leading-7 text-gray-900 text-center">
@@ -156,6 +155,7 @@ export default function Profile() {
                   <label
                     htmlFor="email"
                     className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
+                    disabled={true}
                   >
                     Email address
                   </label>
@@ -165,6 +165,7 @@ export default function Profile() {
                       name="email"
                       type="email"
                       value={email}
+                      disabled={true}
                       onChange={updateProfileInfo}
                       autoComplete="email"
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-md sm:text-sm sm:leading-6"
