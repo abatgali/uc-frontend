@@ -1,7 +1,6 @@
 "use client"; // This is a client component 👈🏽
 
 // @/components/Layout/Sidebar.js
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 import { BsInfoSquare, BsEnvelopeAt } from "react-icons/bs";

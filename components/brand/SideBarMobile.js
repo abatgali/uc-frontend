@@ -9,7 +9,7 @@ import LogoWhite from "./LogoWhite";
 export default function MenuBarMobile({ setter }) {
   return (
     <>
-      <nav className="md:hidden z-20 fixed top-0 left-0 right-0 h-[60px] bg-gradient-to-r from-amber-800 via-amber-600 to-orange-600 flex [&>*]:my-auto px-2 justify-between shadow-md shadow-white">
+      <nav className="md:hidden z-20 fixed top-0 left-0 right-0 h-[60px] bg-gradient-to-r from-amber-800  to-gray-800 flex [&>*]:my-auto px-2 justify-between shadow-md shadow-white">
         <button
           className="text-4xl flex text-white"
           onClick={() => {

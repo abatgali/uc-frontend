@@ -32,14 +32,6 @@ export default function MembersList() {
     <>
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm text-left">
-          <thead className="">
-            <tr>
-              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                Name
-              </th>
-            </tr>
-          </thead>
-
           <tbody className="divide-y divide-gray-200">
             {members.map((member) => (
               <tr key={member.id}>
@@ -68,13 +60,6 @@ export default function MembersList() {
           </tbody>
         </table>
       </div>
-      {/* <details className="collapse bg-base-200">
-        <summary className="collapse-title text-xl font-medium rounded-none">
-          Members
-        </summary>
-        <div className="collapse-content">
-        </div>
-      </details> */}
     </>
   );
 }
