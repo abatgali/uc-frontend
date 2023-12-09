@@ -59,7 +59,7 @@ export default function Profile() {
                 Profile
               </h2>
               <div className="mt-10 space-y-8 border-b border-gray-900/10 pb-12 sm:space-y-0 sm:divide-y sm:divide-gray-900/10 sm:border-t sm:pb-0">
-                <div className="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:py-6">
+                {/* <div className="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:py-6">
                   <label
                     htmlFor="username"
                     className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
@@ -83,7 +83,7 @@ export default function Profile() {
                       />
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:py-6">
                   <label
