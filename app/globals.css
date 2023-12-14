@@ -28,12 +28,10 @@ progress::-webkit-progress-value {
 }
 
 h1 {
-  font-family: 'oswald', sans-serif;
   font-size: 2rem;
 }
 
 h2 {
-  font-family: 'oswald', sans-serif;
   font-size: 1.5rem;
   font-weight: bolder;
 }
