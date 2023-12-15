@@ -1,0 +1,66 @@
+/* DonateButton.module.css */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.donateLink {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.donateButton {
+  font-size: 1rem; /* Use rem for scalability */
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #804600 30%, #3f1104 90%);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.5rem; /* Use rem for scalability */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  border: 2px solid transparent;
+  overflow: hidden;
+  animation: pulseGlow 2s infinite;
+}
+
+.donateButton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #fff6e5 30%, #ffc3a0 90%);
+  opacity: 0;
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.donateButton:hover::after {
+  opacity: 0.3;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .donateButton {
+    font-size: 0.9rem;
+    padding: 0.9rem 1.3rem;
+  }
+}
+
+/* Small screens (phones, 600px and up) */
+@media (max-width: 600px) {
+  .donateButton {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
