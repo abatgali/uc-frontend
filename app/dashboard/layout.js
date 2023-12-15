@@ -23,7 +23,7 @@ export default async function LayoutPrivate({ children }) {
 
   return (
     <>
-      <DashboardNav>{children}</DashboardNav>
+      <DashboardNav session={session}>{children}</DashboardNav>
     </>
   );
 }
