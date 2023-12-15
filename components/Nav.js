@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
+import DonateButton from "./brand/Donate";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -81,14 +82,8 @@ export default function Nav() {
               href="https://donate.stripe.com/7sI9ChdkhcsF0PC3cc"
               className="text-sm font-semibold leading-6 "
             >
-              <CurrencyDollarIcon className="w-6 h-6 " />
+              <DonateButton />
             </a>
-            <Link
-              href="/contact"
-              className=" hidden md:text-sm ml-3 font-semibold leading-6 "
-            >
-              Contact
-            </Link>
           </div>
         </div>
         {/* nav links for larger screens */}
