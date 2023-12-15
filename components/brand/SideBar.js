@@ -1,6 +1,4 @@
-"use client"; // This is a client component 👈🏽
-
-// @/components/Layout/Sidebar.js
+"use client";
 import Link from "next/link";
 
 import { BsInfoSquare, BsEnvelopeAt } from "react-icons/bs";
@@ -11,9 +9,14 @@ import { useRouter } from "next/navigation";
 import LogoWhite from "./LogoWhite";
 import ButtonAccount from "../ButtonAccount";
 
-export default function Sidebar({ show, setter }) {
+export default function Sidebar({ session, show, setter }) {
   const router = useRouter();
-
+  let permitted = [
+    "ef08ea5d-4f4d-449b-a62c-c4a62fb02edc",
+    "e8655e27-90a8-42f5-ac0f-085c98199464",
+  ];
+  let admin = permitted.includes(session.user.id);
+  // console.log(admin, session.user.id, session);
   // Define our base class
   const className =
     "bg-black w-[250px] transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40";
@@ -67,22 +70,27 @@ export default function Sidebar({ show, setter }) {
               route="/dashboard/board"
               icon={<FaUserTie />}
             />
-            <MenuItem
-              name="Events"
-              route="/dashboard/events"
-              icon={<MdEmojiEvents />}
-            />
             {/* <MenuItem
-              name="Account"
-              route="/dashboard/account"
-              icon={<BsInfoSquare />}
+              name="Events"
+              route="/dashboard"
+              icon={<MdEmojiEvents />}
             /> */}
-
-            <MenuItem
-              name="Members"
-              route="/dashboard/members"
-              icon={<FaUsers />}
-            />
+            {admin ? (
+              <>
+                <MenuItem
+                  name="Manage Events"
+                  route="/dashboard/events"
+                  icon={<MdEmojiEvents />}
+                />
+                <MenuItem
+                  name="Members"
+                  route="/dashboard/members"
+                  icon={<FaUsers />}
+                />
+              </>
+            ) : (
+              <></>
+            )}
 
             <MenuItem name="Contact" route="/contact" icon={<BsEnvelopeAt />} />
           </div>
