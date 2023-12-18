@@ -1,0 +1,23 @@
+/* styles/CategoryFilter.module.css */
+.categoryFilter {
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+/* styles/EventHighlight.module.css */
+.eventHighlight {
+  display: flex;
+  overflow-x: auto;
+  padding: 16px 0;
+}
+
+/* styles/PastEventsArchive.module.css */
+.pastEventsArchive {
+  padding: 16px 0;
+}
+
+.pastEvent {
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+}
