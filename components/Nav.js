@@ -116,7 +116,7 @@ export default function Nav() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 w-1/4 overflow-y-auto z-50  bg-amber-800 px-6 py-6 backdrop-blur-sm bg-opacity-90">
+        <Dialog.Panel className="fixed inset-y-0 left-0 w-1/4 overflow-y-auto z-50  bg-black px-6 py-6 backdrop-blur-sm bg-opacity-90">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
@@ -134,7 +134,7 @@ export default function Nav() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="-mx-3 block px-3 py-2 text-xs font-semibold leading-7 text-gray-100 hover:bg-yellow-700"
+                className="-mx-3 block px-3 py-2 text-xs font-semibold leading-7 text-gray-100 hover:bg-amber-900"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}

@@ -9,9 +9,9 @@ export default function AddEventModal() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
-  const [venue, setVenue] = useState("");
+  const [date, setDate] = useState(null);
+  const [time, setTime] = useState(null);
+  const [venue, setVenue] = useState(null);
   const [tba, setTba] = useState(false);
   // const [image, setImage] = useState("");
 
@@ -23,15 +23,15 @@ export default function AddEventModal() {
       toast.error("Please enter an event name");
     } else if (category === "") {
       toast.error("Please select an event category");
-    } else if (tba === false && date === "") {
+    } else if (tba === false && date === null) {
       toast.error(
         "Please add the date if the event is confirmed or check 'To be announced'."
       );
-    } else if (tba === false && time === "") {
+    } else if (tba === false && time === null) {
       toast.error(
         "Please add the time if the event is confirmed or check 'To be announced'."
       );
-    } else if (tba === false && venue === "") {
+    } else if (tba === false && venue === null) {
       toast.error(
         "Please add the venue if the event is confirmed or check 'To be announced'."
       );
