@@ -5,6 +5,7 @@ import CategoryFilter from "@/components/brand/CategoryFilter";
 import EventHighlight from "@/components/brand/EventHighlight";
 import PastEventsArchive from "@/components/brand/PastEventsArchive";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import Image from "next/image";
 import Head from 'next/head';
 
 
@@ -67,7 +68,21 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="py-24 sm:py-36 md:pt-48">
+    <div className="w-full h-[20rem] object-cover bg-gradient-to-b from-black to-gray-900 relative max-sm:hidden">
+        <Image
+          src="https://storage.googleapis.com/uci-public/events_home.jpg"
+          alt="tix banner"
+          className="h-full w-full opacity-90 object-cover shadow-lg "
+          width={1920}
+          height={1080}
+        />
+        <h2
+          className={`text-3xl md:text-4xl font-semibold text-white absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center`}
+        >
+          Upcoming Events
+        </h2>
+      </div>
+      <div className="py-24 sm:pb-36 md:pb-48">
         <CategoryFilter
           categories={categories}
           onFilterChange={handleFilterChange}
