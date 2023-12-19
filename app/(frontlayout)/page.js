@@ -139,12 +139,16 @@ export default function Home() {
       <div className="w-full text-center py-12 h-max">
         <h1 className={``}>Who We Are</h1>
         <p className="p-2 my-5 md:w-3/4 mx-auto lg:w-1/2">
-          The United Myanmar American Association (UMAA) is a non-profit
-          organization that is committed to fostering a vibrant and connected
-          Burmese community. The UMAA&apos;s primary goal is to promote cultural
-          preservation, education, personal growth within the Myanmar community,
-          and to provide a commonplace for resources and guidance on employment
-          opportunities & social benefits.
+          The United Myanmar American Association (UMAA) warmly welcomes you as
+          a compassionate and dedicated non-profit organization. Our heart lies
+          in nurturing a lively and interconnected Burmese community across the
+          United States. At UMAA, our mission is deeply rooted in celebrating
+          and preserving the rich cultural heritage of Myanmar, fostering
+          educational advancement, and encouraging personal development within
+          our community. We are committed to being a supportive haven, offering
+          a wealth of resources and guidance, from facilitating employment
+          opportunities to navigating social benefits. Join us in this journey
+          of unity, growth, and empowerment.
         </p>
       </div>
       <div
