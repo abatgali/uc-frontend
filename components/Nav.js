@@ -114,7 +114,7 @@ export default function Nav() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 w-1/4 overflow-y-auto z-50  bg-black px-6 py-6 backdrop-blur-sm bg-opacity-50">
+        <Dialog.Panel className="fixed inset-y-0 left-0 w-1/4 overflow-y-auto z-50  bg-black px-6 py-6 backdrop-blur-sm  bg-opacity-50">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
