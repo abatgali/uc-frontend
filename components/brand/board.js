@@ -50,7 +50,7 @@ export default function MeetBoardMembers() {
                 <div className="object-cover">
                   {!person.profile_id || !person.profiles.avatar_url ? (
                     <>
-                      {person.role == "Chairman" ? (
+                      {person.role == "President" ? (
                         <Image
                           width={64}
                           height={64}

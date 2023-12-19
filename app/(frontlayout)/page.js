@@ -6,6 +6,7 @@ import {
   X,
   YouTube,
 } from "@/components/brand/LivePlatformLogos";
+import Link from "next/link";
 
 export const metadata = getSEOTags({
   title: "UMAA Home",
@@ -17,9 +18,7 @@ export default function Home() {
     <>
       <div className="w-full h-max relative">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center mt-10 border-solid border-s-white border-1">
-          <h2
-            className={` text-5xl font-bold text-white sm:text-4xl `}
-          >
+          <h2 className={` text-5xl font-bold text-white sm:text-4xl `}>
             UNITED MYANMAR AMERICAN ASSOCIATION
           </h2>
           <p className="mt-4 text-2xl text-white max-sm:hidden ">
@@ -45,7 +44,7 @@ export default function Home() {
       <div className="sm:w-4/5 w-full text-center py-12 h-max mx-auto">
         <h1 className={``}>Our Mission</h1>
         <div className="flex justify-between mt-10 max-sm:flex-col">
-          <div className="w-[300px] h-48 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
+          <div className="w-[300px] h-56 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -62,8 +61,13 @@ export default function Home() {
             </svg>
 
             <h2>Cultural Preservation</h2>
+            <Link href="/blog/cultural-preservation">
+              <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 mt-2 rounded">
+                {"Read More"}
+              </button>
+            </Link>
           </div>
-          <div className="w-[300px] h-48 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
+          <div className="w-[300px] h-56 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -79,8 +83,13 @@ export default function Home() {
               />
             </svg>
             <h2>Education</h2>
+            <Link href="/blog/education">
+              <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 mt-2 rounded">
+                {"Read More"}
+              </button>
+            </Link>
           </div>
-          <div className="w-[300px] h-48 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
+          <div className="w-[300px] h-56 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -96,8 +105,13 @@ export default function Home() {
               />
             </svg>
             <h2>Personal Growth</h2>
+            <Link href="/blog/personal-growth">
+              <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 mt-2 rounded">
+                {"Read More"}
+              </button>
+            </Link>
           </div>
-          <div className="w-[300px] h-48 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
+          <div className="w-[300px] h-56 text-center mt-5 border-solid border-2 border-amber-600 max-md:w-full shadow-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -114,6 +128,11 @@ export default function Home() {
             </svg>
 
             <h2>Social Services</h2>
+            <Link href="/blog/social-services">
+              <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 mt-2 rounded">
+                {"Read More"}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

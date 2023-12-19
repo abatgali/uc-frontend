@@ -4,8 +4,6 @@ import { Dialog } from "@headlessui/react";
 import {
   Bars3Icon,
   XMarkIcon,
-  UserIcon,
-  CurrencyDollarIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
