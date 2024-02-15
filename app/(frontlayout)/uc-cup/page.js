@@ -15,7 +15,7 @@ export default function UCup() {
             className="mb-12 w-64 h-auto mx-auto"
             width={256}
             height={48}
-            alt="UMAA - United Myanmar American Association Logo"
+            alt="UMAA - United Chin Association Logo"
           />
           <h2
             className={`text-5xl font-bold tracking-tight text-white sm:text-4xl `}

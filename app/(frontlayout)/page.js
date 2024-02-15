@@ -19,9 +19,9 @@ export default function Home() {
       <div className="w-full h-max relative">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center mt-10 border-solid border-s-white border-1">
           <h2 className={` text-5xl font-bold text-white sm:text-4xl `}>
-            UNITED MYANMAR AMERICAN ASSOCIATION
+            UNITED CHIN ASSOCIATION
           </h2>
-          <p className="mt-4 text-2xl text-white max-sm:hidden ">
+          <p className="mt-4 text-2xl text-white ">
             Celebrating and Empowering Burmese Community
           </p>
         </div>
@@ -139,7 +139,7 @@ export default function Home() {
       <div className="w-full text-center py-12 h-max">
         <h1 className={``}>Who We Are</h1>
         <p className="p-2 my-5 md:w-3/4 mx-auto lg:w-1/2">
-          The United Myanmar American Association (UMAA) is a non-profit
+          The United Chin Association (UMAA) is a non-profit
           organization that is committed to fostering a vibrant and connected
           Burmese community. The UMAA&apos;s primary goal is to promote cultural
           preservation, education, personal growth within the Myanmar community,

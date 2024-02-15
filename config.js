@@ -2,10 +2,10 @@ import themes from "daisyui/src/theming/themes.js";
 
 const config = {
   // REQUIRED
-  appName: "United Myanmar American Association | UMAA",
+  appName: "United Chin Association | UMAA",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "United Myanmar American Association is a non-profit organization that aims to promote the welfare of the Burmese/Myanmar American community in the United States.",
+    "United Chin Association is a non-profit organization that aims to promote the welfare of the Burmese/Myanmar American community in the United States.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
   domainName: "unitedmyanmar.org",
   crisp: {
