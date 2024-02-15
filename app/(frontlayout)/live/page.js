@@ -3,7 +3,7 @@ import { getSEOTags } from "@/libs/seo";
 
 export const metadata = getSEOTags({
   title: "Live",
-  description: "United Myanmar American Association | UMAA",
+  description: "United Chin Association | UMAA",
   canonicalUrlRelative: "/live",
 });
 

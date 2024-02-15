@@ -37,7 +37,7 @@ const TOS = () => {
           {`Last Updated: November 25, 2023
 
 **1. Acceptance of Terms**
-By accessing or using the website https://unitedmyanmar.org ("Site"), operated by UMAA (United Myanmar American Association Corp.), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to all of these Terms, do not use the Site.
+By accessing or using the website https://unitedmyanmar.org ("Site"), operated by UMAA (United Chin Association Corp.), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to all of these Terms, do not use the Site.
 
 **2. Description of Service**
 The Site provides a platform for the American Burmese community, offering memberships, merchandise, and event tickets. Access to certain content may be restricted to members only.

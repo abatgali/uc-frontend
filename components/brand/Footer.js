@@ -113,9 +113,9 @@ export default function Footer() {
           <div className="space-y-8">
             <div className="flex justify-items-start max-sm:justify-center">
               <Image
-                src="https://storage.googleapis.com/uci-public/umaa/white-logo%403x.png"
+                src="https://storage.googleapis.com/allprojectsdata/UCA/uca-white.png"
                 className="w-48 h-auto"
-                alt="United Myanmar American Association logo"
+                alt="United Chin Association logo"
                 width={256}
                 height={64}
               />
@@ -225,7 +225,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 mb-10 sm:mt-20 lg:mt-24">
           <p className={`text-xs leading-5 text-gray-500 max-sm:text-center`}>
-            United Myanmar American Association Corp. ©{" "}
+            United Chin Association Corp. ©{" "}
             {new Date().getFullYear()} - All rights reserved
           </p>
         </div>

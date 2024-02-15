@@ -67,9 +67,9 @@ export default function Nav() {
           <Link href="/" className="">
             <Image
               src={
-                "https://storage.googleapis.com/uci-public/umaa/white-logo%403x.png"
+                "https://storage.googleapis.com/allprojectsdata/UCA/uca-white.png"
               }
-              className="h-auto w-48 md:w-64"
+              className="h-auto w-32 md:w-48"
               alt="UMAA logo"
               width={256}
               height={64}

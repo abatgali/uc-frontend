@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
           {`Last Updated: November 25, 2023*
 
 1. Introduction
-This Privacy Policy applies to the website https://unitedmyanmar.org ("Site"), operated by UMAA (United Myanmar American Association Corp.), a non-profit organization for the American Burmese community. By using the Site, you consent to the data practices described in this policy.
+This Privacy Policy applies to the website https://unitedmyanmar.org ("Site"), operated by UMAA (United Chin Association Corp.), a non-profit organization for the American Burmese community. By using the Site, you consent to the data practices described in this policy.
 
 2. Data Collection
 - We collect personal data such as name, email, and payment information primarily for order processing.

@@ -299,7 +299,7 @@ export const articles = [
           <h2 className={styles.h2}>Unlocking Potential Through Learning</h2>
           <p className={styles.p}>
             Education is the beacon that guides the journey of progress and
-            empowerment. At the United Myanmar American Association (UMAA), we
+            empowerment. At the United Chin Association (UMAA), we
             believe that access to education is fundamental to individual and
             community development. As part of our mission, UMAA is devoted to
             fostering educational opportunities for the Burmese community,
@@ -521,7 +521,7 @@ export const articles = [
           <h2 className={styles.h2}>Bridging the Gap to Resources</h2>
           <p className={styles.p}>
             Embarking on life in a new country can be a daunting venture.
-            Recognizing this, the United Myanmar American Association (UMAA)
+            Recognizing this, the United Chin Association (UMAA)
             dedicates itself to smoothing this transition for new immigrants
             through its social services mission. As one of the four pillars of
             our organization, we provide a guiding light for newcomers, helping
