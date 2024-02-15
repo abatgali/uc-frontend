@@ -114,7 +114,7 @@ export default function Footer() {
             <div className="flex justify-items-start max-sm:justify-center">
               <Image
                 src="https://storage.googleapis.com/allprojectsdata/UCA/uca-white.png"
-                className="w-48 h-auto"
+                className="w-32 h-auto"
                 alt="United Chin Association logo"
                 width={256}
                 height={64}
