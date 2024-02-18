@@ -225,7 +225,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 mb-10 sm:mt-20 lg:mt-24">
           <p className={`text-xs leading-5 text-gray-500 max-sm:text-center`}>
-            United Chin Association Corp. ©{" "}
+            United Chin Association Inc. ©{" "}
             {new Date().getFullYear()} - All rights reserved
           </p>
         </div>
