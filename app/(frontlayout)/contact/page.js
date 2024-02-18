@@ -16,7 +16,7 @@ export default function ContactUs() {
           </div>
           <div>
             <Image
-              src="https://storage.googleapis.com/uci-public/umaa/contact_transparent.png"
+              src="https://storage.googleapis.com/uci-public/UCA/contact_transparent.png"
               alt="contact"
               width={500}
               height={500}

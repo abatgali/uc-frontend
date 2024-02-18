@@ -22,7 +22,7 @@ export default async function Dashboard() {
       <section className="max-w-xl mx-auto space-y-8 sm:py-5">
         <NewPost />
         <span className="flex items-center">
-          <span className="pr-6">UMAA Feed & News</span>
+          <span className="pr-6">UCA Feed & News</span>
           <span className="h-px flex-1 bg-gray-200"></span>
         </span>
         <Feed />

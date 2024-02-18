@@ -37,7 +37,7 @@ const TOS = () => {
           {`Last Updated: November 25, 2023
 
 **1. Acceptance of Terms**
-By accessing or using the website https://unitedmyanmar.org ("Site"), operated by UMAA (United Chin Association Corp.), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to all of these Terms, do not use the Site.
+By accessing or using the website https://unitedmyanmar.org ("Site"), operated by UCA (United Chin Association Corp.), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to all of these Terms, do not use the Site.
 
 **2. Description of Service**
 The Site provides a platform for the American Burmese community, offering memberships, merchandise, and event tickets. Access to certain content may be restricted to members only.
@@ -59,13 +59,13 @@ The Site provides a platform for the American Burmese community, offering member
 - Misuse of the Site or its services is strictly prohibited.
 
 **7. Intellectual Property**
-- All content on the Site, including text, graphics, logos, and software, is the property of UMAA or its licensors and is protected by copyright and other laws.
+- All content on the Site, including text, graphics, logos, and software, is the property of UCA or its licensors and is protected by copyright and other laws.
 
 **8. Governing Law**
 - These Terms are governed by the laws of the United States.
 
 **9. Changes to Terms**
-- UMAA reserves the right to modify these Terms at any time.
+- UCA reserves the right to modify these Terms at any time.
 - Users will be notified of any changes via email.
 
 **10. Contact Information**

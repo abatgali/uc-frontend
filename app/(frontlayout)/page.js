@@ -9,7 +9,7 @@ import {
 import Link from "next/link";
 
 export const metadata = getSEOTags({
-  title: "UMAA Home",
+  title: "UCA Home",
   canonicalUrlRelative: "/",
 });
 
@@ -82,8 +82,8 @@ export default function Home() {
                 d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
               />
             </svg>
-            <h2>Education</h2>
-            <Link href="/blog/education">
+            <h2>Sports</h2>
+            <Link href="/blog/sports">
               <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 mt-2 rounded">
                 {"Read More"}
               </button>
@@ -127,8 +127,8 @@ export default function Home() {
               />
             </svg>
 
-            <h2>Social Services</h2>
-            <Link href="/blog/social-services">
+            <h2>Entertainment</h2>
+            <Link href="/blog/entertainment">
               <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 mt-2 rounded">
                 {"Read More"}
               </button>
@@ -139,12 +139,11 @@ export default function Home() {
       <div className="w-full text-center py-12 h-max">
         <h1 className={``}>Who We Are</h1>
         <p className="p-2 my-5 md:w-3/4 mx-auto lg:w-1/2">
-          The United Chin Association (UMAA) is a non-profit
-          organization that is committed to fostering a vibrant and connected
-          Burmese community. The UMAA&apos;s primary goal is to promote cultural
-          preservation, education, personal growth within the Myanmar community,
-          and to provide a commonplace for resources and guidance on employment
-          opportunities & social benefits.
+          The United Chin Association (UCA) is an organization that is committed
+          to fostering a vibrant and connected Burmese community. The UCA&apos;s
+          primary goal is to promote cultural preservation, personal growth, and
+          community engagement. We aim to provide a commonplace for resources
+          and host events that will help the community local and beyond thrive.
         </p>
       </div>
       <div
