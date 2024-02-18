@@ -56,7 +56,7 @@ export default function MeetBoardMembers() {
                           height={64}
                           className="h-16 w-16 rounded-full object-cover"
                           src={logo}
-                          alt="UMAA logo"
+                          alt="UCA logo"
                         />
                       ) : (
                         <div

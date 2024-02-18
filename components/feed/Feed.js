@@ -96,14 +96,14 @@ export default function Feed() {
           <Image
             className="h-10 w-10 rounded-md object-cover"
             src={logo}
-            alt="UMAA Logo"
+            alt="UCA Logo"
             width={150}
             height={150}
           />
           <div>
             <p className="line-clamp-5 text-normal text-gray-700">
-              Welcome to the UMAA Feed & News! This is a place for you to share
-              your thoughts, ideas, and questions with the UMAA community.
+              Welcome to the UCA Feed & News! This is a place for you to share
+              your thoughts, ideas, and questions with the UCA community.
               Please be respectful and kind to others. We look forward to your
               participation!
             </p>

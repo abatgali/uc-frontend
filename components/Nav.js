@@ -70,7 +70,7 @@ export default function Nav() {
                 "https://storage.googleapis.com/allprojectsdata/UCA/uca-white.png"
               }
               className="h-auto w-32 md:w-48"
-              alt="UMAA logo"
+              alt="UCA logo"
               width={256}
               height={64}
             />

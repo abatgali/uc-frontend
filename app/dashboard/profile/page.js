@@ -47,7 +47,7 @@ export default function Profile() {
       <div className=" sm:px-8 px-4">
         <Image
           src="https://storage.googleapis.com/uci-public/Branding/icon%20only/white%20icon/3x/UCI%20white%20icon%403x.png"
-          alt="UMAA - United Chin Association Logo"
+          alt="UCA - United Chin Association Logo"
           width={48}
           height={48}
           className="mx-auto mb-5"
