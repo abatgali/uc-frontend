@@ -10,8 +10,9 @@ export default function UCup() {
     <>
       <div className="w-full h-screen object-cover relative ">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center mt-10">
+          {/* United Chin cup wordmark */}
           <Image
-            src="https://storage.googleapis.com/uci-public/Branding/primary%20logo/3x/UCI%20primary%403x.png"
+            src="https://storage.googleapis.com/allprojectsdata/UCA/uccup.png"
             className="mb-12 w-64 h-auto mx-auto"
             width={256}
             height={48}
