@@ -20,7 +20,7 @@
   font-size: 1rem; /* Use rem for scalability */
   font-weight: bold;
   color: #fff;
-  background: linear-gradient(45deg, #804600 30%, #3f1104 90%);
+  background: linear-gradient(45deg, #23ae14 30%, #286100 90%);
   border: none;
   border-radius: 5px;
   padding: 1rem 1.5rem; /* Use rem for scalability */
@@ -39,7 +39,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #fff6e5 30%, #ffc3a0 90%);
+  background: linear-gradient(45deg, #fff6e5 30%, #85d201 90%);
   opacity: 0;
   border-radius: 5px;
   transition: opacity 0.3s ease-in-out;

@@ -9,7 +9,7 @@ import {
 import Link from "next/link";
 
 export const metadata = getSEOTags({
-  title: "UCA Home",
+  title: "UMAA | United Myanmar American Association",
   canonicalUrlRelative: "/",
 });
 
