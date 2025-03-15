@@ -135,14 +135,14 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <div
+            {/* <div
               className={` text-amber-700 text-lg hover:text-white flex items-center gap-3 max-sm:justify-around`}
             >
               Member Portal
               <div className="">
                 <ButtonSignin />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 max-sm:mx-auto max-sm:text-center">
@@ -219,9 +219,9 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="mt-16 max-sm:text-center max-md:ml-16 max-sm:mr-12">
+          {/* <div className="mt-16 max-sm:text-center max-md:ml-16 max-sm:mr-12">
             <ButtonLead />
-          </div>
+          </div> */}
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 mb-10 sm:mt-20 lg:mt-24">
           <p className={`text-xs leading-5 text-gray-500 max-sm:text-center`}>
