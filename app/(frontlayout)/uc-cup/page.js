@@ -53,7 +53,7 @@ export default function UCup() {
           </video>
         </div>
       </div>
-      <ClubPromote />
+      {/* <ClubPromote /> */}
       <FollowSocials />
       {/* <Questions /> */}
     </>
