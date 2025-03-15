@@ -116,7 +116,7 @@ export default function Tournament() {
             Everything you need to know about UC Cup 2025
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            The United Chin Soccer Tournament is more than just a competition. It's a celebration of our heritage, 
+            The United Chin Soccer Tournament is more than just a competition. It&apos;s a celebration of our heritage, 
             an opportunity to strengthen community bonds, and a chance to showcase the talent within the Chin community.
           </p>
         </div>
