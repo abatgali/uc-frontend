@@ -14,7 +14,7 @@ const navigation = [
   { name: "Events", href: "/events" },
   { name: "Live", href: "/live" },
   { name: "Shop", href: "/shop" },
-  { name: "Board", href: "/board" },
+  // { name: "Board", href: "/board" },
   // { name: "Contact", href: "/contact" },
   { name: "UC Cup", href: "/uc-cup" },
 ];
@@ -77,7 +77,8 @@ export default function Nav() {
           </Link>
           <div className="flex flex-1 justify-end text-white">
             <a
-              href="https://donate.stripe.com/7sI9ChdkhcsF0PC3cc"
+              // TODO: add link to the tournament page
+              href=""
               className="text-sm font-semibold leading-6 "
             >
               <DonateButton />

@@ -56,7 +56,7 @@ export default function Live() {
             <div className=" m-3 ">
               <YouTube />
             </div>
-            <div className=" m-3 ">
+            {/* <div className=" m-3 ">
               <Rumble />
             </div>
             <div className=" m-3 ">
@@ -64,40 +64,15 @@ export default function Live() {
             </div>
             <div className=" m-3 ">
               <X />
-            </div>
+            </div> */}
           </div>
-          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="mt-8 mx-auto">
             <div className="bg-white overflow-hidden shadow rounded-lg">
               <div className="p-5">
                 <h3 className="text-lg font-medium text-gray-900">YouTube</h3>
                 <p className="mt-2 text-sm text-gray-500">
                   Subscribe to our YouTube channel for live streams and
                   highlights.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white overflow-hidden shadow rounded-lg">
-              <div className="p-5">
-                <h3 className="text-lg font-medium text-gray-900">Rumble</h3>
-                <p className="mt-2 text-sm text-gray-500">
-                  Follow us on Rumble for exclusive content and live streams.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white overflow-hidden shadow rounded-lg">
-              <div className="p-5">
-                <h3 className="text-lg font-medium text-gray-900">Facebook</h3>
-                <p className="mt-2 text-sm text-gray-500">
-                  Follow our Facebook page for live streams and updates.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white overflow-hidden shadow rounded-lg">
-              <div className="p-5">
-                <h3 className="text-lg font-medium text-gray-900">X</h3>
-                <p className="mt-2 text-sm text-gray-500">
-                  Follow us on X (formerly Twitter) for exclusive live streams
-                  and updates.
                 </p>
               </div>
             </div>

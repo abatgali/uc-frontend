@@ -19,8 +19,8 @@
 .donateButton {
   font-size: 1rem; /* Use rem for scalability */
   font-weight: bold;
-  color: #fff;
-  background: linear-gradient(45deg, #23ae14 30%, #286100 90%);
+  color: #111;
+  background: linear-gradient(45deg, #f4f028 30%, #e3790f 90%);
   border: none;
   border-radius: 5px;
   padding: 1rem 1.5rem; /* Use rem for scalability */

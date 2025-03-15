@@ -157,12 +157,12 @@ export default function Home() {
             services to the American Burmese community and expand our reach.
           </p>
           <div className="mx-auto">
-            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            {/* <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
             <stripe-buy-button
               buy-button-id="buy_btn_1O2gajAkvwHnCGKIrk2sKWOa"
               publishable-key="pk_live_51NzC35AkvwHnCGKIPiIwJhBZZ9jL5QtpAE8UCjJXY74tnz26BeGQddkjSZbSTw9FcE6ZtAT5A8CF35UljCbkdVfw006qJjDcCA"
-            ></stripe-buy-button>
+            ></stripe-buy-button> */}
           </div>
         </div>
       </div>
