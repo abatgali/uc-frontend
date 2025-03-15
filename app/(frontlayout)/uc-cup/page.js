@@ -55,7 +55,7 @@ export default function UCup() {
       </div>
       <ClubPromote />
       <FollowSocials />
-      <Questions />
+      {/* <Questions /> */}
     </>
   );
 }
