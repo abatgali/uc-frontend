@@ -15,9 +15,9 @@ export default function ClubPromote() {
             Learn More.
           </a>
         </p>
-        <Link href="/signin">
+        <Link href="/tournament">
           <div className="w-48 mx-auto p-2 mt-5 bg-black text-gray-200 hover:text-black hover:bg-gray-200 font-semibold">
-            Create an Account
+            Learn More
           </div>
         </Link>
       </div>

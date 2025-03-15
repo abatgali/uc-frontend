@@ -77,8 +77,7 @@ export default function Nav() {
           </Link>
           <div className="flex flex-1 justify-end text-white">
             <a
-              // TODO: add link to the tournament page
-              href=""
+              href="/tournament"
               className="text-sm font-semibold leading-6 "
             >
               <DonateButton />

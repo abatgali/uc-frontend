@@ -25,14 +25,13 @@ export default function UCup() {
           </h2>
           <p className="mt-4 text-lg text-white max-sm:hidden ">
             Unlock a world of excitement, camaraderie, and competition. United
-            Chin International is your all-access pass to an incredible array of
-            clubs, events, and competitions that will keep you engaged,
-            entertained, and energized. Say hello to limitless opportunities
-            right in your community.
+            Chin Cup is your all-access pass to an incredible soccer tournament
+            with a chance to win prizes. Say hello to limitless opportunities
+            limitless opportunities right in your community.
           </p>
-          <Link href="/signin">
+          <Link href="/tournament">
             <div className=" mx-auto p-2 mt-5 bg-black text-gray-200 hover:bg-gray-200 hover:text-black font-semibold w-48">
-              Join Now
+              More Info
             </div>
           </Link>
         </div>
