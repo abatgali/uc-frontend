@@ -9,60 +9,60 @@ import {
   HeartIcon,
   UserPlusIcon,
   ArrowRightIcon,
-} from '@heroicons/react/24/outline'
+} from "@heroicons/react/24/outline"
 
 const tournamentDetails = [
   {
-    name: '10 Teams',
-    description: 'Head-to-head competition representing 10 different Chin cities.',
+    name: "10 Teams",
+    description: "Head-to-head competition representing 10 different Chin cities.",
     icon: UserGroupIcon,
   },
   {
-    name: 'Prize Pool',
-    description: '1st Place: $5,000, 2nd Place: $1,500, 3rd Place: $1,000',
+    name: "Prize Pool",
+    description: "1st Place: $5,000, 2nd Place: $1,500, 3rd Place: $1,000",
     icon: TrophyIcon,
   },
   {
-    name: 'Entry Fee',
-    description: '$1,200 per team with a $300 deposit required to reserve your spot.',
+    name: "Entry Fee",
+    description: "$1,200 per team with a $300 deposit required to reserve your spot.",
     icon: BanknotesIcon,
   },
   {
-    name: 'Tournament Dates',
-    description: 'August 2025, Saturday and Sunday. Exact kick-off time to be announced.',
+    name: "Tournament Dates",
+    description: "August 2025, Saturday and Sunday. Exact kick-off time to be announced.",
     icon: CalendarIcon,
   },
   {
-    name: 'Community Building',
-    description: 'Strengthening the Chin community by bringing people together through sports.',
+    name: "Community Building",
+    description: "Strengthening the Chin community by bringing people together through sports.",
     icon: HeartIcon,
   },
   {
-    name: 'Team Representation',
-    description: 'Each team represents one of the 10 Chin cities with their respective flags.',
+    name: "Team Representation",
+    description: "Each team represents one of the 10 Chin cities with their respective flags.",
     icon: FlagIcon,
   },
 ]
 
 const registrationSteps = [
   {
-    name: 'Step 1: Team Formation',
-    description: 'Form your team with players representing your Chin city.',
+    name: "Step 1: Team Formation",
+    description: "Form your team with players representing your Chin city.",
     icon: UserGroupIcon,
   },
   {
-    name: 'Step 2: Reserve Your Spot',
-    description: 'Make a $300 deposit to secure your team\'s place in the tournament.',
+    name: "Step 2: Reserve Your Spot",
+    description: "Make a $300 deposit to secure your team\"s place in the tournament.",
     icon: BanknotesIcon,
   },
   {
-    name: 'Step 3: Complete Registration',
-    description: 'Pay the remaining $900 entry fee before the registration deadline.',
+    name: "Step 3: Complete Registration",
+    description: "Pay the remaining $900 entry fee before the registration deadline.",
     icon: UserPlusIcon,
   },
   {
-    name: 'Step 4: Confirmation',
-    description: 'Receive confirmation and tournament details via email.',
+    name: "Step 4: Confirmation",
+    description: "Receive confirmation and tournament details via email.",
     icon: EnvelopeIcon,
   },
 ]
@@ -77,7 +77,7 @@ export default function Tournament() {
             <span className="block mt-2">Soccer Tournament 2025</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Join the United Chin Association's premier soccer event bringing together 10 teams
+            Join the United Chin Association&apos;s premier soccer event bringing together 10 teams
             representing different Chin cities for competition, community, and celebration.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -181,7 +181,7 @@ export default function Tournament() {
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               The tournament is limited to 10 teams, each representing a different Chin city. 
-              Secure your team's spot by following these simple steps:
+              Secure your team&apos;s spot by following these simple steps:
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -209,11 +209,11 @@ export default function Tournament() {
                 <div className="ml-3">
                   <h3 className="text-sm font-medium text-indigo-800">Contact for Registration</h3>
                   <p className="mt-2 text-sm text-indigo-700">
-                    For more information or to register your team, please contact us at{' '}
+                    For more information or to register your team, please contact us at{" "}
                     <a href="mailto:unitedchin.uci@gmail.com" className="font-medium underline">
                       unitedchin.uci@gmail.com
                     </a>
-                    {' '}or follow us on Instagram{' '}
+                    {" "}or follow us on Instagram{" "}
                     <a href="https://www.instagram.com/unitedchin/" className="font-medium underline">
                       @unitedchin
                     </a>
