@@ -16,7 +16,7 @@ const DonateButton = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        Enter Tournament
+        Enter
       </button>
   );
 };
